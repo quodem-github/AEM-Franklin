@@ -17,7 +17,7 @@ function embedYoutube(url, autoplay) {
       allow="autoplay; fullscreen; picture-in-picture; encrypted-media; accelerometer; gyroscope; picture-in-picture" allowfullscreen="" scrolling="no" title="Content from Youtube" loading="lazy"></iframe>
     </div>`;
 }
-  
+
 function embedVimeo(url, autoplay) {
   const [, video] = url.pathname.split('/');
   const suffix = autoplay ? '?muted=1&autoplay=1' : '';
@@ -28,7 +28,7 @@ function embedVimeo(url, autoplay) {
       title="Content from Vimeo" loading="lazy"></iframe>
     </div>`;
 }
-  
+
 function getVideoElement(source, autoplay) {
   const video = document.createElement('video');
   video.setAttribute('controls', '');
@@ -43,7 +43,7 @@ function getVideoElement(source, autoplay) {
 
   return video;
 }
-  
+
 const loadVideoEmbed = (block, link, autoplay) => {
   if (block.dataset.embedIsLoaded) {
     return;
@@ -65,7 +65,7 @@ const loadVideoEmbed = (block, link, autoplay) => {
 
   block.dataset.embedIsLoaded = true;
 };
-  
+
 export default async function decorate(block) {
   const placeholder = block.querySelector('picture');
   const link = block.querySelector('a').href;
