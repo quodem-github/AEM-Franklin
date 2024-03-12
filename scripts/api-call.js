@@ -28,6 +28,6 @@ const getData = async () => {
   } catch (error) {
     sectionApi.innerHTML = '<p>Perdón, algo ha ido mal con sus solicitud</p>';
   }
-}
+};
 
 getData();
