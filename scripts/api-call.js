@@ -4,16 +4,14 @@ const getData = async () => {
   try {
     const response = await fetch('https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=mSjPOCZGSP3RZdeeGfHdDPMcT6PeTXT5');
     const data = await response.json();
-    let books = data.results.lists[0].books.map((book) => {
-      return {
-          title: book.title,
-          author: book.author,
-          cover: book.book_image,
-          description: book.description
-      }
-    });
+    const books = data.results.lists[0].books.map((book) => ({
+      title: book.title,
+      author: book.author,
+      cover: book.book_image,
+      description: book.description,
+    }));
     const ul = document.createElement('ul');
-    books.forEach(book => {
+    books.forEach((book) => {
       const li = document.createElement('li');
       li.innerHTML = `
         <div class="cards-card-image">
@@ -28,7 +26,7 @@ const getData = async () => {
     });
     sectionApi.appendChild(ul);
   } catch (error) {
-    console.log('Error:', error)
+    sectionApi.innerHTML = '<p>Perdón, algo ha ido mal con sus solicitud</p>';
   }
 }
 
