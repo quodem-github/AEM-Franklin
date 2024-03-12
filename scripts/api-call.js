@@ -26,7 +26,7 @@ const getData = async () => {
     });
     sectionApi.appendChild(ul);
   } catch (error) {
-    sectionApi.innerHTML = '<p>Perdón, algo ha ido mal con sus solicitud</p>';
+    sectionApi.innerHTML = '<p>Perdón, algo ha ido mal con su solicitud</p>';
   }
 };
 
