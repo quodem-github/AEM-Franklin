@@ -3,15 +3,15 @@ document.body.addEventListener('submit', (e) => {
     return;
   }
   e.preventDefault();
-  const username = e.target.querySelector('#form-email').value;
-  const password = e.target.querySelector('#form-password').value;
-  if (username === '' || password === '') {
+  const emailInput = e.target.querySelector('#form-email').value;
+  const passwordInput = e.target.querySelector('#form-password').value;
+  if (emailInput === '' || passwordInput === '') {
     console.error('Username and password are required');
     return;
   }
   const loginData = {
-    email: username,
-    password: password,
+    email: emailInput,
+    password: passwordInput,
   };
   console.log(loginData);
   // Esta es una API para hacer pruebas de login
@@ -22,24 +22,24 @@ document.body.addEventListener('submit', (e) => {
     },
     body: JSON.stringify(loginData),
   })
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then((data) => {
-    if (data.token) {
-      console.log('Login successful');
-      document.cookie = 'userIsLoggedIn=true; path=/';
-      window.location.href = '/next-page';
-    } else {
-      console.error('Login failed');
-    }
-  })
-  .catch((error) => {
-    console.error('There has been a problem with your fetch operation: ', error);
-  });
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then((data) => {
+      if (data.token) {
+        console.log('Login successful');
+        document.cookie = 'userIsLoggedIn=true; path=/';
+        window.location.href = '/next-page';
+      } else {
+        console.error('Login failed');
+      }
+    })
+    .catch((error) => {
+      console.error('There has been a problem with your fetch operation: ', error);
+    });
 });
 
 const isUserLogged = () => {
