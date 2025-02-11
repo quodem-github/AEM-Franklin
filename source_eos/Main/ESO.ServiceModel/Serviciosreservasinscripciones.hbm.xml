@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Serviciosreservasinscripciones" table="serviciosreservasinscripciones">
+    <id name="Idservicioinscripcion" type="Int32">
+      <column name="idservicioinscripcion" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Inscripcion" type="String">
+      <column name="inscripcion" not-null="true" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Envioboletin" type="String">
+      <column name="envioboletin" not-null="true" length="5" sql-type="nvarchar" />
+    </property>
+    <property name="Tipoinscripcion" type="String">
+      <column name="tipoinscripcion" default="NULL" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Otros" type="String">
+      <column name="Otros" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Observaciones" type="String">
+      <column name="observaciones" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="ObservAgencia" type="String">
+      <column name="observ_agencia" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Iddatosentrega" type="Int32">
+      <column name="iddatosentrega" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtarifainscripcion" type="Int32">
+      <column name="idtarifainscripcion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Pvp" type="Double">
+      <column name="pvp" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Confempresa" class="Confempresa" update="false" insert="false">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Tarifasinscripcion" class="Tarifasinscripcion" update="false" insert="false">
+      <column name="idtarifainscripcion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="InsPassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idservicioinscripcion" />
+      </key>
+      <one-to-many class="InsPassengersList" />
+    </set>
+    <set name="Serviciosreservasviajes" inverse="true" generic="true">
+      <key>
+        <column name="idservicioinscripcion" />
+      </key>
+      <one-to-many class="Serviciosreservasviajes" />
+    </set>
+  </class>
+</hibernate-mapping>

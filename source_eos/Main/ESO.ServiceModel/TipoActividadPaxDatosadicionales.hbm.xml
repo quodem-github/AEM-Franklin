@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TipoActividadPaxDatosadicionales" table="tipo_actividad_pax_datosadicionales">
+    <id name="Idtipoactividadpax" type="Int64">
+      <column name="idtipoactividadpax" not-null="true" precision="19" scale="0" sql-type="bigint" />
+      <generator class="identity" />
+    </id>
+    <property name="Tipoactividadpax" type="String">
+      <column name="tipoactividadpax" not-null="true" length="100" sql-type="varchar" />
+    </property>
+    <set name="DatosadicionalesReservasPassengers" inverse="true" generic="true">
+      <key>
+        <column name="idtipoactividadpax" />
+      </key>
+      <one-to-many class="DatosadicionalesReservasPassenger" />
+    </set>
+    <set name="PeticionGrupos" inverse="true" generic="true">
+      <key>
+        <column name="idtipoactividad_datosadicionales" />
+      </key>
+      <one-to-many class="PeticionGrupos" />
+    </set>
+  </class>
+</hibernate-mapping>

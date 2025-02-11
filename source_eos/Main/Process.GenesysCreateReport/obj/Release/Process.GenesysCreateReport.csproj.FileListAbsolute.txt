@@ -1,0 +1,17 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\msd.GenesysCreateReportProcess.exe.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\msd.GenesysCreateReportProcess.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\msd.GenesysCreateReportProcess.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\linq2db.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\NPOI.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\NPOI.OOXML.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\NPOI.OpenXml4Net.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\NPOI.OpenXmlFormats.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\Quodem.Correo.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\Quodem.MailForms.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\bin\Release\Quodem.Monitor.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\obj\Release\Process.GenesysCreateReport.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\obj\Release\Process.GenesysCreateReport.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\obj\Release\Process.GenesysCreateReport.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\obj\Release\msd.GenesysCreateReportProcess.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysCreateReport\obj\Release\msd.GenesysCreateReportProcess.pdb

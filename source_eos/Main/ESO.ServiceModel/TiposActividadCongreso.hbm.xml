@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TiposActividadCongreso" table="tipos_actividad_congreso">
+    <id name="Idtipoactividadcongreso" type="Int32">
+      <column name="idtipoactividadcongreso" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Tipoactividadcongreso" type="String">
+      <column name="tipoactividadcongreso" default="N''" not-null="true" length="35" sql-type="nvarchar" />
+    </property>
+    <property name="Orden" type="Int32">
+      <column name="orden" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Codtipoactividad" type="String">
+      <column name="codtipoactividad" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <set name="Tarifasactividads" inverse="true" generic="true">
+      <key>
+        <column name="idtipoactividadcongreso" />
+      </key>
+      <one-to-many class="Tarifasactividad" />
+    </set>
+  </class>
+</hibernate-mapping>

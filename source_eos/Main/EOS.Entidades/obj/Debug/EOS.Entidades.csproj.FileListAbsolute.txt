@@ -1,0 +1,10 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\bin\Debug\EOS.Entidades.dll.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\bin\Debug\EOS.Entidades.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\bin\Debug\EOS.Entidades.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\bin\Debug\Newtonsoft.Json.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\bin\Debug\Quodem.Utility.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\obj\Debug\EOS.Entidades.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\obj\Debug\EOS.Entidades.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\obj\Debug\EOS.Entidades.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\obj\Debug\EOS.Entidades.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Entidades\obj\Debug\EOS.Entidades.pdb

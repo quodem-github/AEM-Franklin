@@ -1,0 +1,10 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\bin\Debug\EOS.ServiceModel.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\bin\Debug\EOS.ServiceModel.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\bin\Debug\Iesi.Collections.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\bin\Debug\Newtonsoft.Json.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\bin\Debug\NHibernate.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\obj\Debug\EOS.ServiceModel.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\obj\Debug\EOS.ServiceModel.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\obj\Debug\EOS.ServiceModel.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\obj\Debug\EOS.ServiceModel.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\ESO.ServiceModel\obj\Debug\EOS.ServiceModel.pdb

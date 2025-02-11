@@ -1,0 +1,10 @@
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Release\EOSGestorDocumental.exe.config
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\obj\Release\EOSGestorDocumental.csprojResolveAssemblyReference.cache
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Release\EOSGestorDocumental.exe
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Release\EOSGestorDocumental.pdb
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Release\Newtonsoft.Json.dll
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Release\RestSharp.dll
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Release\Newtonsoft.Json.xml
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Release\RestSharp.xml
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\obj\Release\EOSGestorDocumental.exe
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\obj\Release\EOSGestorDocumental.pdb

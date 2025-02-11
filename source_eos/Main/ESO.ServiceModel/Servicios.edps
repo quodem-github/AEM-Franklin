@@ -1,0 +1,1096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDeveloper Version="5.7.556.0">
+  <ModelSettings xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ConnectionStringInAppConfig="False" TargetFramework="Net40" DetectTPTInheritance="True" PreserveSchemaName="False" IncludeForeignKeysInModel="true">
+    <Connection ConnectionString="Data Source=PRE-DBServer01.quodem.net;Initial Catalog=WINTOUR_ROBOT_EOS-STAGING;Integrated Security=False;Persist Security Info=True;User ID=quodem_web;Password=Quowppo10" Provider="System.Data.SqlClient" />
+    <Generation>
+      <GeneratedFiles>
+        <File Name="ActividadesPassengersList.cs" />
+        <File Name="Amec.cs" />
+        <File Name="Amecs.cs" />
+        <File Name="Confempresa.cs" />
+        <File Name="Congresos.cs" />
+        <File Name="Expediente.cs" />
+        <File Name="Gestorinvitados.cs" />
+        <File Name="HotelPassengersList.cs" />
+        <File Name="InsPassengersList.cs" />
+        <File Name="PassengersList.cs" />
+        <File Name="Peticionarios.cs" />
+        <File Name="QService.cs" />
+        <File Name="QServiceQuery.cs" />
+        <File Name="QServiceStatistics.cs" />
+        <File Name="QServiceSuscriptor.cs" />
+        <File Name="QSuscriptor.cs" />
+        <File Name="ReservasPassengersList.cs" />
+        <File Name="Reservasviajes.cs" />
+        <File Name="Serviciosreservasactividades.cs" />
+        <File Name="Serviciosreservashotel.cs" />
+        <File Name="Serviciosreservasinscripciones.cs" />
+        <File Name="Serviciosreservastransporte.cs" />
+        <File Name="Serviciosreservasviajes.cs" />
+        <File Name="Tarifasactividad.cs" />
+        <File Name="Tarifasaloj.cs" />
+        <File Name="Tarifasinscripcion.cs" />
+        <File Name="Transportepassengerslist.cs" />
+        <File Name="TiposActividadCongreso.cs" />
+        <File Name="TiposHab.cs" />
+        <File Name="Tiposaloj.cs" />
+        <File Name="Tiposcongreso.cs" />
+        <File Name="Tiposinscripcion.cs" />
+        <File Name="Tramitacionesserviciosreservas.cs" />
+        <File Name="ValoracionFi.cs" />
+        <File Name="Estadosreservas.cs" />
+        <File Name="Nivelesaprobacion.cs" />
+        <File Name="PeticionesActividad.cs" />
+        <File Name="Poblaciones.cs" />
+        <File Name="Productos.cs" />
+        <File Name="Proveedores.cs" />
+        <File Name="Comunidad.cs" />
+        <File Name="Criteriosseleccion.cs" />
+        <File Name="DatosadicionalesReservasPassenger.cs" />
+        <File Name="Empleadosgp.cs" />
+        <File Name="Iatas.cs" />
+        <File Name="MensajeReservasPassengerDatosadicionales.cs" />
+        <File Name="NivelRiesgoHcp.cs" />
+        <File Name="ProductosPrv.cs" />
+        <File Name="Provincias.cs" />
+        <File Name="Servicios.cs" />
+        <File Name="TipoServicio.cs" />
+        <File Name="Tipoactividad.cs" />
+        <File Name="TiposPrv.cs" />
+        <File Name="Tipospatrocinio.cs" />
+        <File Name="TiposreservasWeb.cs" />
+        <File Name="Especialidades.cs" />
+        <File Name="EstadosReservas 1.cs" />
+        <File Name="JustificacionesDatosadicionales.cs" />
+        <File Name="NivelRiesgoHcpDatosadicionales.cs" />
+        <File Name="PeticionGrupos.cs" />
+        <File Name="PeticionGruposAbc.cs" />
+        <File Name="TipoActividadPaxDatosadicionales.cs" />
+        <File Name="TipoAsistenteDatosadicionales.cs" />
+        <File Name="TiposBonos.cs" />
+        <File Name="Tratamientos.cs" />
+        <File Name="QuodemAuditLog.cs" />
+        <File Name="Departaments.cs" />
+        <File Name="Districts.cs" />
+        <File Name="Salesforce.cs" />
+        <File Name="AgencyUserApprovalStructure.cs" />
+        <File Name="Aprobadoramec.cs" />
+        <File Name="GestordocumentalDocumento.cs" />
+        <File Name="GestordocumentalDocumentoversion.cs" />
+        <File Name="GestordocumentalSubtipodoc.cs" />
+        <File Name="GestordocumentalTipodoc.cs" />
+        <File Name="Positions.cs" />
+        <File Name="GestordocumentalTipoSeccion.cs" />
+        <File Name="QuodemQueryLog.cs" />
+        <File Name="PeticionariosEmpleadosgp.cs" />
+        <File Name="Servicios.Extensions.MethodsExecutor.cs" />
+        <File Name="ActividadesPassengersList.hbm.xml" />
+        <File Name="Amec.hbm.xml" />
+        <File Name="Amecs.hbm.xml" />
+        <File Name="Confempresa.hbm.xml" />
+        <File Name="Congresos.hbm.xml" />
+        <File Name="Expediente.hbm.xml" />
+        <File Name="Gestorinvitados.hbm.xml" />
+        <File Name="HotelPassengersList.hbm.xml" />
+        <File Name="InsPassengersList.hbm.xml" />
+        <File Name="PassengersList.hbm.xml" />
+        <File Name="Peticionarios.hbm.xml" />
+        <File Name="QService.hbm.xml" />
+        <File Name="QServiceQuery.hbm.xml" />
+        <File Name="QServiceStatistics.hbm.xml" />
+        <File Name="QServiceSuscriptor.hbm.xml" />
+        <File Name="QSuscriptor.hbm.xml" />
+        <File Name="ReservasPassengersList.hbm.xml" />
+        <File Name="Reservasviajes.hbm.xml" />
+        <File Name="Serviciosreservasactividades.hbm.xml" />
+        <File Name="Serviciosreservashotel.hbm.xml" />
+        <File Name="Serviciosreservasinscripciones.hbm.xml" />
+        <File Name="Serviciosreservastransporte.hbm.xml" />
+        <File Name="Serviciosreservasviajes.hbm.xml" />
+        <File Name="Tarifasactividad.hbm.xml" />
+        <File Name="Tarifasaloj.hbm.xml" />
+        <File Name="Tarifasinscripcion.hbm.xml" />
+        <File Name="Transportepassengerslist.hbm.xml" />
+        <File Name="TiposActividadCongreso.hbm.xml" />
+        <File Name="TiposHab.hbm.xml" />
+        <File Name="Tiposaloj.hbm.xml" />
+        <File Name="Tiposcongreso.hbm.xml" />
+        <File Name="Tiposinscripcion.hbm.xml" />
+        <File Name="Tramitacionesserviciosreservas.hbm.xml" />
+        <File Name="ValoracionFi.hbm.xml" />
+        <File Name="Estadosreservas.hbm.xml" />
+        <File Name="Nivelesaprobacion.hbm.xml" />
+        <File Name="PeticionesActividad.hbm.xml" />
+        <File Name="Poblaciones.hbm.xml" />
+        <File Name="Productos.hbm.xml" />
+        <File Name="Proveedores.hbm.xml" />
+        <File Name="Comunidad.hbm.xml" />
+        <File Name="Criteriosseleccion.hbm.xml" />
+        <File Name="DatosadicionalesReservasPassenger.hbm.xml" />
+        <File Name="Empleadosgp.hbm.xml" />
+        <File Name="Iatas.hbm.xml" />
+        <File Name="MensajeReservasPassengerDatosadicionales.hbm.xml" />
+        <File Name="NivelRiesgoHcp.hbm.xml" />
+        <File Name="ProductosPrv.hbm.xml" />
+        <File Name="Provincias.hbm.xml" />
+        <File Name="Servicios.hbm.xml" />
+        <File Name="TipoServicio.hbm.xml" />
+        <File Name="Tipoactividad.hbm.xml" />
+        <File Name="TiposPrv.hbm.xml" />
+        <File Name="Tipospatrocinio.hbm.xml" />
+        <File Name="TiposreservasWeb.hbm.xml" />
+        <File Name="Especialidades.hbm.xml" />
+        <File Name="EstadosReservas 1.hbm.xml" />
+        <File Name="JustificacionesDatosadicionales.hbm.xml" />
+        <File Name="NivelRiesgoHcpDatosadicionales.hbm.xml" />
+        <File Name="PeticionGrupos.hbm.xml" />
+        <File Name="PeticionGruposAbc.hbm.xml" />
+        <File Name="TipoActividadPaxDatosadicionales.hbm.xml" />
+        <File Name="TipoAsistenteDatosadicionales.hbm.xml" />
+        <File Name="TiposBonos.hbm.xml" />
+        <File Name="Tratamientos.hbm.xml" />
+        <File Name="QuodemAuditLog.hbm.xml" />
+        <File Name="Departaments.hbm.xml" />
+        <File Name="Districts.hbm.xml" />
+        <File Name="Salesforce.hbm.xml" />
+        <File Name="AgencyUserApprovalStructure.hbm.xml" />
+        <File Name="Aprobadoramec.hbm.xml" />
+        <File Name="GestordocumentalDocumento.hbm.xml" />
+        <File Name="GestordocumentalDocumentoversion.hbm.xml" />
+        <File Name="GestordocumentalSubtipodoc.hbm.xml" />
+        <File Name="GestordocumentalTipodoc.hbm.xml" />
+        <File Name="Positions.hbm.xml" />
+        <File Name="GestordocumentalTipoSeccion.hbm.xml" />
+        <File Name="QuodemQueryLog.hbm.xml" />
+        <File Name="PeticionariosEmpleadosgp.hbm.xml" />
+        <File Name="Servicios 1.hbm.xml" />
+      </GeneratedFiles>
+    </Generation>
+    <generator class="assigned" />
+    <DatabaseFirstNamingRules>
+      <EntitySet PluralizationName="Pluralize" />
+      <Class UseSchemaAsPrefix="False" PluralizeCollectionNavigationPropertyName="True" RemoveUnderscores="True" RemoveInvalidCharacters="True" CodeCase="Capitalized" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+      <Property RemoveUnderscores="True" RemoveInvalidCharacters="True" CodeCase="Capitalized" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+    </DatabaseFirstNamingRules>
+    <ModelFirst StorageSynchronizationEnabled="False" TargetSchema="dbo" TargetProviderName="System.Data.SqlClient">
+      <TargetServer Server="SQL Server" />
+      <ModelFirstNamingRules>
+        <Table RemoveUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Pluralize" />
+        <Column RemoveUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+      </ModelFirstNamingRules>
+    </ModelFirst>
+    <Diagrams>
+      <Diagram Name="Diagram1" DefaultDiagram="True" />
+    </Diagrams>
+    <Templates>
+      <Template Name="NHibernate" Description="Use this template to generate classes and xml mappings for an NHibernate model." Enabled="True" PredefinedTemplateName="NHibernate C#">
+        <ed:Property Name="ValidationFramework" Type="EntityDeveloper.TemplateEngine.ValidationFramework, EntityDeveloper.Common, Version=5.7.556.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <ValidationFramework>None</ValidationFramework>
+        </ed:Property>
+        <ed:Property Name="ValidationErrorMessages" Type="EntityDeveloper.TemplateEngine.ValidationErrorMessages, EntityDeveloper.Common, Version=5.7.556.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <ValidationErrorMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </ed:Property>
+        <ed:Property Name="FilePerClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="ModelNameAsFilesPrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="HeaderTimestampVersionControlTag" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="EntitiesOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=5.7.556.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="NHibernateV3Compatible" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="PropertyChangeNotifiers" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="PropertyChangePartialMethods" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementValidatable" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementEquals" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementCloneable" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="GeneratePartialClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="GenerateDataContracts" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="GenerateDummyComments" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="GenerateSerializableAttributes" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="XmlMappingOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=5.7.556.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="XmlMappingAction" Type="EntityDeveloper.MetadataArtifactProcessing, EntityDeveloper.Orm.Common, Version=5.7.556.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <MetadataArtifactProcessing>EmbedInOutputAssembly</MetadataArtifactProcessing>
+        </ed:Property>
+        <ed:Property Name="XmlMappingFilePerClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+      </Template>
+    </Templates>
+    <AttributeAssemblies />
+    <Configuration SeparateConfigFile="False" />
+    <UpdateFromDatabaseExcludes>
+      <Exclude Name="idactividadpassengerlist" Table="dbo.actividades_passengers_list" Type="Column" />
+      <Exclude Name="idservicioactividad" Table="dbo.actividades_passengers_list" Type="Column" />
+      <Exclude Name="idpassengerlist" Table="dbo.actividades_passengers_list" Type="Column" />
+      <Exclude Name="locked" Table="dbo.actividades_passengers_list" Type="Column" />
+      <Exclude Name="PK_dbo_iw_actividades_passengers_list_idactividadpassengerlist" Table="dbo.actividades_passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_actividades_passengers_list$FK__iw_activi__idpas__67152DD3" Table="dbo.actividades_passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_actividades_passengers_list$FK__iw_activi__idser__6809520C" Table="dbo.actividades_passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_actividades_passengers_list$XPKiw_actividades_passengers_list" Table="dbo.actividades_passengers_list" Type="Constraint" />
+      <Exclude Name="idamec" Table="dbo.amec" Type="Column" />
+      <Exclude Name="amec" Table="dbo.amec" Type="Column" />
+      <Exclude Name="IdEmpresa" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idpeticionactividad" Table="dbo.amec" Type="Column" />
+      <Exclude Name="IdCongreso" Table="dbo.amec" Type="Column" />
+      <Exclude Name="inactivo" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idestado" Table="dbo.amec" Type="Column" />
+      <Exclude Name="aprobado" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idpeticionario" Table="dbo.amec" Type="Column" />
+      <Exclude Name="fechaaprobadolegal" Table="dbo.amec" Type="Column" />
+      <Exclude Name="aprobadolegal" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idpeticionario2" Table="dbo.amec" Type="Column" />
+      <Exclude Name="fechaaprobadocomplaice" Table="dbo.amec" Type="Column" />
+      <Exclude Name="aprobadocomplaice" Table="dbo.amec" Type="Column" />
+      <Exclude Name="Idarea" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idarea1" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idarea2" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idarea3" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idunidad" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idtipoactividadcongreso" Table="dbo.amec" Type="Column" />
+      <Exclude Name="iddistrito" Table="dbo.amec" Type="Column" />
+      <Exclude Name="paraguas" Table="dbo.amec" Type="Column" />
+      <Exclude Name="especificarotras" Table="dbo.amec" Type="Column" />
+      <Exclude Name="nombreprograma" Table="dbo.amec" Type="Column" />
+      <Exclude Name="codgenesis" Table="dbo.amec" Type="Column" />
+      <Exclude Name="objetivosprograma" Table="dbo.amec" Type="Column" />
+      <Exclude Name="contenido" Table="dbo.amec" Type="Column" />
+      <Exclude Name="lugar" Table="dbo.amec" Type="Column" />
+      <Exclude Name="ambitogeografico" Table="dbo.amec" Type="Column" />
+      <Exclude Name="duracion" Table="dbo.amec" Type="Column" />
+      <Exclude Name="numparticipantes" Table="dbo.amec" Type="Column" />
+      <Exclude Name="fechacomienzop" Table="dbo.amec" Type="Column" />
+      <Exclude Name="fechafinp" Table="dbo.amec" Type="Column" />
+      <Exclude Name="gastosdes_aloj" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idcriterio" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idcriterio2" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idcriterio3" Table="dbo.amec" Type="Column" />
+      <Exclude Name="otros" Table="dbo.amec" Type="Column" />
+      <Exclude Name="relponentes" Table="dbo.amec" Type="Column" />
+      <Exclude Name="numponentes" Table="dbo.amec" Type="Column" />
+      <Exclude Name="observacioneslegal" Table="dbo.amec" Type="Column" />
+      <Exclude Name="honorarios" Table="dbo.amec" Type="Column" />
+      <Exclude Name="conceptogastos" Table="dbo.amec" Type="Column" />
+      <Exclude Name="importetotal" Table="dbo.amec" Type="Column" />
+      <Exclude Name="numpropuestas" Table="dbo.amec" Type="Column" />
+      <Exclude Name="numcartas" Table="dbo.amec" Type="Column" />
+      <Exclude Name="numhojasinscripcion" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idtipopatrocinio" Table="dbo.amec" Type="Column" />
+      <Exclude Name="mailautorizadofi" Table="dbo.amec" Type="Column" />
+      <Exclude Name="ficheroprograma" Table="dbo.amec" Type="Column" />
+      <Exclude Name="fechaaprobadodg" Table="dbo.amec" Type="Column" />
+      <Exclude Name="aprobadodg" Table="dbo.amec" Type="Column" />
+      <Exclude Name="observacionescomplaice" Table="dbo.amec" Type="Column" />
+      <Exclude Name="observacionesdg" Table="dbo.amec" Type="Column" />
+      <Exclude Name="fecha" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idpeticionario3" Table="dbo.amec" Type="Column" />
+      <Exclude Name="amec_comunicado" Table="dbo.amec" Type="Column" />
+      <Exclude Name="comunicar_amec" Table="dbo.amec" Type="Column" />
+      <Exclude Name="observaciones" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idregion" Table="dbo.amec" Type="Column" />
+      <Exclude Name="area" Table="dbo.amec" Type="Column" />
+      <Exclude Name="numboletines" Table="dbo.amec" Type="Column" />
+      <Exclude Name="PrevisionInicial" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idpeticionario_responsable" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.amec" Type="Column" />
+      <Exclude Name="idamecorigin" Table="dbo.amec" Type="Column" />
+      <Exclude Name="newco" Table="dbo.amec" Type="Column" />
+      <Exclude Name="PK_dbo_iw_amec_idamec" Table="dbo.amec" Type="Constraint" />
+      <Exclude Name="dbo_iw_amec$FK__iw_amec__IdCongr__774B959C" Table="dbo.amec" Type="Constraint" />
+      <Exclude Name="dbo_iw_amec$FK__iw_amec__IdEmpre__783FB9D5" Table="dbo.amec" Type="Constraint" />
+      <Exclude Name="dbo_iw_amec$FK__iw_amec__idpetic__76577163" Table="dbo.amec" Type="Constraint" />
+      <Exclude Name="dbo_iw_amec$FK_amec_confempresa" Table="dbo.amec" Type="Constraint" />
+      <Exclude Name="dbo_iw_amec$XPKiw_amec" Table="dbo.amec" Type="Constraint" />
+      <Exclude Name="idamecs" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="idsolicitante" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="Idcargo" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="idcreadopor" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="fechaamecs" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="nwein" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="idtipoactividad" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="preaprobadaamed" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="preaprobadaneg" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="preaprobadaleg" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="farmaindustria" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="casosclinicos" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="participantesmsd" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="detallecriterios" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="medicosfichero" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="duracionhoras" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="ponentespatrocinados" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="conceptogastos" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="cargoadaxas" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="importegasto" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="cartascontrato" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="programaamecs" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="urlprograma" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="descripcionobjetivo" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="idestado" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="descripcion" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="politicaN20" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="fechacomienzo" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="fechafinalizacion" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="lugarsede" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="idcriterioseleccion" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="criterioespecificado" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="idnivelaprobacion" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="paraguas" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="importegastoacumulado" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="profesionalessanitarios" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="fechaultimaactualizacion" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="idposition" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="idamecsrelacionado" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="veeva" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="newco" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="PK_dbo_iw_amecs_idamecs" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="dbo_iw_amecs$FK_dbo_iw_amecs_idcriterioseleccion" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="dbo_iw_amecs$FK_dbo_iw_amecs_idestado" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="dbo_iw_amecs$FK_dbo_iw_amecs_idnivelaprobacion" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="FK__amecs__idamecsre__2BECA869" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="dbo_iw_amecs$FK_dbo_iw_amecs_idcreadopor" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="dbo_iw_amecs$FK_dbo_iw_amecs_idsolicitante" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="FK__amecs__idpositio__48BB8F3C" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="dbo_iw_amecs$FK_dbo_iw_amecs_idcargo" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="dbo_iw_amecs$FK_amecs_confempresa" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="idconfempresa" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="codpostal" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="direccion" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="linkhorariosservicios" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="logoinferiorpantalla" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="locked" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="mailtorespuesta" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="formatoprgmailcomunicfi" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="cuerpomailcomunicfi" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="asuntomailcomunicfi" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="mailcccomunicfi" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="mailtocomunicfi" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="mailfromcomunicfi" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="gestordearchivo" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="poblacion" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="IdEmpresa" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="logosuperiorpantalla" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="codigo_agencia" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="nombrecontacto" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="nombreagencia" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="mailcontacto" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="telefonoagencia" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="faxagencia" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="inactive" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="RutaFormularioGrupos" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="idagencia" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="PK_dbo_iw_confempresa_idconfempresa" Table="dbo.confempresa" Type="Constraint" />
+      <Exclude Name="dbo_iw_confempresa$FK__iw_confem__IdEmp__0781FD65" Table="dbo.confempresa" Type="Constraint" />
+      <Exclude Name="dbo_iw_confempresa$XPKiw_confempresa" Table="dbo.confempresa" Type="Constraint" />
+      <Exclude Name="iddatosadicionales" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="idpassengerlist" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="idexpediente" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="idtipoactividadpax" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="idtipoasistente" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="idnivelriesgo" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="idjustificaciones" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="honorarios" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="pagodirecto" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="pagosociedad" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="datacreacion" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="ficherogenesis" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="descripcionobjetivos" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="tiporeunion" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="ponentes_duracionactividad" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="ponentes_preparacion" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="ponentes_nivelps" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="ponentes_honorariosmaximos" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="abeif_preparacion" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="abeif_duracionactividad" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="abeif_nivelps" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="abeif_honorariosmaximos" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="ponencia_centro_salud" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="talleres" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="videoconferencia_repetida" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="tipo_ponente" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="ponentes_idhonorariosmaximos" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="justificacion" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="idTipoContratoConsultoria" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="numero_dias_consultoria" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="PK_dbo_iw_datosadicionales_reservas_passenger_iddatosadicionales" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_abeif_duracionactividad" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$FK_dbo_iw_honorarios_reservas_passenger_4" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_abeif_nivelps" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$FK_dbo_iw_honorarios_reservas_passenger_6" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_abeif_preparacion" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$FK_dbo_iw_datosadicionales_reservas_passenger_6" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_ponentes_idhonorariosmaximos" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_ponentes_duracionactividad" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_ponentes_nivelps" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$FK_dbo_iw_honorarios_reservas_passenger_5" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_ponentes_preparacion" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_idTipoContratoConsultoria" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_tiporeunion" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$FK_dbo_iw_honorarios_reservas_passenger_1" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$FK_dbo_iw_honorarios_reservas_passenger_2" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$index_unique_idpassengerlist_idexpediente" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="Id" Table="dbo.gestordocumental_subtipodoc" Type="Column" />
+      <Exclude Name="IdTipodoc" Table="dbo.gestordocumental_subtipodoc" Type="Column" />
+      <Exclude Name="Nombre" Table="dbo.gestordocumental_subtipodoc" Type="Column" />
+      <Exclude Name="Inactivo" Table="dbo.gestordocumental_subtipodoc" Type="Column" />
+      <Exclude Name="CampoLibre" Table="dbo.gestordocumental_subtipodoc" Type="Column" />
+      <Exclude Name="IdCategoriaDocumento" Table="dbo.gestordocumental_subtipodoc" Type="Column" />
+      <Exclude Name="PK__gestordo__3214EC076DE226F3" Table="dbo.gestordocumental_subtipodoc" Type="Constraint" />
+      <Exclude Name="FK__gestordoc__IdCat__0000D72E" Table="dbo.gestordocumental_subtipodoc" Type="Constraint" />
+      <Exclude Name="FK__gestordoc__IdTip__00F4FB67" Table="dbo.gestordocumental_subtipodoc" Type="Constraint" />
+      <Exclude Name="IdGestorInvitados" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="IdEventoFormulario" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="IdCongreso" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="DescripcionGestor" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="FechaInicio" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="FechaFin" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="Poblacion" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="LinkGestorInvitados" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="LinkPrograma" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="Amec" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="TipoGestorInvitados" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="Inactivo" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="locked" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="PK_dbo_iw_gestorinvitados_IdGestorInvitados" Table="dbo.gestorinvitados" Type="Constraint" />
+      <Exclude Name="dbo_iw_gestorinvitados$FK_GestorInvitados_1" Table="dbo.gestorinvitados" Type="Constraint" />
+      <Exclude Name="dbo_iw_gestorinvitados$FK_gestorinvitados_confempresa" Table="dbo.gestorinvitados" Type="Constraint" />
+      <Exclude Name="idhotelpassengerlist" Table="dbo.hotel_passengers_list" Type="Column" />
+      <Exclude Name="idserviciohotel" Table="dbo.hotel_passengers_list" Type="Column" />
+      <Exclude Name="idpassengerlist" Table="dbo.hotel_passengers_list" Type="Column" />
+      <Exclude Name="locked" Table="dbo.hotel_passengers_list" Type="Column" />
+      <Exclude Name="PK_dbo_iw_hotel_passengers_list_idhotelpassengerlist" Table="dbo.hotel_passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_hotel_passengers_list$FK__iw_hotel___idpas__26FAA8BE" Table="dbo.hotel_passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_hotel_passengers_list$FK__iw_hotel___idser__27EECCF7" Table="dbo.hotel_passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_hotel_passengers_list$PK__iw_hotel_passeng__57DDD73B" Table="dbo.hotel_passengers_list" Type="Constraint" />
+      <Exclude Name="id" Table="dbo.iatas" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.iatas" Type="Column" />
+      <Exclude Name="IdIata" Table="dbo.iatas" Type="Column" />
+      <Exclude Name="IdPoblacion" Table="dbo.iatas" Type="Column" />
+      <Exclude Name="Iata" Table="dbo.iatas" Type="Column" />
+      <Exclude Name="locked" Table="dbo.iatas" Type="Column" />
+      <Exclude Name="PK_dbo_iw_iatas_id" Table="dbo.iatas" Type="Constraint" />
+      <Exclude Name="dbo_iw_iatas$FK__iw_Iatas__IdPobl__28E2F130" Table="dbo.iatas" Type="Constraint" />
+      <Exclude Name="dbo_iw_iatas$FK_iatas_confempresa_idx" Table="dbo.iatas" Type="Constraint" />
+      <Exclude Name="idpassengerlist" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="nombre" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="apel1" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="apel2" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="NIF" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="DireccionEmail" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="TelefonoContacto" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="FechaNacimiento" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="Pasaporte" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="FechaCaducidadPasaporte" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="NombreCentroTrabajo" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="LocalidadCentroTrabajo" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="DireccionCentroTrabajo" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="LugarEmisionPasaporte" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="NacionalidadPasaporte" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="OrganizacionVisitaProfesional" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="DireccionProfesionalOrganizacion" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="CodigoPostal" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="Localidad" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="Provincia" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="Pais" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="msdid" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="locked" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="idtratamiento" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="iddistrito" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="idespecialidad" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="descuentoresidente" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="idnivelriesgo" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="inactivo" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="GenesysCode" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="GoldenId" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="ProvinceCenter" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="PostalCodeCenter" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="UpdateDate" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="CenterCode" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="internacional" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="idpassengerlistorigin_gp" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="idpassengerlistorigin_mt" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="idpassengerlistorigin_amex" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="peticionario" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="PK_dbo_iw_passengers_list_idpassengerlist" Table="dbo.passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_passengers_list$FK__iw_passen__iddis__308412F8" Table="dbo.passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_passengers_list$FK__iw_passen__idtra__31783731" Table="dbo.passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_passengers_list$FK__iw_passen__idesp__2F8FEEBF" Table="dbo.passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_passengers_list$FK_dbo_iw_passengers_list_idnivelriesgo" Table="dbo.passengers_list" Type="Constraint" />
+      <Exclude Name="dbo_iw_passengers_list$PK__passengers_list__0DD9F539" Table="dbo.passengers_list" Type="Constraint" />
+      <Exclude Name="idpeticiongrupo" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idevento" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idasistente" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idexpediente" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="unidad" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="region" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="area" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="nombre_peticionario" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="apellido_peticionario" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idamec" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="evento" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="fecha_inicio_evento" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="apellido1" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="nombre" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="msdid" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="tipo_gasto" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="importe_peticion" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="fecha_peticion" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="estado_peticion" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idpeticionario" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idunidad" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idarea" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idregion" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="Iddistrito" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="fkidcongreso" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="cargo_peticionario" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="numpedido" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="ultima_actualizacion" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="codespecialidad" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="estado_expediente" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="fecha_expediente" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="producto" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="porcentaje_prodcuto" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idcargo" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idvalfi" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="fecha_fin_evento" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idtipoactividadcongreso" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idestadoreserva" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="distrito" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="apellido2" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="tipoactividad_datosadicionales" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="tipoasistente_datosadicionales" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="nivelriesgo_datosadicionales" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="justificaciones_datosadicionales" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="ficherogenesis_datosadicionales" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="iddepartament" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idsaleforce" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="iddistrict" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idposition" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idtipoactividad_datosadicionales" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idtipoasistente_datosadicionales" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idnivelriesgo_datosadicionales" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="PK_dbo_iw_peticion_grupos_idpeticiongrupo" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="FK_peticion_grupos_idpeticionario_peticionarios" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="FK_peticion_grupos_idexpediente_expedientes" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="FK__peticion___iddep__56FEC19B" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="FK__peticion___idsal__57F2E5D4" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="FK__peticion___iddis__58E70A0D" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="FK__peticion___idpos__59DB2E46" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="FK__peticion___idtip__5ACF527F" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="FK__peticion___idtip__5BC376B8" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="FK__peticion___idniv__5CB79AF1" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="IdPeticionario" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="FKIdEmpresa" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="login" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="password" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="wein" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="IdCargo" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="idtratamiento" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Nombre" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Apellido1" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Apellido2" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Direccion" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="IdPoblacion" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="CodPostal" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Telefono" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="extension" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Movil" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Email" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Inactivo" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Observaciones" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="fechaprimeraccesoportal" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Idarea" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="idregion" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="iddistrito" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="locked" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="atencionprimaria" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="descuentoresidente" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="idunidad" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="idpeticionarioresponsable" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="administrador" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="amex" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="fecha_caducidad" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="idnivelaprobacion" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="emailPiloto" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="emailBueno" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="Poblacion" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="WeinManager" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="CreationDate" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="LastUpdateDate" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="idposition" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="iddepartament" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="idsaleforce" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="iddistrict" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="medico" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="legal" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="executive" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="director" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="gerente" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="assistant" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="altocargo" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="LevelCode" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="externalUser" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="newco" Table="dbo.peticionarios" Type="Column" />
+      <Exclude Name="PK_dbo_iw_peticionarios_IdPeticionario" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__iddis__3548C815" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__idtra__33607FA3" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__iduni__326C5B6A" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__FKIdE__391958F9" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="FK__peticiona__idcon__13D2C5B1" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__Idare__363CEC4E" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK_iw_Petici_idnivelaprobacion" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="FK__peticiona__idpos__47BC7E0B" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="FK__peticiona__iddep__48B0A244" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="FK__peticiona__idsal__49A4C67D" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="FK__peticiona__iddis__4A98EAB6" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__IdPob__37311087" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__idreg__382534C0" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__IdCar__3A0D7D32" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$PK__Peticionarios__00FF1D08" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="IdPoblacion" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="Poblacion" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="IdProvincia" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="IdPais" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="CodPostal" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="locked" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="IdPaisABC" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="inactivo" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="PK_dbo_iw_poblaciones_IdPoblacion" Table="dbo.poblaciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_poblaciones$FK__iw_Poblac__IdPai__40BA7AC1" Table="dbo.poblaciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_poblaciones$FK__iw_Poblac__IdPro__3FC65688" Table="dbo.poblaciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_poblaciones$FK_poblaciones_confempresa" Table="dbo.poblaciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_poblaciones$PK__Poblaciones__6D0D32F4" Table="dbo.poblaciones" Type="Constraint" />
+      <Exclude Name="IdProveedor" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="IdTipoPrv" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="CodCia" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="CodAmadeus" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="Enlace" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="Proveedor" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="Direccion" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="Nro" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="Piso" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="IdPoblacion" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="CodPostal" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="Telefono" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="Fax" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="Email" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="http" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="locked" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="PK_dbo_iw_proveedores_IdProveedor" Table="dbo.proveedores" Type="Constraint" />
+      <Exclude Name="dbo_iw_proveedores$FK__iw_Provee__IdTip__448B0BA5" Table="dbo.proveedores" Type="Constraint" />
+      <Exclude Name="dbo_iw_proveedores$FK__iw_Provee__IdPob__457F2FDE" Table="dbo.proveedores" Type="Constraint" />
+      <Exclude Name="dbo_iw_proveedores$FK_proveedores_confempresa" Table="dbo.proveedores" Type="Constraint" />
+      <Exclude Name="dbo_iw_proveedores$PK__Proveedores__7D439ABD" Table="dbo.proveedores" Type="Constraint" />
+      <Exclude Name="IdProvincia" Table="dbo.provincias" Type="Column" />
+      <Exclude Name="Provincia" Table="dbo.provincias" Type="Column" />
+      <Exclude Name="IdPais" Table="dbo.provincias" Type="Column" />
+      <Exclude Name="IdComunidad" Table="dbo.provincias" Type="Column" />
+      <Exclude Name="locked" Table="dbo.provincias" Type="Column" />
+      <Exclude Name="PK_dbo_iw_provincias_IdProvincia" Table="dbo.provincias" Type="Constraint" />
+      <Exclude Name="dbo_iw_provincias$FK__iw_Provin__IdPai__4A43E4FB" Table="dbo.provincias" Type="Constraint" />
+      <Exclude Name="dbo_iw_provincias$FK__iw_Provin__IdCom__4B380934" Table="dbo.provincias" Type="Constraint" />
+      <Exclude Name="dbo_iw_provincias$PK__Provincias__693CA210" Table="dbo.provincias" Type="Constraint" />
+      <Exclude Name="idserviciohotel" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="fechahorallegada" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="fechahorasalida" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="IdPais" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="pais" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="IdProvincia" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="provincia" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="IdPoblacion" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="poblacion" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="Idproveedor" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="hotel" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="IdTipoAloj" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="categoria" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="observaciones" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="idtipohab" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="num_habitaciones" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="desc_tipoalojamiento" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="desc_idtipo_habitacion" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="idtarifaaloj" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="pvp" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="locked" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.serviciosreservashotel" Type="Column" />
+      <Exclude Name="PK_dbo_iw_serviciosreservashotel_idserviciohotel" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK__iw_servic__idtip__54C1736E" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK__iw_servic__IdTip__53CD4F35" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK__iw_servic__IdPai__55B597A7" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK__iw_servic__IdPob__579DE019" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK__iw_servic__Idpro__58920452" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK__iw_servic__IdPro__56A9BBE0" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK__iw_servic__idtar__52D92AFC" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK_serviciosreservashot_confemp" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$PK__serviciosreserva__03A67F89" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="idservicioinscripcion" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="inscripcion" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="envioboletin" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="tipoinscripcion" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="Otros" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="observaciones" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="observ_agencia" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="iddatosentrega" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="idtarifainscripcion" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="pvp" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="locked" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.serviciosreservasinscripciones" Type="Column" />
+      <Exclude Name="PK_dbo_iw_serviciosreservasinscripciones_idservicioinscripcion" Table="dbo.serviciosreservasinscripciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservasinscripciones$FK__iw_servic__iddat__5A7A4CC4" Table="dbo.serviciosreservasinscripciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservasinscripciones$FK__iw_servic__idtar__5986288B" Table="dbo.serviciosreservasinscripciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservasinscripciones$FK_serviciosreservasins_confemp" Table="dbo.serviciosreservasinscripciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservasinscripciones$PK__inscripcionesweb__62458BBE" Table="dbo.serviciosreservasinscripciones" Type="Constraint" />
+      <Exclude Name="idserviciotransporte" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="IdTipoBono_ida1" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida1_fechasalida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida1_origen" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida1_destino" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida1_numvuelo_tren" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida1_horasalida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida1_horallegada" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="IdTipoBono_ida2" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida2_fechasalida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida2_origen" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida2_destino" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida2_numvuelo_tren" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida2_horasalida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida2_horallegada" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="IdTipoBono_reg1" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg1_fechasalida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg1_origen" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg1_destino" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg1_numvuelo_tren" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg1_horasalida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg1_horallegada" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="IdTipoBono_reg2" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg2_fechasalida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg2_origen" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg2_destino" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg2_numvuelo_tren" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg2_horasalida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="reg2_horallegada" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="importe_max" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="observaciones_ida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="observaciones_reg" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="observaciones" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="gastos_cancelacion" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="ida" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="regreso" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="locked" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.serviciosreservastransporte" Type="Column" />
+      <Exclude Name="PK_dbo_iw_serviciosreservastransporte_idserviciotransporte" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$FK__iw_servic__IdTip__5E4ADDA8" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$FK_serviciosreservastrans_confemp" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$FK__iw_servic__IdTip__5B6E70FD" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$FK__iw_servic__IdTip__5C629536" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$FK__iw_servic__IdTip__5D56B96F" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$XPKiw_serviciosreservastransporte" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="idtarifaactividad" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="fkidcongreso" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="idtipoactividadcongreso" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="IdProveedor" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="idproducto" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="actividad" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="pvp" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="notascli" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="prepago" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="socio" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="cancelacion" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="fechainicio" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="fechafin" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="descripcion" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tarifasactividad_idtarifaactividad" Table="dbo.tarifasactividad" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasactividad$FK__iw_tarifa__fkidc__66E023A9" Table="dbo.tarifasactividad" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasactividad$FK__iw_tarifa__idpro__6403B6FE" Table="dbo.tarifasactividad" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasactividad$FK__iw_tarifa__idtip__64F7DB37" Table="dbo.tarifasactividad" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasactividad$XPKiw_tarifasactividad" Table="dbo.tarifasactividad" Type="Constraint" />
+      <Exclude Name="IdTarifaAloj" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="FKIdCongreso" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="IdTipoAloj" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="Descripcion" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="IdProveedor" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="idproducto" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="IdTipoHab" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="IdServicio" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="PrecioNoche" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="Prepago" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="Socio" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="fechainicio" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="fechafin" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="cancelacion" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="visible" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tarifasaloj_IdTarifaAloj" Table="dbo.tarifasaloj" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasaloj$FK__iw_Tarifa__FKIdC__6C98FCFF" Table="dbo.tarifasaloj" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasaloj$FK__iw_Tarifa__IdTip__68C86C1B" Table="dbo.tarifasaloj" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasaloj$FK__iw_Tarifa__IdTip__69BC9054" Table="dbo.tarifasaloj" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasaloj$FK__iw_Tarifa__idpro__67D447E2" Table="dbo.tarifasaloj" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasaloj$FK__iw_Tarifa__IdPro__6BA4D8C6" Table="dbo.tarifasaloj" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasaloj$FK__iw_Tarifa__IdSer__6AB0B48D" Table="dbo.tarifasaloj" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasaloj$PK__TarifasAloj__0EB90AD9" Table="dbo.tarifasaloj" Type="Constraint" />
+      <Exclude Name="IdTarifaInscripcion" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="FKIdCongreso" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="IdTipoInscripcion" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="IdProveedor" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="PVP" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="NotasCli" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="idproducto" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="Prepago" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="Socio" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="cancelacion" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="fecha_validez" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="fechainicio" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="fechafin" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="descripcion" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tarifasinscripcion_IdTarifaInscripcion" Table="dbo.tarifasinscripcion" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasinscripcion$FK__iw_Tarifa__FKIdC__70698DE3" Table="dbo.tarifasinscripcion" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasinscripcion$FK__iw_Tarifa__IdTip__6E814571" Table="dbo.tarifasinscripcion" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasinscripcion$FK__iw_Tarifa__idpro__6D8D2138" Table="dbo.tarifasinscripcion" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasinscripcion$FK__iw_Tarifa__IdPro__6F7569AA" Table="dbo.tarifasinscripcion" Type="Constraint" />
+      <Exclude Name="dbo_iw_tarifasinscripcion$PK__TarifasInscripci__5B3966D3" Table="dbo.tarifasinscripcion" Type="Constraint" />
+      <Exclude Name="idtipoactividadpax" Table="dbo.tipo_actividad_pax_datosadicionales" Type="Column" />
+      <Exclude Name="tipoactividadpax" Table="dbo.tipo_actividad_pax_datosadicionales" Type="Column" />
+      <Exclude Name="Visible" Table="dbo.tipo_actividad_pax_datosadicionales" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tipo_actividad_pax_datosadicionales_idtipoactividadpax" Table="dbo.tipo_actividad_pax_datosadicionales" Type="Constraint" />
+      <Exclude Name="idtipoactividad" Table="dbo.tipoactividad" Type="Column" />
+      <Exclude Name="tipoactividad" Table="dbo.tipoactividad" Type="Column" />
+      <Exclude Name="idtiporegistroactividad" Table="dbo.tipoactividad" Type="Column" />
+      <Exclude Name="veeva" Table="dbo.tipoactividad" Type="Column" />
+      <Exclude Name="newco" Table="dbo.tipoactividad" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tipoactividad_idtipoactividad" Table="dbo.tipoactividad" Type="Constraint" />
+      <Exclude Name="FK__tipoactiv__idtip__38527F4E" Table="dbo.tipoactividad" Type="Constraint" />
+      <Exclude Name="idtipoactividadcongreso" Table="dbo.tipos_actividad_congreso" Type="Column" />
+      <Exclude Name="tipoactividadcongreso" Table="dbo.tipos_actividad_congreso" Type="Column" />
+      <Exclude Name="orden" Table="dbo.tipos_actividad_congreso" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tipos_actividad_congreso" Type="Column" />
+      <Exclude Name="codtipoactividad" Table="dbo.tipos_actividad_congreso" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tipos_actividad_congreso_idtipoactividadcongreso" Table="dbo.tipos_actividad_congreso" Type="Constraint" />
+      <Exclude Name="dbo_iw_tipos_actividad_congreso$XPKiw_tipos_actividad_congreso" Table="dbo.tipos_actividad_congreso" Type="Constraint" />
+      <Exclude Name="IdTipoHab" Table="dbo.tipos_hab" Type="Column" />
+      <Exclude Name="TipoHab" Table="dbo.tipos_hab" Type="Column" />
+      <Exclude Name="Ocup" Table="dbo.tipos_hab" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tipos_hab" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tipos_hab_IdTipoHab" Table="dbo.tipos_hab" Type="Constraint" />
+      <Exclude Name="dbo_iw_tipos_hab$PK__Tipos_Hab__7FD5EEA5" Table="dbo.tipos_hab" Type="Constraint" />
+      <Exclude Name="IdTipoPrv" Table="dbo.tipos_prv" Type="Column" />
+      <Exclude Name="TipoProveedor" Table="dbo.tipos_prv" Type="Column" />
+      <Exclude Name="IdTipoBono" Table="dbo.tipos_prv" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tipos_prv" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tipos_prv_IdTipoPrv" Table="dbo.tipos_prv" Type="Constraint" />
+      <Exclude Name="dbo_iw_tipos_prv$FK__iw_Tipos___IdTip__715DB21C" Table="dbo.tipos_prv" Type="Constraint" />
+      <Exclude Name="dbo_iw_tipos_prv$PK__Tipos_Prv__7A672E12" Table="dbo.tipos_prv" Type="Constraint" />
+      <Exclude Name="IdTipoAloj" Table="dbo.tiposaloj" Type="Column" />
+      <Exclude Name="TipoAloj" Table="dbo.tiposaloj" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tiposaloj" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tiposaloj_IdTipoAloj" Table="dbo.tiposaloj" Type="Constraint" />
+      <Exclude Name="dbo_iw_tiposaloj$PK__TiposAloj__01BE3717" Table="dbo.tiposaloj" Type="Constraint" />
+      <Exclude Name="IdTipoCongreso" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="TipoCongreso" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="canal" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="cod_tipocongreso" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="visible_Web" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="newco" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tiposcongreso_IdTipoCongreso" Table="dbo.tiposcongreso" Type="Constraint" />
+      <Exclude Name="dbo_iw_tiposcongreso$PK__TiposCongreso__731B1205" Table="dbo.tiposcongreso" Type="Constraint" />
+      <Exclude Name="IdTipoInscripcion" Table="dbo.tiposinscripcion" Type="Column" />
+      <Exclude Name="TipoInscripcion" Table="dbo.tiposinscripcion" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tiposinscripcion" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tiposinscripcion_IdTipoInscripcion" Table="dbo.tiposinscripcion" Type="Constraint" />
+      <Exclude Name="dbo_iw_tiposinscripcion$PK__TiposInscripcion__5768D5EF" Table="dbo.tiposinscripcion" Type="Constraint" />
+      <Exclude Name="idtramitacion" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="fkidservicio" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="linea" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="requerimientos" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="alternativa1" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="okalternativa1" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="alternativa2" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="okalternativa2" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="alternativa3" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="okalternativa3" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="idestado" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="pvp1" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="pvp2" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="pvp3" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="requerimientos2" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="IdProveedor1" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="IdProveedor2" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="IdProveedor3" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="IdProductoPrv1" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="IdProductoPrv2" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="IdProductoPrv3" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="requerimientos3" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="Validez1" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="Validez2" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="Validez3" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="IdProveedor4" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="IdProveedor5" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="IdProveedor6" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="gastoscancelacion1" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="gastoscancelacion2" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="gastoscancelacion3" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="PK_dbo_iw_tramitacionesserviciosreservas_idtramitacion" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="dbo_iw_tramitacionesserviciosreservas$FK__iw_tramit__idest__7251D655" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="dbo_iw_tramitacionesserviciosreservas$FK__iw_tramit__IdPro__7345FA8E" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="dbo_iw_tramitacionesserviciosreservas$FK__iw_tramit__IdPro__743A1EC7" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="dbo_iw_tramitacionesserviciosreservas$FK__iw_tramit__IdPro__752E4300" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="dbo_iw_tramitacionesserviciosreservas$FK__iw_tramit__IdPro__76226739" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="dbo_iw_tramitacionesserviciosreservas$FK__iw_tramit__IdPro__77168B72" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="dbo_iw_tramitacionesserviciosreservas$FK__iw_tramit__IdPro__780AAFAB" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="dbo_iw_tramitacionesserviciosreservas$FK__iw_tramit__fkids__78FED3E4" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="dbo_iw_tramitacionesserviciosreservas$PK__tramitacionesser__0E6E26BF" Table="dbo.tramitacionesserviciosreservas" Type="Constraint" />
+      <Exclude Name="idvaloracionfi" Table="dbo.valoracion_fi" Type="Column" />
+      <Exclude Name="descripcion" Table="dbo.valoracion_fi" Type="Column" />
+      <Exclude Name="color" Table="dbo.valoracion_fi" Type="Column" />
+      <Exclude Name="locked" Table="dbo.valoracion_fi" Type="Column" />
+      <Exclude Name="PK_dbo_iw_valoracion_fi_idvaloracionfi" Table="dbo.valoracion_fi" Type="Constraint" />
+      <Exclude Name="dbo_iw_valoracion_fi$XPKiw_valoracion_fi" Table="dbo.valoracion_fi" Type="Constraint" />
+      <Exclude Name="locked" Table="dbo.actividades_passengers_list" Type="Column" />
+      <Exclude Name="idamecorigin" Table="dbo.amec" Type="Column" />
+      <Exclude Name="dbo_iw_amec$FK__iw_amec__IdEmpre__783FB9D5" Table="dbo.amec" Type="Constraint" />
+      <Exclude Name="preaprobadaneg" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="preaprobadaleg" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="farmaindustria" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="casosclinicos" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="paraguas" Table="dbo.amecs" Type="Column" />
+      <Exclude Name="dbo_iw_amecs$FK_dbo_iw_amecs_idestado" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="FK__amecs__idamecsre__2BECA869" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="FK__amecs__idpositio__48BB8F3C" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="dbo_iw_amecs$FK_dbo_iw_amecs_idcargo" Table="dbo.amecs" Type="Constraint" />
+      <Exclude Name="idagencia" Table="dbo.confempresa" Type="Column" />
+      <Exclude Name="dbo_iw_confempresa$FK__iw_confem__IdEmp__0781FD65" Table="dbo.confempresa" Type="Constraint" />
+      <Exclude Name="ponentes_honorariosmaximos" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="abeif_honorariosmaximos" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="ponencia_centro_salud" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="talleres" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="videoconferencia_repetida" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="justificacion" Table="dbo.datosadicionales_reservas_passenger" Type="Column" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_abeif_duracionactividad" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$FK_dbo_iw_honorarios_reservas_passenger_4" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_abeif_nivelps" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_abeif_preparacion" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_ponentes_idhonorariosmaximos" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_ponentes_duracionactividad" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_ponentes_nivelps" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$FK_dbo_iw_honorarios_reservas_passenger_5" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_ponentes_preparacion" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_idTipoContratoConsultoria" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="dbo_iw_datosadicionales_reservas_passenger$fk_tiporeunion" Table="dbo.datosadicionales_reservas_passenger" Type="Constraint" />
+      <Exclude Name="FK__gestordoc__IdCat__0000D72E" Table="dbo.gestordocumental_subtipodoc" Type="Constraint" />
+      <Exclude Name="Amec" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="Inactivo" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="locked" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="idconfempresa" Table="dbo.gestorinvitados" Type="Column" />
+      <Exclude Name="locked" Table="dbo.hotel_passengers_list" Type="Column" />
+      <Exclude Name="dbo_iw_iatas$FK__iw_Iatas__IdPobl__28E2F130" Table="dbo.iatas" Type="Constraint" />
+      <Exclude Name="dbo_iw_iatas$FK_iatas_confempresa_idx" Table="dbo.iatas" Type="Constraint" />
+      <Exclude Name="nombre" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="apel1" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="NIF" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="NombreCentroTrabajo" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="CodigoPostal" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="Localidad" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="Provincia" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="msdid" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="GenesysCode" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="idpassengerlistorigin_gp" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="idpassengerlistorigin_mt" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="idpassengerlistorigin_amex" Table="dbo.passengers_list" Type="Column" />
+      <Exclude Name="dbo_iw_passengers_list$FK__iw_passen__iddis__308412F8" Table="dbo.passengers_list" Type="Constraint" />
+      <Exclude Name="idasistente" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="idamec" Table="dbo.peticion_grupos" Type="Column" />
+      <Exclude Name="FK__peticion___idpos__59DB2E46" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="" Table="dbo.peticion_grupos" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__iddis__3548C815" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__iduni__326C5B6A" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__FKIdE__391958F9" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="FK__peticiona__idcon__13D2C5B1" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__Idare__363CEC4E" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="FK__peticiona__idpos__47BC7E0B" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__idreg__382534C0" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="dbo_iw_peticionarios$FK__iw_Petici__IdCar__3A0D7D32" Table="dbo.peticionarios" Type="Constraint" />
+      <Exclude Name="idconfempresa" Table="dbo.poblaciones" Type="Column" />
+      <Exclude Name="dbo_iw_poblaciones$FK__iw_Poblac__IdPai__40BA7AC1" Table="dbo.poblaciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_poblaciones$FK__iw_Poblac__IdPro__3FC65688" Table="dbo.poblaciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_poblaciones$FK_poblaciones_confempresa" Table="dbo.poblaciones" Type="Constraint" />
+      <Exclude Name="idconfempresa" Table="dbo.proveedores" Type="Column" />
+      <Exclude Name="dbo_iw_proveedores$FK_proveedores_confempresa" Table="dbo.proveedores" Type="Constraint" />
+      <Exclude Name="dbo_iw_provincias$FK__iw_Provin__IdPai__4A43E4FB" Table="dbo.provincias" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK__iw_servic__IdPai__55B597A7" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservashotel$FK__iw_servic__IdPro__56A9BBE0" Table="dbo.serviciosreservashotel" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservasinscripciones$FK__iw_servic__iddat__5A7A4CC4" Table="dbo.serviciosreservasinscripciones" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$FK__iw_servic__IdTip__5E4ADDA8" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$FK__iw_servic__IdTip__5B6E70FD" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$FK__iw_servic__IdTip__5C629536" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="dbo_iw_serviciosreservastransporte$FK__iw_servic__IdTip__5D56B96F" Table="dbo.serviciosreservastransporte" Type="Constraint" />
+      <Exclude Name="prepago" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="socio" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tarifasactividad" Type="Column" />
+      <Exclude Name="Prepago" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="Socio" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="visible" Table="dbo.tarifasaloj" Type="Column" />
+      <Exclude Name="dbo_iw_tarifasaloj$FK__iw_Tarifa__IdSer__6AB0B48D" Table="dbo.tarifasaloj" Type="Constraint" />
+      <Exclude Name="Prepago" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="Socio" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tarifasinscripcion" Type="Column" />
+      <Exclude Name="Visible" Table="dbo.tipo_actividad_pax_datosadicionales" Type="Column" />
+      <Exclude Name="idtiporegistroactividad" Table="dbo.tipoactividad" Type="Column" />
+      <Exclude Name="veeva" Table="dbo.tipoactividad" Type="Column" />
+      <Exclude Name="newco" Table="dbo.tipoactividad" Type="Column" />
+      <Exclude Name="FK__tipoactiv__idtip__38527F4E" Table="dbo.tipoactividad" Type="Constraint" />
+      <Exclude Name="locked" Table="dbo.tipos_actividad_congreso" Type="Column" />
+      <Exclude Name="Ocup" Table="dbo.tipos_hab" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tipos_hab" Type="Column" />
+      <Exclude Name="dbo_iw_tipos_prv$FK__iw_Tipos___IdTip__715DB21C" Table="dbo.tipos_prv" Type="Constraint" />
+      <Exclude Name="locked" Table="dbo.tiposaloj" Type="Column" />
+      <Exclude Name="newco" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="TipoCongreso" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="visible_Web" Table="dbo.tiposcongreso" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tiposinscripcion" Type="Column" />
+      <Exclude Name="locked" Table="dbo.tramitacionesserviciosreservas" Type="Column" />
+      <Exclude Name="locked" Table="dbo.valoracion_fi" Type="Column" />
+    </UpdateFromDatabaseExcludes>
+  </ModelSettings>
+</EntityDeveloper>

@@ -1,0 +1,11 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\bin\Release\PeticionariosImportProcess.exe.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\bin\Release\PeticionariosImportProcess.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\bin\Release\PeticionariosImportProcess.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\bin\Release\Quodem.Monitor.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\bin\Release\Renci.SshNet.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\obj\Release\Process.PeticionariosImport.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\obj\Release\Process.PeticionariosImport.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\obj\Release\Process.PeticionariosImport.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\obj\Release\PeticionariosImportProcess.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\obj\Release\PeticionariosImportProcess.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.PeticionariosImport\bin\Release\Quodem.Correo.dll

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="QServiceQuery" table="q_service_query">
+    <id name="Idservicequery" type="Int32">
+      <column name="IdServiceQuery" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idservicesuscriptor" type="Int32">
+      <column name="IdServiceSuscriptor" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Hashedkey" type="String">
+      <column name="HashedKey" default="NULL" not-null="false" length="100" sql-type="nvarchar" />
+    </property>
+    <property name="Createdate" type="DateTime">
+      <column name="CreateDate" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Updatedate" type="DateTime">
+      <column name="UpdateDate" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Randonguid" type="String">
+      <column name="RandonGuid" default="NULL" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <many-to-one name="QServiceSuscriptor" class="QServiceSuscriptor" update="false" insert="false">
+      <column name="IdServiceSuscriptor" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

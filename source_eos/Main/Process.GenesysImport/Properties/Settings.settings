@@ -1,0 +1,65 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GenesysImportProcess.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SftpHost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ftpserver.quodem.com</Value>
+    </Setting>
+    <Setting Name="SftpUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp_eos</Value>
+    </Setting>
+    <Setting Name="SftpPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">YI3FHafYj2x</Value>
+    </Setting>
+    <Setting Name="SftpPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">22</Value>
+    </Setting>
+    <Setting Name="SftpInitialDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/MSD_IN/</Value>
+    </Setting>
+    <Setting Name="ItemsPerInsert" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="CsvSeparator" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\t</Value>
+    </Setting>
+    <Setting Name="TestMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="StoreProcedureNameLoadMasterTable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_genesys_load_master_table</Value>
+    </Setting>
+    <Setting Name="ProcessDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MSD Importación de datos de Genesys</Value>
+    </Setting>
+    <Setting Name="LocalDirectoryToDownloadPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\jmartin\Desktop\Eos.Genesys\</Value>
+    </Setting>
+    <Setting Name="TxtSeparator" Type="System.String" Scope="User">
+      <Value Profile="(Default)">,</Value>
+    </Setting>
+    <Setting Name="TempTableName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">hcp_genesys_tmp</Value>
+    </Setting>
+    <Setting Name="FileLogDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\jmartin\Desktop\Eos.Genesys\</Value>
+    </Setting>
+    <Setting Name="StoreProcedureUpdatePassengerList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_genesys_update_passengerList</Value>
+    </Setting>
+    <Setting Name="DateFormatGenesysFileMasterPattern" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GenesysFileMasterPattern" Type="System.String" Scope="User">
+      <Value Profile="(Default)">agency_prescriber_master.txt</Value>
+    </Setting>
+    <Setting Name="SqlConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=desarrollo.sqlserver.quodemspain.es;Database=wintour_robot_eos-development;User Id=desarrollo;Password=Quowppo10;&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Sql.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=desarrollo.sqlserver.quodemspain.es;Database=wintour_robot_eos-development;User Id=desarrollo;Password=Quowppo10;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,50 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="msd.GenesysCreateReportProcess.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="StoreProcedureDataName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_hcp_report_new</Value>
+    </Setting>
+    <Setting Name="EmailFrom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">quodem@quodem.com</Value>
+    </Setting>
+    <Setting Name="EmailBodyTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Le enviamos adjunto el reporte del periodo</Value>
+    </Setting>
+    <Setting Name="EmailSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">no-reply</Value>
+    </Setting>
+    <Setting Name="StoreProcedureTimeControllername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_hcp_report_time_controller</Value>
+    </Setting>
+    <Setting Name="StoreProcedurePrepare" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_hcp_report_prepare</Value>
+    </Setting>
+    <Setting Name="ProcessDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MSD Generación de Informe</Value>
+    </Setting>
+    <Setting Name="FileExportName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Efpia_Report.xlsx</Value>
+    </Setting>
+    <Setting Name="FileLogDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\jmartin\Desktop\EOSProcess\</Value>
+    </Setting>
+    <Setting Name="FileExportDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\jmartin\Desktop\EOSProcess\</Value>
+    </Setting>
+    <Setting Name="EmailList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jmartin@quodem.com,jmmv80@hotmail.com</Value>
+    </Setting>
+    <Setting Name="InstanceNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SqlConnectioString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Server=pre-dbserver01.quodem.net;Database=WINTOUR_ROBOT_EOS_UAT-STAGING;User Id=quodem_web;Password=Quowppo10;&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Sql.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=pre-dbserver01.quodem.net;Database=WINTOUR_ROBOT_EOS_UAT-STAGING;User Id=quodem_web;Password=Quowppo10;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

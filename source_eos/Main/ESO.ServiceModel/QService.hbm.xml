@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="QService" table="q_service">
+    <id name="Idservice" type="Int32">
+      <column name="IdService" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Servicecode" type="String">
+      <column name="ServiceCode" default="NULL" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Title" type="String">
+      <column name="Title" default="NULL" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Status" type="Int32">
+      <column name="Status" default="NULL" not-null="false" length="1" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Creationdate" type="DateTime">
+      <column name="CreationDate" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <set name="QServiceStatistics" inverse="true" generic="true">
+      <key>
+        <column name="IdService" />
+      </key>
+      <one-to-many class="QServiceStatistics" />
+    </set>
+    <set name="QServiceSuscriptors" inverse="true" generic="true">
+      <key>
+        <column name="IdService" />
+      </key>
+      <one-to-many class="QServiceSuscriptor" />
+    </set>
+  </class>
+</hibernate-mapping>

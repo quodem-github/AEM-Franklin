@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Confempresa" table="confempresa">
+    <id name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Codpostal" type="String">
+      <column name="codpostal" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Direccion" type="String">
+      <column name="direccion" default="N''" not-null="false" length="150" sql-type="nvarchar" />
+    </property>
+    <property name="Linkhorariosservicios" type="String">
+      <column name="linkhorariosservicios" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Logoinferiorpantalla" type="String">
+      <column name="logoinferiorpantalla" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Mailtorespuesta" type="String">
+      <column name="mailtorespuesta" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="Formatoprgmailcomunicfi" type="String">
+      <column name="formatoprgmailcomunicfi" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="Cuerpomailcomunicfi" type="String">
+      <column name="cuerpomailcomunicfi" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Asuntomailcomunicfi" type="String">
+      <column name="asuntomailcomunicfi" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="Mailcccomunicfi" type="String">
+      <column name="mailcccomunicfi" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="Mailtocomunicfi" type="String">
+      <column name="mailtocomunicfi" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="Mailfromcomunicfi" type="String">
+      <column name="mailfromcomunicfi" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="Gestordearchivo" type="String">
+      <column name="gestordearchivo" default="N''" not-null="false" length="100" sql-type="nvarchar" />
+    </property>
+    <property name="Poblacion" type="String">
+      <column name="poblacion" default="N''" not-null="false" length="100" sql-type="nvarchar" />
+    </property>
+    <property name="Idempresa" type="Int32">
+      <column name="IdEmpresa" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Logosuperiorpantalla" type="String">
+      <column name="logosuperiorpantalla" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="CodigoAgencia" type="String">
+      <column name="codigo_agencia" default="N''" not-null="false" length="2" sql-type="nvarchar" />
+    </property>
+    <property name="Nombrecontacto" type="String">
+      <column name="nombrecontacto" default="NULL" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Nombreagencia" type="String">
+      <column name="nombreagencia" default="NULL" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Mailcontacto" type="String">
+      <column name="mailcontacto" default="NULL" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Telefonoagencia" type="String">
+      <column name="telefonoagencia" default="NULL" not-null="false" length="45" sql-type="nvarchar" />
+    </property>
+    <property name="Faxagencia" type="String">
+      <column name="faxagencia" default="NULL" not-null="false" length="45" sql-type="nvarchar" />
+    </property>
+    <property name="Rutaformulariogrupos" type="String">
+      <column name="RutaFormularioGrupos" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="Idagencia" type="String">
+      <column name="idagencia" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Inactive" type="Int32">
+      <column name="inactive" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="Amecs" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="Amec" />
+    </set>
+    <set name="Amecs1" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="Amecs" />
+    </set>
+    <set name="Gestorinvitados" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="Gestorinvitados" />
+    </set>
+    <set name="Empleadosgps" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="Empleadosgp" />
+    </set>
+    <set name="QuodemAuditLogs" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="QuodemAuditLog" />
+    </set>
+    <set name="Congresos" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="Congresos" />
+    </set>
+    <set name="Serviciosreservasactividades" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="Serviciosreservasactividades" />
+    </set>
+    <set name="Serviciosreservashotels" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="Serviciosreservashotel" />
+    </set>
+    <set name="Serviciosreservasinscripciones" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="Serviciosreservasinscripciones" />
+    </set>
+    <set name="Serviciosreservastransportes" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="Serviciosreservastransporte" />
+    </set>
+    <set name="QuodemQueryLogs" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="QuodemQueryLog" />
+    </set>
+    <set name="PeticionesActividads" inverse="true" generic="true">
+      <key>
+        <column name="idconfempresa" />
+      </key>
+      <one-to-many class="PeticionesActividad" />
+    </set>
+  </class>
+</hibernate-mapping>

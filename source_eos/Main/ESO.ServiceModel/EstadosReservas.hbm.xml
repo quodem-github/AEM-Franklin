@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Estadosreservas" table="estadosreservas">
+    <id name="Idestado" type="String">
+      <column name="idestado" default="N''" not-null="true" length="5" sql-type="nvarchar" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Estado" type="String">
+      <column name="estado" default="N''" not-null="true" length="30" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="Expedientes" inverse="true" generic="true">
+      <key>
+        <column name="idestado" />
+      </key>
+      <one-to-many class="Expediente" />
+    </set>
+    <set name="Reservasviajes" inverse="true" generic="true">
+      <key>
+        <column name="idestado" />
+      </key>
+      <one-to-many class="Reservasviajes" />
+    </set>
+    <set name="Tramitacionesserviciosreservas" inverse="true" generic="true">
+      <key>
+        <column name="idestado" />
+      </key>
+      <one-to-many class="Tramitacionesserviciosreservas" />
+    </set>
+    <set name="EstadosReservas_idestadofinal" inverse="true" generic="true">
+      <key>
+        <column name="idestadofinal" />
+      </key>
+      <one-to-many class="EstadosReservas" />
+    </set>
+    <set name="EstadosReservas_idestadoinicial" inverse="true" generic="true">
+      <key>
+        <column name="idestadoinicial" />
+      </key>
+      <one-to-many class="EstadosReservas" />
+    </set>
+  </class>
+</hibernate-mapping>

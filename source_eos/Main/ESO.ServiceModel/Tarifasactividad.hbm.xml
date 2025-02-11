@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Tarifasactividad" table="tarifasactividad">
+    <id name="Idtarifaactividad" type="Int32">
+      <column name="idtarifaactividad" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Fkidcongreso" type="Int32">
+      <column name="fkidcongreso" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtipoactividadcongreso" type="Int32">
+      <column name="idtipoactividadcongreso" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idproveedor" type="Int32">
+      <column name="IdProveedor" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idproducto" type="String">
+      <column name="idproducto" default="N''" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Actividad" type="String">
+      <column name="actividad" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Pvp" type="Double">
+      <column name="pvp" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="Notascli" type="String">
+      <column name="notascli" default="N''" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Prepago" type="Int32">
+      <column name="prepago" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Socio" type="Int32">
+      <column name="socio" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Cancelacion" type="String">
+      <column name="cancelacion" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Fechainicio" type="DateTime">
+      <column name="fechainicio" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Fechafin" type="DateTime">
+      <column name="fechafin" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Descripcion" type="String">
+      <column name="descripcion" default="NULL" not-null="false" length="45" sql-type="nvarchar" />
+    </property>
+    <many-to-one name="Congresos" class="Congresos" update="false" insert="false">
+      <column name="fkidcongreso" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="TiposActividadCongreso" class="TiposActividadCongreso" update="false" insert="false">
+      <column name="idtipoactividadcongreso" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Productos" class="Productos" update="false" insert="false">
+      <column name="idproducto" default="N''" not-null="false" length="3" sql-type="nvarchar" />
+    </many-to-one>
+    <set name="Serviciosreservasactividades" inverse="true" generic="true">
+      <key>
+        <column name="idtarifaactividad" />
+      </key>
+      <one-to-many class="Serviciosreservasactividades" />
+    </set>
+  </class>
+</hibernate-mapping>

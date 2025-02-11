@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Tiposcongreso" table="tiposcongreso">
+    <id name="Idtipocongreso" type="Int32">
+      <column name="IdTipoCongreso" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Tipocongreso" type="String">
+      <column name="TipoCongreso" default="N''" not-null="true" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Canal" type="String">
+      <column name="canal" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="CodTipocongreso" type="String">
+      <column name="cod_tipocongreso" default="N'&quot;&quot;'" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="VisibleWeb" type="Int32">
+      <column name="visible_Web" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="Congresos" inverse="true" generic="true">
+      <key>
+        <column name="IdTipoCongreso" />
+      </key>
+      <one-to-many class="Congresos" />
+    </set>
+    <set name="PeticionesActividads" inverse="true" generic="true">
+      <key>
+        <column name="IdTipoCongreso" />
+      </key>
+      <one-to-many class="PeticionesActividad" />
+    </set>
+  </class>
+</hibernate-mapping>

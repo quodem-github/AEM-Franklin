@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using EOS.Web.Enums;
+using EOS.Entidades.Datos;
+using EOS.Web;
+
+namespace EOS.Web.BLL.GestorPermisos.Permisos
+{
+    class PermisosAprobado : IPermiso
+    {
+        public EstadosAmec Estado { get { return EstadosAmec.Aprobado; } }
+        private readonly AgenteAprobadorAmec _agAprobador;
+
+        public PermisosAprobado(AgenteAprobadorAmec agAprobador)
+        {
+            _agAprobador = agAprobador;
+        }
+
+        public bool BuscarPermisos(int estado)
+        {
+            return estado == Estado.GetHashCode();
+        }
+
+        public bool PuedoAprobarYRechazar(string idamec, int idAprobador)
+        {
+            return false;
+        }
+
+        public bool PuedoSometer(string idamec, int idPeticionario)
+        {
+            return false;
+        }
+        public bool Rechazar(string idamec, int idPeticionario)
+        {
+            return false;
+        }
+        public bool Aprobar(string idamec, int idPeticionario, bool condicionado)
+        {
+            return false;
+        }
+        public List<string> ObtenerListaDestinatarios(string idamec, int idPeticionario)
+        {
+            return new List<string>();
+        }
+    }
+}

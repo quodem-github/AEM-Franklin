@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="EstadosReservas" table="estados_reservas">
+    <id name="Idregistre" type="Int32">
+      <column name="idregistre" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="identity" />
+    </id>
+    <property name="Idestadoinicial" type="String">
+      <column name="idestadoinicial" default="N''" not-null="true" length="5" sql-type="nvarchar" />
+    </property>
+    <property name="Idestadofinal" type="String">
+      <column name="idestadofinal" default="N''" not-null="true" length="5" sql-type="nvarchar" />
+    </property>
+    <property name="Enviado" type="Int16">
+      <column name="enviado" default="0" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Fechacambioestado" type="DateTime">
+      <column name="fechacambioestado" not-null="true" sql-type="datetime2" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Tipo" type="String">
+      <column name="tipo" default="N''" not-null="false" length="5" sql-type="nvarchar" />
+    </property>
+    <property name="Idreserva" type="Int32">
+      <column name="idreserva" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idexpediente" type="Int32">
+      <column name="idexpediente" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="WaitAck" type="Int32">
+      <column name="wait_ack" default="3" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Datasync" type="DateTime">
+      <column name="datasync" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Sync" type="Int32">
+      <column name="sync" default="1" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="TransactionKey" type="String">
+      <column name="transaction_key" default="NULL" not-null="false" length="32" sql-type="nvarchar" />
+    </property>
+    <property name="Idservicio" type="Int32">
+      <column name="idservicio" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="XmlData" type="String">
+      <column name="xml_data" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="EnviadoAgencia" type="Int32">
+      <column name="enviado_agencia" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtramitacion" type="Int32">
+      <column name="idtramitacion" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Reservasviajes" class="Reservasviajes" update="false" insert="false">
+      <column name="idreserva" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Estadosreservas_idestadofinal" class="Estadosreservas" update="false" insert="false">
+      <column name="idestadofinal" default="N''" not-null="true" length="5" sql-type="nvarchar" />
+    </many-to-one>
+    <many-to-one name="Estadosreservas_idestadoinicial" class="Estadosreservas" update="false" insert="false">
+      <column name="idestadoinicial" default="N''" not-null="true" length="5" sql-type="nvarchar" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

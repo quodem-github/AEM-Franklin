@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CalcCorrespondencias" table="calc_correspondencias">
+    <id name="Id" type="Int32">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idtipoasistente" type="Int64">
+      <column name="idTipoAsistente" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idtiporeunion" type="Int32">
+      <column name="idTipoReunion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtipopsponentes" type="Int32">
+      <column name="idTipoPSPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtiponacionallocal" type="Int32">
+      <column name="idTipoNacionalLocal" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idduracionactividadponentes" type="Int32">
+      <column name="idDuracionActividadPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtiempopreparacionponentes" type="Int32">
+      <column name="idTiempoPreparacionPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtipopsabeif" type="Int32">
+      <column name="idTipoPSAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idduracionactividadabeif" type="Int32">
+      <column name="idDuracionActividadAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtiempopreparacionabeif" type="Int32">
+      <column name="idTiempoPreparacionAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Ponenciacentrosalud" type="Boolean">
+      <column name="ponenciaCentroSalud" not-null="true" length="1" sql-type="bit" />
+    </property>
+    <property name="Tallerocurso" type="Boolean">
+      <column name="tallerOCurso" not-null="true" length="1" sql-type="bit" />
+    </property>
+    <property name="Videoconferenciarepetida" type="Boolean">
+      <column name="VideoconferenciaRepetida" not-null="true" length="1" sql-type="bit" />
+    </property>
+    <property name="Idtipocontratoconsultoria" type="Int32">
+      <column name="idtipoContratoConsultoria" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idcalchonorariosmaximos" type="Int32">
+      <column name="idCalcHonorariosMaximos" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="CalcAbEifNivelPs" class="CalcAbEifNivelPs">
+      <column name="idTipoPSAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcAbEifPreparacion" class="CalcAbEifPreparacion">
+      <column name="idTiempoPreparacionAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcHonorariosMaximos" class="CalcHonorariosMaximos">
+      <column name="idCalcHonorariosMaximos" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcPonentesDuracionActividad" class="CalcPonentesDuracionActividad">
+      <column name="idDuracionActividadPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcPonentesPreparacion" class="CalcPonentesPreparacion">
+      <column name="idTiempoPreparacionPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcTipoContratoConsultoria" class="CalcTipoContratoConsultoria">
+      <column name="idtipoContratoConsultoria" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcPonentesNivelPs" class="CalcPonentesNivelPs">
+      <column name="idTipoPSPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcTipoReunion" class="CalcTipoReunion">
+      <column name="idTipoReunion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="AbEifDuracionActividad" class="AbEifDuracionActividad">
+      <column name="idDuracionActividadAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

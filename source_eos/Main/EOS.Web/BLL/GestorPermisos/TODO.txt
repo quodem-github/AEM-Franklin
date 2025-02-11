@@ -1,0 +1,5 @@
+﻿Quitar hardcodeo de las consultas
+
+Los aprobados con condicion cambian los correos, cuando se lo cuenten al JP lo implementamos
+
+Comprobar el email enviado a farma industria

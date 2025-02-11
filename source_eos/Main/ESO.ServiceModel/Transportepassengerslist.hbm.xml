@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Transportepassengerslist" table="transportepassengerslist">
+    <id name="Idtransportepassengerlist" type="Int32">
+      <column name="idtransportepassengerlist" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Idserviciotransporte" type="Int32">
+      <column name="idserviciotransporte" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idpassengerlist" type="Int32">
+      <column name="idpassengerlist" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="PassengersList" class="PassengersList" update="false" insert="false">
+      <column name="idpassengerlist" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Serviciosreservastransporte" class="Serviciosreservastransporte" update="false" insert="false">
+      <column name="idserviciotransporte" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

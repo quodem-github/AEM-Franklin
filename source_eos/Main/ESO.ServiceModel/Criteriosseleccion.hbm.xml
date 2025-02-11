@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Criteriosseleccion" table="criteriosseleccion">
+    <id name="Idcriterio" type="Int32">
+      <column name="idcriterio" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Criterioseleccion" type="String">
+      <column name="criterioseleccion" default="NULL" not-null="false" length="250" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idcriterioabc" type="Int64">
+      <column name="idcriterioABC" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Inactivo" type="Int16">
+      <column name="inactivo" not-null="true" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <set name="Amecs" inverse="true" generic="true">
+      <key>
+        <column name="idcriterioseleccion" />
+      </key>
+      <one-to-many class="Amecs" />
+    </set>
+  </class>
+</hibernate-mapping>

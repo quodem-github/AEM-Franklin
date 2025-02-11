@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="DatosadicionalesReservasPassenger" table="datosadicionales_reservas_passenger">
+    <id name="Iddatosadicionales" type="Int32">
+      <column name="iddatosadicionales" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idpassengerlist" type="Int32">
+      <column name="idpassengerlist" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" unique-key="KEY1" />
+    </property>
+    <property name="Idexpediente" type="Int32">
+      <column name="idexpediente" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" unique-key="KEY1" />
+    </property>
+    <property name="Idtipoactividadpax" type="Int64">
+      <column name="idtipoactividadpax" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idtipoasistente" type="Int64">
+      <column name="idtipoasistente" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idnivelriesgo" type="Int64">
+      <column name="idnivelriesgo" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idjustificaciones" type="Int64">
+      <column name="idjustificaciones" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Honorarios" type="Decimal">
+      <column name="honorarios" default="NULL" not-null="false" precision="10" scale="2" sql-type="decimal" />
+    </property>
+    <property name="Pagodirecto" type="Int16">
+      <column name="pagodirecto" default="NULL" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Pagosociedad" type="String">
+      <column name="pagosociedad" default="NULL" not-null="false" length="400" sql-type="varchar" />
+    </property>
+    <property name="Datacreacion" type="DateTime">
+      <column name="datacreacion" not-null="true" sql-type="datetime2" />
+    </property>
+    <property name="Ficherogenesis" type="Int16">
+      <column name="ficherogenesis" default="NULL" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Descripcionobjetivos" type="String">
+      <column name="descripcionobjetivos" default="NULL" not-null="false" length="300" sql-type="varchar" />
+    </property>
+    <property name="Tiporeunion" type="Int32">
+      <column name="tiporeunion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="PonentesDuracionactividad" type="Int32">
+      <column name="ponentes_duracionactividad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="PonentesPreparacion" type="Int32">
+      <column name="ponentes_preparacion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="PonentesNivelps" type="Int32">
+      <column name="ponentes_nivelps" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="PonentesHonorariosmaximos" type="Double">
+      <column name="ponentes_honorariosmaximos" default="NULL" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="AbeifPreparacion" type="Int32">
+      <column name="abeif_preparacion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="AbeifDuracionactividad" type="Int32">
+      <column name="abeif_duracionactividad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="AbeifNivelps" type="Int32">
+      <column name="abeif_nivelps" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="AbeifHonorariosmaximos" type="Double">
+      <column name="abeif_honorariosmaximos" default="NULL" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="PonenciaCentroSalud" type="Boolean">
+      <column name="ponencia_centro_salud" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="Talleres" type="Boolean">
+      <column name="talleres" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="VideoconferenciaRepetida" type="Boolean">
+      <column name="videoconferencia_repetida" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="TipoPonente" type="Int32">
+      <column name="tipo_ponente" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="PonentesIdhonorariosmaximos" type="Int32">
+      <column name="ponentes_idhonorariosmaximos" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Justificacion" type="String">
+      <column name="justificacion" default="NULL" not-null="false" length="400" sql-type="varchar" />
+    </property>
+    <property name="Idtipocontratoconsultoria" type="Int32">
+      <column name="idTipoContratoConsultoria" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="NumeroDiasConsultoria" type="Int32">
+      <column name="numero_dias_consultoria" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="JustificacionesDatosadicionales" class="JustificacionesDatosadicionales" update="false" insert="false">
+      <column name="idjustificaciones" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+    <many-to-one name="NivelRiesgoHcpDatosadicionales" class="NivelRiesgoHcpDatosadicionales" update="false" insert="false">
+      <column name="idnivelriesgo" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+    <many-to-one name="TipoActividadPaxDatosadicionales" class="TipoActividadPaxDatosadicionales" update="false" insert="false">
+      <column name="idtipoactividadpax" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+    <many-to-one name="TipoAsistenteDatosadicionales" class="TipoAsistenteDatosadicionales" update="false" insert="false">
+      <column name="idtipoasistente" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Release\EOSGestorDocumental.exe.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Release\EOSGestorDocumental.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Release\EOSGestorDocumental.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Release\Newtonsoft.Json.xml
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Release\RestSharp.xml
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Release\EOSGestorDocumental.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Release\EOSGestorDocumental.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Release\EOSGestorDocumental.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Release\EOSGestorDocumental.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Release\EOSGestorDocumental.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Release\EOSGestorDocumental.csproj.SuggestedBindingRedirects.cache

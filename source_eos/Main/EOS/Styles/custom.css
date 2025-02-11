@@ -1,0 +1,2905 @@
+
+
+
+/************/
+a:hover {
+    text-decoration:none;
+}
+.contentLogo {
+    width: 100%;
+    text-align: center;
+    padding-bottom:50px;
+}
+img.contentLogoWeb {
+    width: 160px;
+}
+
+ul#eosHPBotones a {
+    color: #888888;
+    display: block;
+    float: left;
+    padding: 10px 25px 10px 55px;
+    box-sizing: border-box;
+    width: 100%;
+}
+    ul#eosHPBotones a:hover {
+        font-weight:bold;
+        background: #00867D;
+        color:#FFFFFF;
+        border-radius:0px 50px 50px 0px;
+        text-decoration:none;
+
+    }
+
+a.contentBtnMenuExpand {
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    background: url(../Styles/images/iconOpen.png) top left no-repeat #EEC860;
+    bottom: 21px;
+    left: 25px;
+    padding: 10px 15px 8px 30px;
+    color: #FFF;
+    border-radius: 20px;
+    background-position: 17px 9px;
+}
+/**********/
+.contentFormGeneric .eosTresColumna:first-child {
+    padding-left: 0%;
+}
+.eosTresColumna {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    box-sizing: border-box;
+}
+.contentFormGeneric .eosUnoColumna:first-child {
+    padding-left: 0%;
+}
+
+.contentFormGeneric .eosMitadColumna.no-padding-left,
+.contentFormGeneric .eosTresColumna.no-padding-left {
+    padding-left: 0;
+}
+
+.space-up{
+    margin-top: 16px;
+}
+/**********/
+h1 {
+    font-family: 'inventionextrabold';
+    font-size: 28px;
+    font-weight: bolder;
+    color: #00867D;
+    margin-bottom: 30px;
+}
+h2 {
+    font-weight: bold;
+    color: #00CFB2;
+    width: 100%;
+    font-size: 22px;
+    text-transform: initial;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    line-height: 22px;
+}
+p {
+    color: #001E3F;
+    width: 100%;
+    font-size: 16px;
+}
+#eosFiltroBasico {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.contentFormGeneric {
+    width: 100%;
+    padding-top: 20px;
+}
+
+    .contentFormGeneric label,
+    .contentFormGeneric .eosCampoLabel {
+        color: #001E3F;
+        font-weight: bold;
+        padding-bottom:10px;
+    }
+    .contentFormGeneric input,
+    .contentFormGeneric select {
+        border-radius: 30px;
+        /* min-height: 50px; */
+        border: 0px;
+        box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+        font-family: roboto, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        box-sizing:border-box;
+        padding: 15px 20px;
+    }
+
+.eosBotonera.eosBotonFiltradoAvanzado {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+
+
+    .eosBotonera.eosBotonFiltradoAvanzado a {
+        background: url(../Styles/images/iconMore.png) top left no-repeat;
+        background-position: 18px 13px;
+        display: block;
+        padding: 15px 20px 13px 50px;
+        border-radius: 50px;
+        border: 1px solid #00CFB2;
+        color: #00CFB2;
+    }
+        .eosBotonera.eosBotonFiltradoAvanzado a:hover {
+            background: url(../Styles/images/iconMoreHover.png) top left no-repeat #00CFB2;
+            background-position: 18px 13px;
+
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        .eosBotonera.eosBotonFiltrado {
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+    .eosBotonera.eosBotonFiltrado input {
+        font-family: 'inventionregular';
+        font-weight: bold;
+        background: #00CFB2;
+        padding: 17px 20px 13px 20px;
+        border-radius: 50px;
+        min-width: 100px;
+        border: 1px solid #00CFB2;
+        color: #FFFFFF;
+        text-align: center;
+        /* background-image: none; */
+    }
+
+.contentFiltroAvanzado {
+    margin-top:20px;
+    background: #F3F3F3;
+    width: 100%;
+    padding:  25px;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+    .contentFiltroAvanzado > div,
+    .contentGenericBox > div {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+.eosCuartoColumna.contentImporte {
+    display: block;
+}
+
+    .eosCuartoColumna.contentImporte label {
+        width: 100%;
+        float: left;
+    }
+
+.contentImporte .eosSizeW50 {
+    width: 55%;
+    float: left;
+    margin-right: 5%;
+}
+.contentImporte .eosSizeW115 {
+    width: 25%;
+    float: left;
+    display: block;
+}
+.eosMitadColumna,
+.eosTresColumna,
+.eosCuartoColumna {
+    position: relative;
+}
+
+.contentFormGeneric input.iconCalendar {
+    background: none;
+    box-shadow: none;
+    padding: 0px;
+    width: 28px;
+    border-radius: 0px;
+    position: absolute;
+    top: 38px;
+    right: 20px;
+}
+
+
+.contentTableGeneric {
+    width: 100%;
+    float: left;
+}
+
+    .contentTableGeneric table {
+        border-radius: 20px;
+        overflow: hidden;
+        width: 100%;
+        background: #00CFB2;
+        box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 30%);
+    }
+.contentTableGenerictable tbody tr {
+    /* padding: 0px 10%; */
+    border-top: 1px dashed #e5e5e5;
+}
+        .contentTableGeneric table tbody tr:first-child {
+            /* padding: 0px 10%; */
+            border-top: 0px;
+        }
+    .contentTableGeneric table thead tr th {
+        text-align: center !important;
+        padding: 17px 5px 14px 5px;
+        line-height: 16px;
+        color: #FFF !important;
+        font-weight: bold;
+        font-size:13px;
+    }
+    .contentTableGeneric table thead tr th a {
+        color: #FFF !important;
+    }
+        .contentTableGeneric table thead tr th a:hover {
+            text-decoration:none;
+        }
+
+
+    .contentTableGeneric table tbody {
+        background: #FFFFFF;
+    }
+
+        .contentTableGeneric table tbody tr:first-child td:first-child {
+            background: #FFFFFF;
+            border-radius: 20px 0px 0px 0px;
+        }
+        .contentTableGeneric table tbody tr:first-child td:last-child {
+            background: #FFFFFF;
+            border-radius: 0 20px 0 0;
+        }
+        .contentTableGeneric table tbody tr:last-child td:first-child {
+            background: #FFFFFF;
+            border-radius: 0px 0px 0px 0px;
+        }
+
+        .contentTableGeneric table tbody tr:last-child td:last-child {
+            background: #FFFFFF;
+            border-radius: 0 0 0 0px;
+        }
+        .contentTableGeneric table tbody tr td {
+            text-align: center !important;
+            padding: 10px 5px;
+            font-size:13px;
+        }
+
+tr.datoOculto {
+    display: none;
+}
+
+tr.datoVisible {
+    display: table-row;
+}
+tr.datoVisible {
+    background: #F3F3F3;
+}
+.contentTableGeneric table tbody tr.datoVisible:last-child td:last-child {
+    background: #F3F3F3;
+}
+
+
+.contentPagination {
+    text-align: center;
+    padding: 25px 0px;
+    float: left;
+    width: 100%;
+}
+
+    .contentPagination .pageSel {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background: #00CFB2;
+        border: 1px solid #00CFB2;
+        border-radius: 28px;
+        font-size: 13px;
+        padding-top: 6px;
+        box-sizing: border-box;
+        margin: 0px 3px;
+        color: #FFF;
+        position: relative;
+        top: -10px;
+    }
+
+    .contentPagination a {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border: 1px solid #00CFB2;
+        border-radius: 28px;
+        font-size: 13px;
+        padding-top: 6px;
+        box-sizing: border-box;
+        margin: 0px 3px;
+        color: #00CFB2;
+        position: relative;
+        top: -10px;
+    }
+.eosBotonera.eosBotonFiltrado {
+    padding: 20px 0px;
+    float: left;
+}
+.marginTopBtn {
+    margin-top:20px;
+}
+/****/
+ul#eosHPBotones a {
+    background: url(../Styles/images/iconMenu/iconListado.png) top left no-repeat;
+    background-position: 14px 12px;
+    min-height: 50px;
+    background-size: 25px;
+}
+
+    ul#eosHPBotones a:hover {
+        background: url(../Styles/images/iconMenu/iconListadoHover.png) top left no-repeat #00867D;
+        background-position: 14px 12px;
+        background-size: 25px;
+    }
+ul#eosHPBotones li.active a {
+    background: url(../Styles/images/iconMenu/iconListadoHover.png) top left no-repeat #00867D;
+    background-position: 14px 12px;
+    background-size: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0px 50px 50px 0px;
+}
+/****/
+ul#eosHPBotones #liBuscadorGestorInvitados a {
+    background: url(../Styles/images/iconMenu/iconBuscadorInvitados.png) top left no-repeat;
+    background-position: 3px 13px;
+    background-size: 47px;
+    min-height: 50px;
+}
+
+    ul#eosHPBotones #liBuscadorGestorInvitados a:hover {
+        background: url(../Styles/images/iconMenu/iconBuscadorInvitadosHover.png) top left no-repeat #00867D;
+        background-position: 3px 13px;
+        background-size: 47px;
+    }
+
+ul#eosHPBotones #liBuscadorGestorInvitados.active a {
+    background: url(../Styles/images/iconMenu/iconBuscadorInvitadosHover.png) top left no-repeat #00867D;
+    background-position: 3px 13px;
+    background-size: 47px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0px 50px 50px 0px;
+}
+
+/****/
+
+ul#eosHPBotones #liCreacionExpedienteIndividual a {
+    background: url(../Styles/images/iconMenu/iconExpeIndi.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 11px 11px;
+}
+
+    ul#eosHPBotones #liCreacionExpedienteIndividual a:hover {
+        background: url(../Styles/images/iconMenu/iconExpeIndiHover.png) top left no-repeat #00867D;
+        background-position: 11px 11px;
+
+    }
+ul#eosHPBotones #liCreacionExpedienteIndividual.active a {
+    background: url(../Styles/images/iconMenu/iconExpeIndiHover.png) top left no-repeat #00867D;
+    background-position: 11px 11px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+
+ul#eosHPBotones #liCreacionExpedienteColectivo a {
+    background: url(../Styles/images/iconMenu/iconExpeColec.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 4px 10px;
+    /*    background-size: 35px;*/
+}
+
+    ul#eosHPBotones #liCreacionExpedienteColectivo a:hover {
+        background: url(../Styles/images/iconMenu/iconExpeColecHover.png) top left no-repeat #00867D;
+        background-position: 4px 10px;
+        /*  background-size: 35px;*/
+    }
+ul#eosHPBotones #liCreacionExpedienteColectivo.active a {
+    background: url(../Styles/images/iconMenu/iconExpeColecHover.png) top left no-repeat #00867D;
+    background-position: 4px 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+ul#eosHPBotones #liCalculadoraHonorarios a {
+    background: url(../Styles/images/iconMenu/iconCalculadora.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 14px 9px;
+}
+
+    ul#eosHPBotones #liCalculadoraHonorarios a:hover {
+        background: url(../Styles/images/iconMenu/iconCalculadoraHover.png) top left no-repeat #00867D;
+        background-position: 14px 9px;
+    }
+ul#eosHPBotones #liCalculadoraHonorarios.active a {
+    background: url(../Styles/images/iconMenu/iconCalculadoraHover.png) top left no-repeat #00867D;
+    background-position: 14px 9px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+
+ul#eosHPBotones #liDocumentacionAuditoria a {
+    background: url(../Styles/images/iconMenu/iconDocAudi.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 9px 10px;
+}
+
+    ul#eosHPBotones #liDocumentacionAuditoria a:hover {
+        background: url(../Styles/images/iconMenu/iconDocAudiHover.png) top left no-repeat #00867D;
+        background-position: 9px 10px;
+    }
+ul#eosHPBotones #liDocumentacionAuditoria.active a {
+    background: url(../Styles/images/iconMenu/iconDocAudiHover.png) top left no-repeat #00867D;
+    background-position: 9px 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+
+
+
+ul#eosHPBotones #liBuscadorActividades a {
+    background: url(../Styles/images/iconMenu/iconBuscadorActi.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 9px 10px;
+}
+
+    ul#eosHPBotones #liBuscadorActividades a:hover {
+        background: url(../Styles/images/iconMenu/iconBuscadorActiHover.png) top left no-repeat #00867D;
+        background-position: 9px 10px;
+    }
+ul#eosHPBotones #liBuscadorActividades.active a {
+    background: url(../Styles/images/iconMenu/iconBuscadorActiHover.png) top left no-repeat #00867D;
+    background-position: 9px 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+
+
+
+
+ul#eosHPBotones #liInformesYListados a {
+    padding-top: 16px;
+
+    background: url(../Styles/images/iconMenu/iconInforme.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 14px 6px;
+}
+
+    ul#eosHPBotones #liInformesYListados a:hover {
+        background: url(../Styles/images/iconMenu/iconInformeHover.png) top left no-repeat #00867D;
+        background-position: 14px 6px;
+    }
+
+ul#eosHPBotones #liInformesYListados.active a {
+    background: url(../Styles/images/iconMenu/iconInformeHover.png) top left no-repeat #00867D;
+    background-position: 14px 6px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+/***/
+
+
+/****/
+
+
+
+
+
+div#eosNavBar.menuContact ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+    div#eosNavBar.menuContact ul li {
+        display: block;
+        float: left;
+    }
+li.contactNav {
+    padding-top: 12px;
+}
+#eosNavBar.menuContact li a {
+    border: 0px;
+    text-transform: none;
+    z-index: 9;
+    position: relative;
+    height: 45px;
+    width: 45px;
+    display: block;
+}
+div#eosNavBar.menuContact {
+    padding: 15px 50px 15px 0px;
+}
+
+
+li.iconLogout {
+    background: url(../Styles/images/iconMenu/iconLogout.png) top left no-repeat;
+    /* background-position: 14px 6px; */
+    display: inline-block !important;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    font-size:0px;
+}
+
+
+
+
+
+
+
+
+
+/****/
+.eosBotonera.eosBotonFiltrado input.btnMorado {
+    border: 1px solid #554FE9;
+    color: #554FE9;
+    background: none;
+}
+
+    .eosBotonera.eosBotonFiltrado input.btnMorado:hover {
+        border: 1px solid #554FE9;
+        color: #FFFFFF;
+        background: #554FE9;
+    }
+
+    /************************ MININUS **************/
+
+.minimus #eosHPBotones a {
+    display: block;
+    font-size: 0;
+}
+
+.minimus ul#eosHPBotones a {
+    background: url(../Styles/images/iconMenu/iconListado.png) top left no-repeat;
+    background-position: 23px 12px;
+    min-height: 50px;
+    background-size: 25px;
+}
+
+    .minimus ul#eosHPBotones a:hover {
+        background: url(../Styles/images/iconMenu/iconListadoHover.png) top left no-repeat #00867D;
+        background-position: 23px 12px;
+        background-size: 25px;
+    }
+
+
+
+
+
+    /*************/
+
+
+
+.minimus ul#eosHPBotones #liCreacionExpedienteIndividual a {
+    background: url(../Styles/images/iconMenu/iconExpeIndi.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 17px 8px
+}
+
+    .minimus ul#eosHPBotones #liCreacionExpedienteIndividual a:hover {
+        background: url(../Styles/images/iconMenu/iconExpeIndiHover.png) top left no-repeat #00867D;
+        background-position: 17px 8px
+    }
+
+.minimus ul#eosHPBotones #liCreacionExpedienteIndividual.active a {
+    background: url(../Styles/images/iconMenu/iconExpeIndiHover.png) top left no-repeat #00867D;
+    background-position: 17px 8px;
+}
+
+
+
+.minimus ul#eosHPBotones #liCreacionExpedienteColectivo a {
+    background: url(../Styles/images/iconMenu/iconExpeColec.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 11px 8px;
+}
+
+    .minimus ul#eosHPBotones #liCreacionExpedienteColectivo a:hover {
+        background: url(../Styles/images/iconMenu/iconExpeColecHover.png) top left no-repeat #00867D;
+        background-position: 11px 8px;
+    }
+
+.minimus ul#eosHPBotones #liCreacionExpedienteColectivo.active a {
+    background: url(../Styles/images/iconMenu/iconExpeColecHover.png) top left no-repeat #00867D;
+    background-position: 11px 8px;
+}
+
+
+.minimus ul#eosHPBotones #liCalculadoraHonorarios a {
+    background: url(../Styles/images/iconMenu/iconCalculadora.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 21px 7px;
+}
+
+    .minimus ul#eosHPBotones #liCalculadoraHonorarios a:hover {
+        background: url(../Styles/images/iconMenu/iconCalculadoraHover.png) top left no-repeat #00867D;
+        background-position: 21px 7px;
+    }
+
+.minimus ul#eosHPBotones #liCalculadoraHonorarios.active a {
+    background: url(../Styles/images/iconMenu/iconCalculadoraHover.png) top left no-repeat #00867D;
+    background-position: 21px 7px;
+}
+
+
+
+.minimus ul#eosHPBotones #liDocumentacionAuditoria a {
+    background: url(../Styles/images/iconMenu/iconDocAudi.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 17px 8px;
+}
+
+    .minimus ul#eosHPBotones #liDocumentacionAuditoria a:hover {
+        background: url(../Styles/images/iconMenu/iconDocAudiHover.png) top left no-repeat #00867D;
+        background-position: 17px 8px;
+    }
+
+.minimus ul#eosHPBotones #liDocumentacionAuditoria.active a {
+    background: url(../Styles/images/iconMenu/iconDocAudiHover.png) top left no-repeat #00867D;
+    background-position: 17px 8px;
+}
+
+
+
+
+
+.minimus ul#eosHPBotones #liBuscadorActividades a {
+    background: url(../Styles/images/iconMenu/iconBuscadorActi.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 17px 8px;
+}
+
+    .minimus ul#eosHPBotones #liBuscadorActividades a:hover {
+        background: url(../Styles/images/iconMenu/iconBuscadorActiHover.png) top left no-repeat #00867D;
+        background-position: 17px 8px;
+    }
+
+.minimus ul#eosHPBotones #liBuscadorActividades.active a {
+    background: url(../Styles/images/iconMenu/iconBuscadorActiHover.png) top left no-repeat #00867D;
+    background-position: 17px 8px;
+}
+
+
+
+
+
+
+.minimus ul#eosHPBotones #liInformesYListados a {
+    padding-top: 16px;
+    background: url(../Styles/images/iconMenu/iconInforme.png) top left no-repeat;
+    min-height: 50px;
+    background-position: 22px 8px;
+}
+
+    .minimus ul#eosHPBotones #liInformesYListados a:hover {
+        background: url(../Styles/images/iconMenu/iconInformeHover.png) top left no-repeat #00867D;
+        background-position: 22px 8px;
+    }
+
+.minimus ul#eosHPBotones #liInformesYListados.active a {
+    background: url(../Styles/images/iconMenu/iconInformeHover.png) top left no-repeat #00867D;
+    background-position: 22px 8px;
+}
+
+
+    /**********/
+
+
+
+
+
+    .minimus a.contentBtnMenuExpand {
+    background: url(../Styles/images/iconClose.png) top left no-repeat #EEC860;
+    font-size: 0px;
+    background-position: 11px 13px;
+    left: 17px;
+    padding: 10px 20px;
+}
+.imagenTable {
+    width: 25px;
+}
+a.contentMoreInfo {
+    background: #00CFB2;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    font-weight: bold;
+    margin-left: 4px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+}
+    a.contentMoreInfo:hover {
+        text-decoration:none;
+    }
+
+div#eosContentFilter_plPaso3 {
+    float: left;
+    width: 100%;
+}
+
+.fullWidth100 {
+    float: left;
+    width: 100%;
+}
+label.eosCampoLabel.fullWidth100 {
+    width: 100%;
+}
+.paddingReset {
+    padding:0px;
+}
+input#eosContentFilter_DetalleAmec {
+    position: relative;
+    top: 8px;
+    right: -5px;
+    background: #001E3F;
+    box-shadow: none;
+    /* height: 30px; */
+    /* width: 30px; */
+    padding: 10px 7px;
+    box-sizing: border-box;
+    /* padding: 0px; */
+    background-size: 15px auto;
+}
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    right: -9px;
+}
+span.masInfo {
+    display: block;
+    background: #00CFB2;
+    border-radius: 50px;
+    padding: 8px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+input#searchAmec {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.contentFormGeneric .radioCheck {
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+}
+
+.contentFormGeneric .eosTresColumna .radioCheck {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 0;
+}
+
+    .contentFormGeneric .eosTresColumna .radioCheck span {
+        padding-right: 16px;
+        color: #001E3F;
+        font-weight: bold;
+    }
+
+.eosMitadColumna.contentFormRadio {
+    display: block;
+    padding-top: 52px;
+}
+.eosTresColumna.contentFormRadio {
+    display: block;
+    padding-top: 40px;
+}
+
+.eosCuartoColumna.contentFormRadio {
+    display: block;
+    padding-top: 35px;
+}
+.contentFormGeneric .eosCuartoColumna.contentFormRadio .radioCheck {
+    display: block;
+    float: none;
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+}
+.contentFormGeneric .radioCheck input,
+.eosTituloWizard .radioCheck input{
+    height: 35px;
+    padding: 0px;
+    width: 35px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #FFF;
+    border: 0px;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+}
+
+.contentFormGeneric .radioCheck label,
+#eosContentFilter_lblParaguas {
+    position: relative;
+    top: -12px;
+    margin-left: 16px;
+    color: #001E3F;
+}
+
+.contentFormGeneric .radioCheck input:checked,
+.eosTituloWizard .radioCheck input:checked {
+    background: url(../Styles/images/check.png) !important;
+    background-size: 20px 16px !important;
+    background-position: 5px 7px !important;
+    background-repeat: no-repeat !important;
+    border: 3px solid #2DDB38 !important;
+}
+
+.contentError {
+    padding: 15px 25px;
+    border: 1px solid #FFA2A2;
+    background: #FFF5F5;
+    color: #FF3434;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+span.style1 input {
+    width: 100%;
+    box-sizing:border-box;
+}
+
+.iconCalendar input#eosContentResults_txtFechaInicio_txtFechaInicio_clickImageButton, 
+.iconCalendar input#eosContentResults_txtFechaFin_txtFechaFin_clickImageButton {
+    background: none;
+    box-shadow: none;
+    padding: 0px;
+    width: 28px;
+    border-radius: 0px;
+    position: absolute;
+    top: 38px;
+    right: 20px;
+}
+
+div#eosTablaActividad {
+    width: 100%;
+}
+
+.boxCampoWithBtn .eosWidth50 {
+    width: 50%;
+}
+
+.boxCampoWithBtn  input#buscarPoblacion {
+    display: block;
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+}
+.boxCampoWithBtn {
+    display: block;
+}
+.boxCampoWithBtn label {
+    width: 100%;
+    display: block;
+}
+
+.boxCampoWithBtn .eosWidth50 {
+    width: 60%;
+    float: left;
+}
+
+    .boxCampoWithBtn input#buscarPoblacion {
+        display: block;
+        float: left;
+        width: 37%;
+        margin-left: 3%;
+        border: 1px solid #00CFB2;
+        background: none;
+        color: #00CFB2;
+        box-shadow:none;
+        cursor:pointer;
+    }
+        .boxCampoWithBtn input#buscarPoblacion:hover {
+            border: 1px solid #00CFB2;
+            background: #00CFB2;
+            color: #FFFFFF;
+        }
+
+.TDresultados {
+    width: 100%;
+
+}
+
+#cuadroEstilo {
+    width: 100%;
+    margin-top: 20px;
+    background: #F3F3F3;
+    width: 100%;
+    padding: 25px;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+    #cuadroEstilo .poblacionSelect {
+        border: 1px solid #888888;
+        display: block;
+        float: left;
+        padding: 13px 30px 9px 30px;
+        border-radius: 36px;
+        width: 23%;
+        margin: 5px 1% 5px 1%;
+        text-align: center;
+        font-size: 11px;
+        box-sizing: border-box;
+    }
+
+.poblacionSelect.selected {
+    border: 1px solid #00CFB2;
+    color: #00CFB2
+}
+
+div#eosContentAMECErrores {
+    width: 100%;
+}
+
+div.failureNotification {
+    padding: 15px 25px;
+    border: 1px solid #FFA2A2;
+    background: #FFF5F5;
+    color: #FF3434;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing:border-box;
+    font-size: 14px;
+    display: flex;
+}
+#eosContentAMECErrores ul {
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding: 0px;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+#eosContentAMECErrores strong {
+
+   font-weight: bold;
+}
+#eosContentAMECErrores li {
+    color: #FF3434;
+    display: inline-block;
+    /*float: none;*/
+    width: auto;
+    /* font-weight: bold; */
+}
+
+div#errorPoblacion {
+    padding: 15px 25px;
+    border: 1px solid #FFA2A2;
+    background: #FFF5F5;
+    color: #FF3434;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.eosCampoObligatorio {
+    color: #FF3434;
+}
+span#eosContentResults_RequiredFieldValidatorFechaFin, span#eosContentResults_RequiredFieldValidatorFechaInicio {
+    display: none;
+}
+
+.ajax__calendar {
+    width: 100% !important;
+    /* left: 0px !important; */
+}
+
+    .ajax__calendar .ajax__calendar_container {
+        width: 100%;
+        box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+        font-family: roboto, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        box-sizing: border-box;
+        padding: 15px 20px;
+        border: 1px solid #00CFB2 !important;
+
+        border-radius: 20px;
+    }
+
+.ajax__calendar_body {
+    width: 100% !important;
+}
+.ajax__calendar_days, .ajax__calendar_months, .ajax__calendar_years {
+    width: 100% !important;
+}
+
+.ajax__calendar_container TABLE {
+
+    width: 100% !important;
+}
+div#amecsFound {
+    width: 100%;
+}
+.amecsSelect {
+    width: 100%;
+    padding: 18px 2px 10px 20px;
+    background: #d3d3d3;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+div#eosFilterHeaderDetalle {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: auto;
+    width: 100%;
+    line-height: normal;
+    font-weight: normal;position:relative;
+}
+
+
+
+.contentDetalleGeneric h2 {
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.contentDetalleGeneric div#eosFilterHeaderEstadoDetalle {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+}
+
+.contentInfoPanel {
+    width: 73%;
+    box-sizing: border-box;
+    padding-right: 2%;
+    float: left;
+}
+
+.eosHPBotonesDetalle {
+    float: right;
+    width: 27%;
+    margin: 0px;
+}
+
+div#infoPanel {
+    width: 100%;
+    float: left;
+}
+
+.contentAddService {
+    width:100%;
+    float:left;
+}
+
+
+
+    .contentAddService select {
+        border-radius: 30px;
+        /* min-height: 50px; */
+        border: 0px;
+        box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+        font-family: roboto, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        box-sizing: border-box;
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+
+div.eosHPBotonesDetalle a,
+div.eosHPBotonesDetalle input {
+    margin-bottom: 13px;
+    display: block;
+    padding: 12px 10px 10px 10px;
+    border-radius: 50px;
+    border: 1px solid #00CFB2;
+    color: #00CFB2;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'inventionregular';
+    font-size: 15px;
+    line-height: 1.3em;
+}
+
+
+.contentInfoPanelElement {
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #001E3F;
+}
+
+    .contentInfoPanelElement span.lblTitle,
+    .contentInfoPanelElement span.lblTituloTipoPago {
+        font-weight: bold;
+        line-height: 20px;
+    }
+
+span.separateElement {
+    padding: 0px 8px;
+}
+
+#eosHPBotonesDetalle {
+    float: left;
+    width: 100%;
+    margin: 0px;
+}
+    #eosHPBotonesDetalle a {
+        font-family: 'inventionregular';
+        font-weight: bold;
+        background: #00CFB2;
+        padding: 17px 20px 13px 20px;
+        border-radius: 50px;
+        min-width: 100px;
+        border: 1px solid #00CFB2;
+        color: #FFFFFF;
+        text-align: center;
+    }
+        #eosHPBotonesDetalle a:hover {
+            text-decoration:none; 
+        }
+
+.contentDetalleGeneric.contentServicesBox {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+}
+
+.contentTableGeneric.contentServicesBoxResumen table {
+    background: #001E3F;
+}
+.borderDashedTopTotal td {
+    border-top: 1px dashed #ddd !important;
+    border-radius: 0px !important;
+}
+/*
+.contentTableGeneric table tbody {
+    border-top: 1px dashed #ddd;
+    background: #FFFFFF;
+}
+
+.contentTableGeneric.contentServicesBox table tbody tr:first-child td:last-child,
+.contentTableGeneric.contentServicesBox table tbody tr:first-child td:first-child {
+    border-radius: 0 !important;
+}*/
+.addDocumentLink {
+    display: inline-block;
+    padding: 12px 20px 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #00CFB2;
+    color: #00CFB2;
+    text-align: center;
+    box-sizing: border-box;
+    /* width: 100%; */
+    font-family: 'inventionregular';
+    font-size: 15px;
+    line-height: 1.3em;
+}
+    .addDocumentLink:hover {
+        background: #00CFB2;
+        border: 1px solid #00CFB2;
+        color:#FFFFFF;
+    }
+tr.borderDashedTop {
+    border-top: 1px dashed #ddd;
+}
+
+
+.totalStrong {
+    font-size: 14px;
+    color: #001E3F;
+    font-weight:bold;
+}
+
+td.ida {
+    background: #F3F3F3 !important;
+    font-size: 14px;
+    color: #001E3F;
+    font-weight: bold;
+}
+
+
+.contentServicesBoxResumen {
+    margin: 30px 0px 50px 0px;
+}
+
+.borderDashedTopTotal {
+    margin: 30px 0px 50px 0px;
+}
+
+.contentServicesBoxResumen .borderDashedTopTotal td {
+    background: #FFF;
+    padding: 10px 0px;
+    font-size: 13px;
+    text-align: center;
+    color: #001E3F;
+    font-weight: bold;
+}
+#eosFilterHeaderEstadoDetalle span {
+    display: block;
+    float: left;
+}
+#eosFilterHeaderEstadoDetalle {
+    font-size: 1em;
+    font-weight: bold;
+    background: #FFF;
+    padding: 3px 10px;
+    min-width: 110px;
+    width: auto;
+    box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 30%);
+    border-radius: 40px;
+    padding: 6px 7px;
+}
+#eosFilterHeaderEstadoDetalle span.contentIconEstado {
+    border-radius: 30px;
+    height: 38px;
+    width: 38px;
+    display: block;
+    background: #D5DDE5;
+    display: none;
+}
+    #eosFilterHeaderEstadoDetalle span.eosImagenEstado {
+        display: block;
+        padding: 13px 11px 0px 43px;
+        height: 26px;
+    }
+    span.eosImagenLeyendaAB:not(.eosImagenLeyendaX),
+    span.eosImagenLeyendaNC:not(.eosImagenLeyendaX),
+    .eosImagenEstado {
+        padding: 13px 11px 0px 10px;
+        font-size: 14px;
+        color: #001E3F;
+    }
+/***/
+.eosValoracionFin6 {
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    background: #001E3F;
+    border: 3px solid #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px -2px rgb(0 0 0 / 50%);
+}
+
+/***/
+
+.ajax__tab_xp .ajax__tab_body {
+    background: no-repeat !important;
+    font-family: 'inventionregular' !important;
+    font-size: 15px !important;
+    border: 0px !important;
+    padding: 20px 0px !important;
+}
+
+p.marginTop {
+    float: left;
+    width: 100%;
+    margin: 12px 0px 0px 0px;
+}
+.ajax__tab_disabled {
+    display: none;
+}
+
+.ajax__tab_xp .ajax__tab_header {
+    background: none !important;
+    border-bottom: 1px solid #DCDCDC !important;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+
+.ajax__tab_xp .ajax__tab_tab {
+    font-family: 'inventionregular' !important;
+    font-weight: bold;
+    color: #00CFB2;
+    width: 100%;
+    font-size: 22px;
+    background: none !important;
+    text-transform: initial;
+    height: auto !important;
+    padding: 0px !important;
+}
+.ajax__tab_xp .ajax__tab_active .ajax__tab_outer {
+    background: none !important;
+}
+
+.ajax__tab_xp .ajax__tab_active .ajax__tab_inner {
+    background: none !important;
+}
+
+.contentTableAsistents b {
+    color: #001E3F;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+    .contentTableAsistents select, .contentTableAsistents textarea {
+    width: 98%;
+    margin: 10px 0px 10px 0px;
+    border: 0px;
+    border-radius: 20px;
+    overflow: auto;
+    box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+    padding: 20px 10px;
+    box-sizing: border-box;
+    min-height: 150px;
+}
+
+.hour-col{
+    display: flex;
+    flex-direction: column;
+}
+/***************/
+#eosContentLogin {
+    width: 100%;
+}
+
+
+.ajax__tab_default .ajax__tab_tab {
+    overflow: inherit !important;
+}
+
+.ajax__tab_xp .ajax__tab_body {
+    float:left;
+    width:100%;
+}
+
+.calendarContentSpan span {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+    .calendarContentSpan span label {
+        width: 100%;
+        display: block;
+    }
+
+    .calendarContentSpan span input {
+        width: 100%;
+        font-family: roboto, sans-serif !important;
+        font-size: 13px !important;
+    }
+
+        .calendarContentSpan span input:last-child,
+        .calendarContentSpan  input:last-child {
+            background: none;
+            box-shadow: none;
+            padding: 0px;
+            width: 28px !important;
+            border-radius: 0px;
+            position: absolute;
+            top: 38px;
+            right: 20px;
+        }
+.eosUnoColumna {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    box-sizing: border-box;
+}
+.contentTextArea {
+    width: 100%;
+    border-radius: 30px;
+    /* min-height: 50px; */
+    border: 0px;
+    box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    min-height:120px;
+    margin-bottom:20px;
+}
+span.eosCampoObligatorio {
+    width: auto;
+    float: none;
+    display: inline;
+}
+
+.contentSelectW > div {
+    width: 100%;
+    display: block;
+    flex-flow: initial;
+}
+
+.contentTitleTrans label, .contentTitleTrans span {
+    color: #00867C;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 0 0px 0;
+}
+.contentTransporte .contentFormGeneric span {
+    color: #001E3F;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+input#eosContentResults_InscripcionTabContainer_transporteTabPanel_transportePanel_horaLlegadaIdaTimeInputBox1_horaLlegadaIdaTimeInputBox1_inputTextBox {
+    width: 100% !important;
+}
+
+.contentCheckInput {
+    position:relative;
+}
+    .contentCheckInput .calendarContentSpan {
+        width: 100%;
+        padding-left: 54px;
+        box-sizing: border-box;
+        float: left;
+    }
+    .contentCheckInput .radioCheck {
+        position: absolute;
+        top: 7px;
+        left: 0px;
+    }
+
+    .contentCheckInput .calendarContentSpan span input:last-child,
+    .contentCheckInput .calendarContentSpan input:last-child {
+        top: 8px;
+    }
+.eosImagenCotizacion {
+    height: 39px;
+    display: block;
+}
+
+.eosImagenLeyendaX {
+    height: 30px;
+    padding: 14px 8px 0 42px;
+    margin-top: 16px;
+    width: 116px;
+}
+
+.eosImagenLeyendaY {
+    height: 30px;
+    padding: 14px 8px 0 44px;
+    margin-top: 16px;
+    width: 114px;
+}
+
+.eosImagenLeyenda1 {
+    background: url("images/ic_modificar.png") no-repeat scroll 8px 7px transparent;
+}
+
+.eosImagenLeyenda2 {
+    background: url("images/ic_cancelado.png") no-repeat scroll 8px 7px transparent;
+}
+
+.eosImagenLeyendaAB {
+    background: url("images/ic_sin_enviar.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaNC {
+    background: url("images/ic_enviado.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaCR {
+    background: url("images/ic_enviado.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaCTZD {
+    background: url("images/ic_cotizando.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaCTZ {
+    background: url("images/ic_cotizado.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaCFP {
+    background: url("images/ic_aceptado.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaPTR {
+    background: url("images/ic_tramitando.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaTR {
+    background: url("images/ic_tramitado.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaCN {
+    background: url("images/ic_estado_cancelado.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaCNTR {
+    background: url("images/ic_estado_cancelado.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaAN {
+    background: url("images/ic_estado_cancelado.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyenda10 {
+    background: url("images/ic_alternativas.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaSerX {
+    height: 30px;
+    padding: 5px 10px 0 30px;
+    float: left;
+}
+
+.eosImagenLeyendaSer1 {
+    background: url("images/ic_alojamiento.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaSer2 {
+    background: url("images/ic_transporte.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaSer3 {
+    background: url("images/ic_inscripciones.png") no-repeat scroll 0 0 transparent;
+}
+
+.eosImagenLeyendaSer4 {
+    background: url("images/ic_servicios.png") no-repeat scroll 0 0 transparent;
+}
+.leyenda-tabla,
+.leyenda-tabla-estado {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+a#A1 b,
+a#optionsTitle b {
+    padding-top: 2px;
+    padding-right: 8px;
+    display: block;
+    float: left;
+}
+
+.contentTextAreaElement {
+    width: 100%;
+}
+
+.contentTextAreaElement textarea {
+    margin-top:20px;
+}
+
+.contentEuro {
+    position: absolute;
+    top: 47px;
+    right: 20px;
+    color: #001E3F;
+    font-weight: bold;
+    font-size: 20px;
+    /* padding-bottom: 10px; */
+}
+
+.marginTop {
+    margin-top:20px
+}
+
+
+fieldset.eos.eosTablaFiltros.contentTransporte {
+    position: relative;
+}
+
+.contentTitleTransButton {
+    position: absolute;
+    top: -9px;
+    right: 0px;
+}
+
+.contentTitleTransButton input {
+    margin-bottom: 13px;
+    display: block;
+    padding: 12px 25px 10px 25px;
+    border-radius: 50px;
+    border: 1px solid #00CFB2;
+    color: #00CFB2;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'inventionregular';
+    font-size: 15px;
+    line-height: 1.3em;
+}
+
+.contentIconSelect {
+    margin-right:5px;
+}
+.contentTableAsistents option,
+.contentTableAsistents option:checked {
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 37px;
+    margin-bottom: 5px;
+    background: #F3F3F3;
+}
+
+.agencyLogin div#eosNavBar,
+.agencyLogin div#eosHeaderPersonal {
+    display: none;
+}
+
+
+
+
+
+.container.body-content.loginContent {
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.elementLoginMid {
+    padding: 50px 110px; width: 55%;
+    height: 100%;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+    .elementLoginMid.rightLogin {
+        background: url(images/backgroundLogin.png) top left no-repeat;
+  /*      background: #F3F3F3;*/
+        background-size: cover;
+        width: 45%;
+        box-sizing: border-box;
+        /* float: right; */
+    }
+
+
+body.agencyLogin {
+    height: 100%;
+    width: 100%;
+}
+
+body.agencyLogin form#MainForm {
+    height: 100%;
+    width: 100%;
+}
+
+    body.agencyLogin  div#eosWrapContentMain {
+        display: block !important;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+
+    body.agencyLogin  #eosContentMain {
+        height: 100%;
+    }
+
+
+    body.agencyLogin #eosContentLogin {
+        width: 100%;
+        border: 0px;
+        margin: 0px;
+        background: no-repeat;
+        padding: 200px 0px 0px 0px;
+        /* text-align: center; */
+    }
+
+
+
+
+.eosContentLoginDatosElement label {
+    color: #001E3F;
+    font-weight: bold;
+    padding-bottom: 10px;
+    width: 100%;
+    display: block;
+    font-size: 17px !important;
+}
+
+
+.eosContentLoginDatosElement input {
+    border-radius: 30px;
+    /* min-height: 50px; */
+    border: 0px;
+    box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+#eosContentLoginDatos {
+    float: left;
+    width: 100%;
+}
+#eosContentLoginErrores {
+    width: 100%;
+}
+#eosContentLoginErrores div.failureNotification {
+
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#eosContentLoginErrores li {
+    color: Red;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+}
+
+#eosContentLoginErrores span.failureNotification {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.eosBotonera.eosBotonFiltrado.btnInline input {
+    background: no-repeat;
+    color: #00CFB2;
+}
+
+
+.moduloParticipantes {
+    background: #FFF;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    z-index: 99;
+}
+
+    .moduloParticipantes .contentFormGeneric {
+        padding-top: 0;
+    }
+
+        .moduloParticipantes .contentFormGeneric input, .moduloParticipantes .contentFormGeneric select {
+            padding: 0px 5px;
+            margin-top: 0;
+        }
+
+        .moduloParticipantes span.labelForm,
+        .moduloParticipantes .contentFormGeneric .radioCheck label {
+            font-size: 12px;
+            position: relative;
+            top: -3px;
+            padding-bottom: 0;
+        }
+
+        .moduloParticipantes .contentFormGeneric .radioCheck input {
+            height: 16px;
+            width: 16px;
+            box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 30%);
+        }
+
+            .moduloParticipantes .contentFormGeneric .radioCheck input:checked {
+                background-size: 7px 9px !important;
+                background-position: 2px 1px !important;
+            }
+
+            .moduloParticipantes .eosTituloAMEC {
+                padding-top: 0;
+                font-size: 14px;
+            }
+
+    .moduloParticipantes #eosContentAMECErrores {
+        padding: 0;
+    }
+
+    .moduloParticipantes div.contentForm.eosMitadColumna span:nth-of-type(2) {
+        height: 0px;
+    }
+
+    .moduloParticipantes .contentSpeaker.contentCalculadoras.contentFiltroAvanzado {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 8px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .moduloParticipantes span.bold-label{
+        font-size: 12px;
+    }
+
+    .moduloParticipantes .eosBotonera.eosBotonFiltrado{
+        padding: 0;
+    }
+
+    .moduloParticipantes .eosBotonera.eosBotonFiltrado input {
+        padding: 8px 20px 8px 20px;
+        font-size: 12px;
+    }
+
+    .moduloParticipantes .large-text-area {
+        height: 36px;
+        padding: 8px 16px;
+        margin-top: 8px;
+    }
+
+    .moduloParticipantes #eosContentFilter_updPanelSpeakerHonorariosMaximos {
+        position: relative;
+    }
+
+    .moduloParticipantes span.bold-label{
+        top: 0;
+        padding-bottom: 0;
+    }
+
+    .moduloParticipantes .eosTablaFiltros .contentCalculadoras table:last-child {
+        margin-top: 8px;
+    }
+
+    .moduloParticipantes #idtrpagofundacionotros span {
+        font-size: 12px;
+    }
+
+    .moduloParticipantes #idtrpagofundacionotros {
+        display: flex;
+        margin-top: 0;
+    }
+
+        .moduloParticipantes #idtrpagofundacionotros textarea {
+            height: 16px;
+            padding: 0px 16px;
+            margin-top: 8px;
+        }
+
+        .moduloParticipantes .top-space{
+            margin-top: 0;
+        }
+
+        .moduloParticipantes .contentFiltroAvanzado{
+            margin-bottom: 8px;
+        }
+
+        .moduloParticipantes span.white-bold{
+            margin-top: 0;
+        }
+
+    .moduloParticipantes .calc-col.center-content{
+        font-size: 12px;
+    }
+
+    .moduloParticipantes #eosContentFilter_rblpagodirecto {
+        margin-top: 0;
+    }
+
+    .eosTituloAMEC {
+        padding-top: 10px;
+        font-family: 'inventionextrabold';
+        font-size: 20px;
+        font-weight: bolder;
+        color: #00867D;
+    }
+
+td.eosTablaResultadosResumen.par {
+    border-radius: 0px !important;
+}
+
+span.labelForm {
+    color: #001E3F;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.radioCheck td input {
+    margin-top: 6px;
+}
+ 
+.radioCheck td label {
+    margin-right: 20px;
+}
+
+div#idPlhTipoPonente_2 {
+    float: left;
+    width: 100%;
+}
+
+span.bold-label {
+    top: 8px;
+    position: relative;
+    font-weight: bold;
+    color: #000;
+}
+
+.moduloParticipantes .eosTablaFiltros td.data-space {
+    padding-bottom: 4px;
+    padding-left: 0;
+}
+
+div.calculadora {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.calc-col {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+    .calc-col .center-elements {
+        text-align: center;
+        position: relative;
+    }
+
+.eosDisabledInputVacio.eosInputVacio.calculator.eosSizeW120 {
+    background: #888888;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    height: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+span.absolute-money {
+    position: absolute;
+    right: 25%;
+    color: #fff;
+    font-weight: bold;
+}
+
+a.contentMoreInfo.no-padd{
+    padding-top: 0;
+}
+
+.col-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.large-text-area {
+    height: 120px;
+    width: 97%;
+    border-radius: 30px;
+    border: 0px;
+    box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 16px;
+}
+
+    .large-text-area.not-margin{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .eosTablaFiltros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+.line-content{
+    display: flex;
+}
+
+.data-space{
+    padding-bottom: 16px;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.honorario-input {
+    font-weight: bold;
+    color: #000
+}
+
+.honorario-input input {
+    width: 90%;
+    margin-right: 8px;
+}
+
+#eosContentFilter_rblpagodirecto{
+    margin-top: 16px;
+}
+
+#idtrpagofundacionotros {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+    #idtrpagofundacionotros span {
+        top: 8px;
+        position: relative;
+        font-weight: bold;
+        color: #000;
+    }
+
+    #idtrpagofundacionotros textarea {
+        width: 97%;
+        border-radius: 30px;
+        border: 0px;
+        box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+        font-family: roboto, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        box-sizing: border-box;
+        padding: 15px 20px;
+        margin-top: 16px;
+    }
+
+#errorMaximoHonorario {
+    margin-top: 16px;
+    width: 100%;
+}
+
+#eosContentFilter_txtSpeakerChairFeeHora,
+#eosContentFilter_txtEifABFeeHora {
+    width: 95%;
+}
+
+.bold-label.not-top{
+    top: 0;
+}
+
+#idtrCalculadora_Eif_AB,
+#idtrCalculadora_Consultoria {
+    justify-content: start;
+    margin-top: 0;
+}
+
+#eosContentFilter_updatePanel1{
+    width: 100%;
+}
+
+    #eosContentFilter_updatePanel1 .contentFormGeneric {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.calc-col.center {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 231px;
+}
+
+.radioCheck.flex-full-width {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.top-space{
+    margin-top: 20px;
+}
+
+.center-content{
+    text-align: center;
+}
+
+#eosContentFilter_txtConsultoriaDiaConsultor{
+    margin-top: 10px; 
+    position:relative;
+}
+
+.white-bold {
+    position: absolute;
+    right: 40%;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#idtrCalculadora_Consultoria_Comment_1{
+    margin-top: 16px;
+}
+
+.notes-text{
+    font-size: 10px;
+}
+
+.eura-container-chk-cnt input{
+    height: 35px;
+    padding: 0px;
+    width: 35px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #FFF;
+    border: 0px;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    box-shadow: 0px 0px 14px -5px rgb(0 0 0 / 30%);
+}
+
+    .eura-container-chk-cnt input:checked {
+        background: url(../Styles/images/check.png) !important;
+        background-size: 20px 16px !important;
+        background-position: 5px 7px !important;
+        background-repeat: no-repeat !important;
+        border: 3px solid #2DDB38 !important;
+    }
+
+.eura-container-btn-cnt button {
+    font-family: 'inventionregular';
+    font-weight: bold;
+    background: #00CFB2;
+    padding: 17px 20px 13px 20px;
+    border-radius: 50px;
+    min-width: 100px;
+    border: 1px solid #00CFB2;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#simplemodal-container h3 {
+    padding-top: 10px;
+    font-family: 'inventionextrabold';
+    font-size: 20px;
+    font-weight: bolder;
+    color: #00867D;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+.eura-container textarea {
+    border-radius: 30px;
+    border: 0px;
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 8px 20px;
+    width: 463px;
+    height: 61px;
+    resize: none;
+    outline: none;
+}
+
+#simplemodal-container {
+    border: none;
+    background: #fff;
+    border-radius: 30px;
+}
+
+    #simplemodal-container a.modalCloseImg {
+        background: #00CFB2;
+        border-radius: 100%;
+        height: 48px;
+        width: 48px;
+        top: -9px;
+        right: -60px;
+    }
+
+    #simplemodal-container .simplemodal-data {
+        background: #fff;
+        border-radius: 30px;
+    }
+
+.eura-container-frame .eura-container-chk-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+    .eura-container-chk-cnt span {
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+
+.eura-container-btn-cnt {
+    margin: 8px auto !important;
+    width: 100%;
+    text-align: center;
+}
+
+#simplemodal-container .simplemodal-data {
+    padding: 32px;
+}
+
+#simplemodal-container a.modalCloseImg:after {
+    content: 'X';
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 32px;
+}
+
+button,
+input[type=submit] {
+    cursor: pointer;
+}
+
+#eosContentFilter_txtImporte {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.eosTituloWizard {
+    color: #001E3F;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.inline-content {
+    display: inline-flex;
+    align-items: center;
+}
+
+.inline-content label {
+    padding-right: 16px;
+}
+
+.radioCheck.right-space {
+    padding-left: 16px;
+    margin-top: 10px;
+}
+
+.large-text-area.bottom-space{
+    margin-bottom: 24px;
+    height: unset;
+}
+
+#TablaPrograma{
+    margin-top: 16px;
+}
+
+.table-icon-container{
+    min-width: 60px;
+}
+
+.moduloParticipantes::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+    height: 0;
+}
+
+.moduloParticipantes::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 50px;
+}
+
+.large-text-area::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+.large-text-area::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 50px;
+}
+
+.eosLink{
+    text-align: center;
+}
+
+.eosLink a{
+    color: #888888;
+}
+
+.contentFormGeneric .icon-not-boder {
+    border-radius: unset;
+    min-height: unset;
+    border: 0px;
+    box-shadow: none;
+    padding: 0;
+}
+
+.remind-container{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+input#eosContentFilter_fuploadDocumentacion {
+    background: url(../Styles/images/ic_listado.png) no-repeat;
+    background-position: 6% 50%;
+    padding-left: 54px;
+}
+
+input#eosContentFilter_fuploadDocumentacion::file-selector-button {
+    display: none;
+}
+
+#eosContentFilter_plAMEC_Comentarios{
+    margin-top: 16px;
+}
+
+.tooltiptext p{
+    color: #fff;
+}
+
+.eosDivCentrada{
+    text-align: center;
+}
+
+#eosContentResults_btnCancelar {
+    font-family: 'inventionregular';
+    font-weight: bold;
+    background: #00CFB2;
+    padding: 17px 20px 13px 20px;
+    border-radius: 50px;
+    min-width: 100px;
+    border: 1px solid #00CFB2;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#eosContentFilter_btnFiltrar2 {
+    font-family: 'inventionregular';
+    font-weight: bold;
+    background: #00CFB2;
+    padding: 17px 20px 13px 20px;
+    border-radius: 50px;
+    min-width: 100px;
+    border: 1px solid #00CFB2;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.excell-icon-container {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+    .excell-icon-container span{
+        margin-left: 16px;
+    }
+
+#eosContentFilter_btnExportar{
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#eosContentFilter_PendienteNo{
+    margin-left: 16px;
+}
+
+.eosDisabledInputVacio.style1 input#eosContentFilter_txtFechaDesde_txtFechaDesde_clickImageButton,
+.eosDisabledInputVacio.style1 input#eosContentFilter_txtFechaHasta_txtFechaHasta_clickImageButton {
+    top: 38px !important;
+}
+.estate-container {
+    font-size: 1em;
+    font-weight: bold;
+    background: #FFF;
+    min-width: 110px;
+    box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 30%);
+    border-radius: 40px;
+    padding: 8px 12px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+    .estate-container span{
+        margin-left: 16px;
+    }
+
+.header-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.align-start-txt{
+    text-align: start;
+    width: 100%;
+}
+
+.align-end-txt {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.separator{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.absolute-center {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 525px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#dropAdvancedFilter{
+    display: none;
+}
+
+#eosContentFilter_Table2{
+    position: relative;
+}
+
+#simplemodal-container{
+    background-color: transparent !important;
+}
+
+    #simplemodal-container .simplemodal-data{
+        overflow: scroll;
+    }
+
+.center-grey {
+    text-align: center;
+}
+
+    .center-grey a {
+        color: #888888;
+    }
+
+div#eosContentFilter_eventosFormsCnt::-webkit-scrollbar {
+    display: none;
+}
+
+.eosTituloWizard a.download {
+    cursor: pointer;
+    font-family: 'inventionregular';
+    font-weight: bold;
+    background: #00CFB2;
+    padding: 17px 20px 13px 20px;
+    border-radius: 50px;
+    min-width: 100px;
+    border: 1px solid #00CFB2;
+    color: #FFFFFF;
+    text-align: center;
+    float: none;
+}
+
+    .eosTituloWizard a.download:hover {
+        background: #00CFB2;
+    }
+
+    .download-container {
+        text-align: center;
+    }
+
+a.downFile{
+    width: 160px;
+}
+
+#eosContentDocument .QC_Item.pos01, #eosContentAmecDocument .eosTablaResultados li.QC_Item.pos01 {
+    padding: 5px 180px 5px 50px;
+    background: #fff url(images/IconoCarpeta.png) 25px center no-repeat;
+}
+
+#eosContentDocument .QC_Item.pos02 {
+    background: #fff url(images/IconoCarpeta.png) 58px center no-repeat;
+}
+
+#eosContentDocument .QC_Item.pos03 {
+    background: #fff url(images/ic_listado.png) 89px center no-repeat;
+}
+
+#eosContentDocument .QC_Item.pos04 {
+    background: #fff url(images/down_doc.png) 122px center no-repeat;
+    padding: 0 0 0 158px;
+}
+
+.contentValidDoc {
+    border: none;
+    background: #fff;
+}
+
+#eosContentDocument ul li .QC_Item_Open .contentValidDoc a {
+    cursor: pointer;
+    font-family: 'inventionregular';
+    font-weight: bold;
+    background: #00CFB2;
+    padding: 17px 20px 13px 20px;
+    border-radius: 50px;
+    min-width: 100px;
+    border: 1px solid #00CFB2;
+    color: #FFFFFF;
+    text-align: center;
+    float: none;
+}
+
+ul.downCarpeta {
+    min-width: 400px;
+}
+
+.div-table {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 30%);
+    margin-bottom: 40px;
+}
+
+#eosContentDocument .QC_Item.pos04 a{
+    width: 100%;
+}
+
+.ui-dialog-titlebar,
+tr.BucketTableHead, tr.UploadTableHead {
+    background: #00CFB2;
+}
+
+.addDocument{
+    border-radius: 50px;
+}
+
+.ui-dialog-titlebar {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sendDocument {
+    border-radius: 50px;
+    background: #00CFB2;
+}
+
+#modal {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+    overflow: scroll;
+}
+
+#modal #ModalButtons {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+    #modal div{
+        min-width: 1000px;
+    }
+
+    div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+        width: 100% !important;
+    }
+
+.end-column{
+    justify-content: flex-end;
+}
+
+.contentFormGeneric select#eosContentFilter_ddlTipoImporte {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+}
+
+.file-link-eura {
+    text-align: center;
+}
+
+#simplemodal-data div.file-link-eura a.document-link {
+    color: #001E3F;
+}
+
+.eura-container-frame {
+    margin-bottom: 80px;
+}
+
+div.eura-container{
+    height: 280px;
+}
+
+div.simplemodal-wrap{
+    height: unset !important;
+    width: unset !important;
+    overflow: unset !important;
+}
+
+div#simplemodal-data::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media(max-width: 842px) {
+    .absolute-center {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .contentFormGeneric.absolute-center .radioCheck{
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1008px) {
+    .contentForm.eosTresColumna .radioCheck > span {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1000px) {
+    .header-info-container{
+        flex-direction: column-reverse;
+    }
+    .align-end-txt {
+        justify-content: flex-start;
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width: 910px){
+    .eosBotonera.eosBotonFiltradoAvanzado {
+        position: unset;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .space-under{
+        margin-bottom: 16px;
+    }
+    div#eosContentFilter_eventosFormsCnt::-webkit-scrollbar {
+        display: block;
+        width: 0px;
+    }
+    .elementLoginMid, .elementLoginMid.rightLogin {
+        width: 100%;
+        padding: 16px;
+    }
+        .elementLoginMid.rightLogin {
+            margin-top: 16px;
+        }
+    body.agencyLogin #eosContentLogin {
+        padding: 64px 0px 0px 0px;
+    }
+    .minimus #eosWrapContentMain {
+        padding-left: 88px;
+        padding-right: 16px;
+    }
+    #eosHeaderPersonal {
+        border-left: 4px solid #00867D;
+    }
+    .minimus #eosHeaderPersonal {
+        width: 72px;
+    }
+    .minimus .contentLogo {
+        padding-left: 0px;
+    }
+    ul#eosHPBotones a {
+        padding: 10px 18px 10px 50px;
+    }
+    a.contentBtnMenuExpand{
+        display: none;
+    }
+    .eosMitadColumna,
+    .eosTresColumna,
+    .eosCuartoColumna {
+        width: 100%;
+        padding-left: 0;
+        margin: 8px 0;
+    }
+    #eosContentFilter h1,
+    #eosContentMain h1,
+    #eosFiltroBasico h1{
+        line-height: 32px;
+    }
+    .contentFormGeneric{
+        padding-top: 0;
+    }
+    div#eosNavBar.menuContact {
+        padding: 15px 12px 15px 0px;
+    }
+    .contentFiltroAvanzado {
+        padding: 0px;
+        background: transparent;
+        margin-top: 0;
+    }
+    .contentImporte .eosSizeW50,
+    #eosContentFilter_txtImporte {
+        width: 100%;
+        margin: 8px 0;
+    }
+    .contentFormGeneric select#eosContentFilter_ddlTipoImporte {
+        width: 100%;
+    }
+    .contentInfoPanel {
+        width: 100%;
+        line-height: 16px;
+    }
+    .eosHPBotonesDetalle{
+        width: 100%;
+    }
+
+    #eosHPBotonesDetalle{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+        #eosHPBotonesDetalle a{
+            margin: 8px 0;
+        }
+    .eosMitadColumna.contentFormRadio{
+        padding-top: 0;
+    }
+    #eosContact{
+        width: 64%;
+    }
+    .line-content{
+        flex-direction: column;
+    }
+    .moduloParticipantes {
+        /*transform: translate(47%);*/
+        max-width: 94% !important;
+        left: 3%;
+        position: fixed;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contentTableGeneric{
+        overflow: scroll;
+    }
+    #simplemodal-container {
+        background-color: transparent !important;
+        max-width: 100% !important;
+        height: 50% !important;
+        transform: translateY(-25%);
+    }
+    .simplemodal-wrap {
+        max-width: 100% !important;
+    }
+    #simplemodal-container .simplemodal-data {
+        width: 86%;
+        transform: translateX(3%);
+        padding: 16px;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .eura-container-frame{
+        width: 100% !important;
+    }
+    .eura-container textarea {
+        max-width: 100% !important;
+        width: 100% !important;
+        min-width: unset !important;
+    }
+    #simplemodal-container a.modalCloseImg {
+        background: #00CFB2;
+        border-radius: 100%;
+        height: 48px;
+        width: 48px;
+        top: -3%;
+        right: 2% !important;
+        display: block;
+        position: absolute;
+    }
+    #eosContentResults_txtBusquedaPoblacion{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    contentForm.eosMitadColumna.boxCampoWithBtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #buscarPoblacion{
+        min-width: 250px;
+    }
+    .eosBotonera.eosBotonFiltrado{
+        display: flex;
+        justify-content: center;
+    }
+        .eosBotonera.eosBotonFiltrado input {
+            margin: 2%;
+        }
+    .contentFormGeneric select {
+        width: 100%;
+        margin: 8px 0;
+    }
+    .eura-container-frame .eura-container-chk-cnt{
+        margin-top: 16px;
+    }
+}
+
+@media(max-width: 600px){
+    #eosFiltroBasico .contentFormGeneric .radioCheck {
+        min-height: 52px;
+        margin-right: 0;
+        width: 100%;
+    }
+    #eosContentFilter_chkUnidadesOrganizativas {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+        #eosContentFilter_chkUnidadesOrganizativas ~ label.eosCampoLabel {
+            position: absolute;
+            width: 81%;
+            top: 10px;
+            left: 39px;
+            margin-left: 0;
+        }
+    .separator{
+        flex-direction: column
+    }
+    #simplemodal-container a.modalCloseImg{
+        right: 0% !important;
+    }
+    .contentDetalleGeneric div#eosFilterHeaderEstadoDetalle {
+        top: -30px;
+    }
+}
+
+@media(max-width: 500px){
+    #eosContentDocument div.eosTablaResultados {
+        overflow: scroll;
+    }
+}

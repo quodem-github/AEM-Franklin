@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Servicios" table="servicios">
+    <id name="Idservicio" type="String">
+      <column name="IdServicio" default="N''" not-null="true" length="3" sql-type="nvarchar" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Idnumerico" type="Int32">
+      <column name="IdNumerico" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Servicio" type="String">
+      <column name="Servicio" default="N''" not-null="true" length="45" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+  </class>
+</hibernate-mapping>

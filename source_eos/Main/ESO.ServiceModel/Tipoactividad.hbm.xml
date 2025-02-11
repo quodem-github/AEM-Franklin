@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Tipoactividad" table="tipoactividad">
+    <id name="Idtipoactividad" type="Int64">
+      <column name="idtipoactividad" not-null="true" precision="19" scale="0" sql-type="bigint" />
+      <generator class="identity" />
+    </id>
+    <property name="Tipoactividad1" type="String">
+      <column name="tipoactividad" not-null="true" length="100" sql-type="varchar" />
+    </property>
+  </class>
+</hibernate-mapping>

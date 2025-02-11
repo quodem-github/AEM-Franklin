@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D87A9AD3-A954-4134-AC85-923BD5EF5429}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EOS.ServiceModel</RootNamespace>
+    <AssemblyName>EOS.ServiceModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AbEifDuracionActividad.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesPassengersList.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgencyUserApprovalStructure.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Amec.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Amecs.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aprobadoramec.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcAbEifNivelPs.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcAbEifPreparacion.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcCorrespondencias.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcCountryCitiesType.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcCountryCorrespondencias.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcCountryGlobalType.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcCountryNumSpeaksModeratorsType.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcCountryNumSpeaksType.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcCountryReasonsType.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcCountryType.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcHonorariosMaximos.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcPonentesDuracionActividad.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcPonentesNivelPs.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcPonentesPreparacion.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcTipoContratoConsultoria.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcTipoPonente.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcTipoReunion.cs">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Comunidad.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Confempresa.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Congresos.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Criteriosseleccion.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="DatosadicionalesReservasPassenger.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Departaments.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Districts.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Empleadosgp.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Especialidades.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="EstadosReservas 1.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="EstadosReservas.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Expediente.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GestordocumentalDocumento.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="GestordocumentalDocumentoversion.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="GestordocumentalSubtipodoc.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="GestordocumentalTipodoc.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="GestordocumentalTipoSeccion.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Gestorinvitados.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HotelPassengersList.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iatas.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="InsPassengersList.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JustificacionesDatosadicionales.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeReservasPassengerDatosadicionales.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Nivelesaprobacion.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="NivelRiesgoHcp.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="NivelRiesgoHcpDatosadicionales.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="PassengersList.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Peticionarios.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeticionariosEmpleadosgp.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="PeticionesActividad.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="PeticionGrupos.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="PeticionGruposAbc.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Poblaciones.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Positions.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosPrv.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Provincias.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="QService.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QServiceQuery.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QServiceStatistics.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QServiceSuscriptor.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QSuscriptor.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuodemAuditLog.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="QuodemQueryLog.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservasPassengersList.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reservasviajes.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Salesforce.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios.Extensions.MethodsExecutor.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Serviciosreservasactividades.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serviciosreservashotel.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serviciosreservasinscripciones.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serviciosreservastransporte.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serviciosreservasviajes.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tarifasactividad.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tarifasaloj.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Tarifasinscripcion.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipoactividad.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="TipoActividadPaxDatosadicionales.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="TipoAsistenteDatosadicionales.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="TiposActividadCongreso.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tiposaloj.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TiposBonos.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Tiposcongreso.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoServicio.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="TiposHab.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tiposinscripcion.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipospatrocinio.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="TiposPrv.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="TiposreservasWeb.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="Tramitacionesserviciosreservas.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transportepassengerslist.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tratamientos.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </Compile>
+    <Compile Include="ValoracionFi.cs">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Calculadora.Diagram1.view">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </None>
+    <None Include="Calculadora.edps">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </None>
+    <None Include="Calculadora.hbml">
+      <Generator>DevartHibernateGenerator</Generator>
+      <LastGenOutput>Calculadora.info</LastGenOutput>
+    </None>
+    <None Include="Calculadora.info">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Servicios.Diagram1.view">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </None>
+    <None Include="Servicios.edps">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </None>
+    <None Include="Servicios.hbml">
+      <SubType>Designer</SubType>
+      <Generator>DevartHibernateGenerator</Generator>
+      <LastGenOutput>Servicios.info</LastGenOutput>
+    </None>
+    <None Include="Servicios.info">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActividadesPassengersList.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amec.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amecs.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcAbEifNivelPs.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcAbEifPreparacion.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcCorrespondencias.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcCountryCitiesType.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcCountryCorrespondencias.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcCountryGlobalType.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcCountryNumSpeaksModeratorsType.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcCountryNumSpeaksType.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcCountryReasonsType.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcCountryType.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcHonorariosMaximos.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcPonentesDuracionActividad.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcPonentesNivelPs.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcPonentesPreparacion.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcTipoContratoConsultoria.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcTipoPonente.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcTipoReunion.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confempresa.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Congresos.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expediente.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestorinvitados.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelPassengersList.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsPassengersList.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassengersList.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peticionarios.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Positions.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QService.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QServiceQuery.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QServiceStatistics.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QServiceSuscriptor.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QSuscriptor.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservasPassengersList.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservasviajes.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serviciosreservasactividades.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serviciosreservashotel.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serviciosreservasinscripciones.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serviciosreservastransporte.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serviciosreservasviajes.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarifasactividad.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarifasinscripcion.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TiposActividadCongreso.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiposaloj.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiposcongreso.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TiposHab.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiposinscripcion.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tramitacionesserviciosreservas.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transportepassengerslist.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValoracionFi.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EstadosReservas.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Nivelesaprobacion.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PeticionesActividad.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Poblaciones.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Productos.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Proveedores.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Tarifasaloj.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Comunidad.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Criteriosseleccion.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DatosadicionalesReservasPassenger.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Empleadosgp.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Iatas.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MensajeReservasPassengerDatosadicionales.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NivelRiesgoHcp.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProductosPrv.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Provincias.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Servicios.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TipoServicio.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Tipoactividad.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TiposPrv.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Tipospatrocinio.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TiposreservasWeb.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Especialidades.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EstadosReservas 1.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="JustificacionesDatosadicionales.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NivelRiesgoHcpDatosadicionales.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PeticionGrupos.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PeticionGruposAbc.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TipoActividadPaxDatosadicionales.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TipoAsistenteDatosadicionales.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TiposBonos.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Tratamientos.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="QuodemAuditLog.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Servicios 1.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GestordocumentalDocumento.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GestordocumentalDocumentoversion.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GestordocumentalSubtipodoc.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GestordocumentalTipodoc.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Departaments.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Districts.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Salesforce.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbEifDuracionActividad.hbm.xml">
+      <DependentUpon>Calculadora.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AgencyUserApprovalStructure.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Aprobadoramec.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GestordocumentalTipoSeccion.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="QuodemQueryLog.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PeticionariosEmpleadosgp.hbm.xml">
+      <DependentUpon>Servicios.hbml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EOS.ServiceModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\EOS.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="lib\EOS.ServiceModel.dll" />
+    <Content Include="lib\Iesi.Collections.dll" />
+    <Content Include="lib\Microsoft.CSharp.dll" />
+    <Content Include="lib\Newtonsoft.Json.dll" />
+    <Content Include="lib\NHibernate.dll" />
+    <Content Include="lib\System.Configuration.dll" />
+    <Content Include="lib\System.Data.DataSetExtensions.dll" />
+    <Content Include="lib\System.Data.dll" />
+    <Content Include="lib\System.dll" />
+    <Content Include="lib\System.Runtime.Serialization.dll" />
+    <Content Include="lib\System.Xml.dll" />
+    <Content Include="lib\System.Xml.Linq.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--<Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

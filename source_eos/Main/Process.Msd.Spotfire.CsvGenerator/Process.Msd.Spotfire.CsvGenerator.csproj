@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0B164D5-9222-42AC-88C7-DBBD622FC8F0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Process.Msd.Spotfire.CsvGenerator</RootNamespace>
+    <AssemblyName>Process.Msd.Spotfire.CsvGenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Process.Msd.Spotfire.CsvGenerator.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CsvManager\MeetingReportCsvGenerator.cs" />
+    <Compile Include="CsvManager\PetitionReportCsvGenerator.cs" />
+    <Compile Include="CsvManager\FeesReportCsvGenerator.cs" />
+    <Compile Include="CsvManager\DossierReportCsvGenerator.cs" />
+    <Compile Include="CsvManager\TransparencyReportCsvGenerator.cs" />
+    <Compile Include="DataAccess\SqlDataManager.cs" />
+    <Compile Include="MeetingReportProcess.cs" />
+    <Compile Include="DossierReportProcess.cs" />
+    <Compile Include="EmailManagement\EmailManager.cs" />
+    <Compile Include="PetitionReportProcess.cs" />
+    <Compile Include="FeesReportProcess.cs" />
+    <Compile Include="Interfaces\IProcess.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TransparencyReportProcess.cs" />
+    <Compile Include="Utilities\AppConfig.cs" />
+    <Compile Include="Utilities\StringExtensions.cs" />
+    <Compile Include="Utilities\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Quodem.Correo, Version=5.2.0.0, Culture=neutral, PublicKeyToken=865ce75f9226627a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Quodem.Correo.dll</HintPath>
+    </Reference>
+    <Reference Include="Quodem.Monitor, Version=5.2.0.0, Culture=neutral, PublicKeyToken=865ce75f9226627a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Quodem.Monitor.dll</HintPath>
+    </Reference>
+    <Reference Include="Quodem.Sms, Version=5.2.0.0, Culture=neutral, PublicKeyToken=865ce75f9226627a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Quodem.Sms.dll</HintPath>
+    </Reference>
+    <Reference Include="Quodem.Utility, Version=5.2.0.0, Culture=neutral, PublicKeyToken=865ce75f9226627a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Quodem.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\Microsoft.CSharp.dll" />
+    <Content Include="lib\Quodem.Correo.dll" />
+    <Content Include="lib\Quodem.Monitor.dll" />
+    <Content Include="lib\Quodem.Sms.dll" />
+    <Content Include="lib\Quodem.Utility.dll" />
+    <Content Include="lib\System.Configuration.dll" />
+    <Content Include="lib\System.Data.DataSetExtensions.dll" />
+    <Content Include="lib\System.Data.dll" />
+    <Content Include="lib\System.dll" />
+    <Content Include="lib\System.Xml.dll" />
+    <Content Include="lib\System.Xml.Linq.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Serviciosreservasviajes" table="serviciosreservasviajes">
+    <id name="Idservicio" type="Int32">
+      <column name="idservicio" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Idreserva" type="Int32">
+      <column name="idreserva" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtipobono" type="String">
+      <column name="IdTipoBono" default="N''" not-null="true" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Fechapeticion" type="DateTime">
+      <column name="fechapeticion" not-null="true" sql-type="datetime2" />
+    </property>
+    <property name="Resumenservicio" type="String">
+      <column name="resumenservicio" not-null="true" sql-type="nvarchar" />
+    </property>
+    <property name="Cotizado" type="Int32">
+      <column name="Cotizado" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idservicioinscripcion" type="Int32">
+      <column name="idservicioinscripcion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idserviciohotel" type="Int32">
+      <column name="idserviciohotel" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idservicioactividad" type="Int32">
+      <column name="idservicioactividad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idserviciotransporte" type="Int32">
+      <column name="idserviciotransporte" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="IdtransporteServicioavion1" type="Int32">
+      <column name="idtransporte_servicioavion1" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="IdtransporteServiciotren1" type="Int32">
+      <column name="idtransporte_serviciotren1" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="IdtransporteServiciocar1" type="Int32">
+      <column name="idtransporte_serviciocar1" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Importereserva" type="Double">
+      <column name="importeReserva" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <many-to-one name="Reservasviajes" class="Reservasviajes" update="false" insert="false">
+      <column name="idreserva" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Serviciosreservasactividades" class="Serviciosreservasactividades" update="false" insert="false">
+      <column name="idservicioactividad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Serviciosreservashotel" class="Serviciosreservashotel" update="false" insert="false">
+      <column name="idserviciohotel" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Serviciosreservasinscripciones" class="Serviciosreservasinscripciones" update="false" insert="false">
+      <column name="idservicioinscripcion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Serviciosreservastransporte" class="Serviciosreservastransporte" update="false" insert="false">
+      <column name="idserviciotransporte" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="Tramitacionesserviciosreservas" inverse="true" generic="true">
+      <key>
+        <column name="fkidservicio" />
+      </key>
+      <one-to-many class="Tramitacionesserviciosreservas" />
+    </set>
+  </class>
+</hibernate-mapping>

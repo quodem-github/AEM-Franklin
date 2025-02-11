@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="NivelRiesgoHcp" table="nivel_riesgo_hcp">
+    <id name="Idnivelriesgo" type="Int64">
+      <column name="idnivelriesgo" not-null="true" precision="19" scale="0" sql-type="bigint" />
+      <generator class="identity" />
+    </id>
+    <property name="Nivelriesgo" type="String">
+      <column name="nivelriesgo" not-null="true" length="45" sql-type="varchar" />
+    </property>
+    <set name="PassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idnivelriesgo" />
+      </key>
+      <one-to-many class="PassengersList" />
+    </set>
+  </class>
+</hibernate-mapping>

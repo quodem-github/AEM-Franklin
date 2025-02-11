@@ -1,0 +1,277 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EOS.Master.cs" Inherits="EOS.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="html" xmlns="http://www.w3.org/1999/xhtml" runat="server">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title></title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="lang" content="es" />
+    <meta name="author" content="Ibermática" />
+    <meta name="organization" content="Grupo Pacífico" />
+    <meta name="locality" content="España" />
+    <meta name="keywords" content="Grupo Pacífico, Viajes" />
+    <meta name="description" content="Maqueta para la aplicación de viajes de Grupo Pacífico" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+
+    <link rel="stylesheet" href="<%# ResolveUrl("~/Styles/style.css?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%# ResolveUrl("~/Styles/custom.css?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%# ResolveUrl("~/Styles/Tabs.css?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="<%# ResolveUrl("~/Scripts/jQuery/jquery-1.7.2.min.js?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>" ></script>
+    <script type="text/javascript" src="<%# ResolveUrl("~/Scripts/jQuery/jquery.simplemodal.js?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>"></script>
+    <script type="text/javascript" src="<%# ResolveUrl("~/Scripts/eura/eura.js?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>"></script>
+    <script type="text/javascript" src="<%# ResolveUrl("~/Scripts/Blob.js?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>"></script>
+    <script type="text/javascript" src="<%# ResolveUrl("~/Scripts/FileSaver.js?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>"></script>
+    <script type="text/javascript" src="<%# ResolveUrl("~/Scripts/jquery-ui-1.11.4.min.js?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>"></script>
+    
+    <link rel="stylesheet" href="<%# ResolveUrl("~/Scripts/eura/css/style.css?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder ID="headContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function NoImplementado() {
+            alert("Esta funcionalidad no ha sido implementada todavía");
+        }
+
+        function openHelp(url) {
+            window.open(url, '', 'menubars=no,statusbar=no,scroll=no,width=400,height=250,top=75,left=150');
+        }
+
+        function ConfirmaCancelacion() {
+            confirmar("¿Desea cancelar el servicio actual?");
+        }
+
+        function ConfirmaEnvio() {
+            confirmar("¿Desea enviar el servicio actual?");
+        }
+
+        function ConfirmaAprobar() {
+            confirmar("¿Desea aprobar el servicio actual?");
+        }
+
+        function ConfirmaRechazar() {
+            confirmar("¿Desea rechazar el servicio actual?");
+        }
+
+        function ConfirmaGuardar() {
+            confirmar("¿Desea guardar el servicio actual?");
+        }
+
+        function confirma() {
+            return confirmar('¿Desea guardar los datos y crear el nuevo expediente?');
+        }
+
+        function abrirContactos() {
+            $('#popupBackground').show();
+            $('#eosContact').show();
+        }
+
+        function cerrarContactos() {
+            $('#popupBackground').hide();
+            $('#eosContact').hide();
+        }
+
+        function CkKeyPress(e) {
+            var evt = e || window.event;
+            var key = evt.keyCode || evt.which;
+
+            return !(key === 13);
+        }
+
+        var confirmar = function (msg) {
+            if (!confirm(msg)) {
+                var e = window.event;
+
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                } else {
+                    e.cancelBubble = true;
+                    e.returnValue = false;
+                }
+            } else {
+                showLoading();
+            }
+        };
+
+        var showLoading = function () {
+            var loading = document.getElementById('loading');
+
+            if (loading) {
+                loading.style.display = 'block';
+            }
+        };
+
+        var closeLoading = function () {
+            var loading = document.getElementById('loading');
+
+            if (loading) {
+                loading.style.display = 'none';
+            }
+        };
+
+        $(document).ready(function () {
+            if (window.visualViewport.width <= 768) {
+                $("body").addClass('minimus');
+            }
+            $(".contentBtnMenuExpand").click(function () {
+                $("body").toggleClass("minimus");
+            });
+            $(window).on("resize", function () {
+                if (window.visualViewport.width <= 768 && !$('body').hasClass('minimus')) {
+                    $('body').addClass('minimus');
+                }
+            })
+        });
+
+    </script>
+</head>
+<body>
+    <form id="MainForm" runat="server">
+    <div id="loading" class="loadingControl">
+    </div>
+    <div id="eosNavBar" class="menuContact" runat="server">
+        <ul>
+            <li class="contactNav"><a title="Contacto" href="javascript:;" onclick="abrirContactos()">
+                Contacto</a> </li>
+            <li class="iconLogout">          <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect"
+                        LogoutText="" href="/Logout.aspx" OnLoggedOut="logout"  onclick="return confirm('¿Está seguro que desea salir de la aplicación?');" /></li>
+        </ul>
+    </div>
+        <div id="popupBackground"></div>
+        <div id="eosContact">
+<%--            <asp:Repeater runat="server" ID="rptAgencias">
+                <ItemTemplate>
+                    <div>
+                        <strong>
+                            <asp:Label ID="lblNombreAgencia" runat="server" Text='<%#Eval("NombreAgencia") %>'></asp:Label>
+                        </strong>
+                        <br />
+                        <asp:Label ID="lblNombreContacto" runat="server" Text='<%#Eval("NombreContacto") %>'></asp:Label>
+                        <br />
+                        <asp:Label ID="lblDireccion" runat="server" Text='<%#Eval("Direccion") %>'></asp:Label>
+                        <br />
+                        <asp:Label ID="lblPoblacion" runat="server" Text='<%# string.Format("{0} {1}", Eval("CodPostal"), Eval("Poblacion") ) %>'></asp:Label>
+                        <br />
+                        <asp:Label ID="lblMailContacto" runat="server" Text='<%#Eval("MailContacto") %>'></asp:Label>
+                        <br />
+                        <asp:Label ID="lblTelefonoAgencia" runat="server" Text='<%#string.Format("Tel: {0}", Eval("TelefonoAgencia")) %>'></asp:Label>
+                        <br />
+                        <asp:Label ID="lblFaxAgencia" runat="server" Text='<%#string.Format("Tel: {0}", Eval("FaxAgencia")) %>'></asp:Label>
+                        <br/>
+                        <br/>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>--%>
+            <div class="closeButton" onclick="cerrarContactos()">
+                <p>X</p>
+            </div>
+            <h1>Contacto</h1>
+            <h2>Grupo Pacifico - Incidencias técnicas de la plataforma</h2>
+            <p><strong>Marilo Caraballo</strong></p>
+            <p>Benito Mas y Prat, 5 1º Oficina 9</p>
+            <p>41005 Sevilla</p>
+            <p>msdgp@pacifico-meetings.com</p>
+            <p>Tel: 900.506.229</p>
+            <p>Tel: 954.581.200</p>
+            <br />
+            <asp:Repeater runat="server" ID="rptEmpleadosGP">
+                <ItemTemplate>
+                    <h2>Dudas con los servicios o las reservas</h2>
+                    <p><strong><%#Eval("Nombre") + " " + Eval("Apellido")%></strong></p>
+                    <p><%#Eval("Email")%></p>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
+    <div id="eosHeaderPersonal" runat="server">
+        <div style="height: 100px;">
+            <asp:ContentPlaceHolder ID="eosHeaderInfoBasica" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="contentLogo">
+                    <img src="/Styles/images/msd.png" alt="MSD" class="contentLogoWeb"/>
+              </div>
+            <asp:ContentPlaceHolder ID="eosHeaderBotonera" runat="server">
+                <ul id="eosHPBotones">
+                    <li class="eosBotonera eosBotonInformes" id="liCreacionExpedienteIndividual">
+                        <a title="Listado de expedientes" 
+                            onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Listado de expedientes';return true;"
+                            href="/NuevoExpedientePasoA.aspx?idexp=0&tipo=1">Creación expediente individual
+                        </a>
+                    </li>
+                    <li class="eosBotonera eosBotonInformes" id="liCreacionExpedienteColectivo">
+                        <a title="Listado de expedientes" 
+                            onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Listado de expedientes';return true;"
+                            href="/NuevoExpedientePasoA.aspx?idexp=0&tipo=2">Creación expediente colectivo
+                        </a>
+                    </li>
+                    <li class="eosBotonera eosBotonInformes" id="liCalculadoraHonorarios">
+                        <a title="Listado de expedientes" 
+                            onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Listado de expedientes';return true;"
+                            href="/NuevoExpedientePasoA.aspx?idexp=0&tipo=3">Calculadora de honorarios
+                        </a>
+                    </li>
+                    <li class="eosBotonera eosBotonInformes" id="liListadoExpedientes">
+                        <a title="Listado de expedientes" 
+                            onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Listado de expedientes';return true;"
+                            href="/Expedientes.aspx">Buscador de expedientes
+                        </a>
+                    </li>              
+                    <li class="eosBotonera eosBotonListadoAmecs" id="liBuscadorGestorInvitados">
+                        <a title="Acceder a buscador gestor de invitados" onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Acceder a Buscador Gestor de Invitados';return true;"
+                            href="/BuscadorGestorInvitados.aspx">Buscador Gestor de Invitados</a>
+                    </li>
+                    <li class="eosBotonera eosBotonListadoAmecs" id="liBuscadorActividades">
+                        <a title="Acceder a Listado de Amecs" onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Acceder a Listado de Amecs';return true;"
+                            href="/ListadoAMECs.aspx">Buscador de eventos (EM)</a>
+                    </li>
+                    <li class="eosBotonera eosBotonGestorDocumentacion" id="liDocumentacionAuditoria">
+                        <a title="Acceder al buscador de documentos" onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Acceder al buscador de documentos';return true;"
+                            href="/DocumentacionBuscador.aspx">Documentación de Auditoría</a>
+                    </li>
+                    <li class="eosBotonera eosBotonInformes" id="liInformesYListados">
+                        <a title="Acceder a Informes y Listados" onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Acceder a Informes y Listados';return true;"
+                            href="/Informes/FiltroInforme.aspx">Informes y listados</a>
+                    </li>
+                  
+      <%--              <li class="eosBotonera eosBotonSalir">
+               
+                    </li>--%>
+                </ul>
+            </asp:ContentPlaceHolder>
+
+            <a class="contentBtnMenuExpand"> Minimizar</a>
+        </div>
+        <asp:ContentPlaceHolder ID="eosHeaderContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="eosWrapContentMain">
+        <div id="eosContentMain">
+            <asp:ContentPlaceHolder ID="eosContentStatus" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="eosContentFilter" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="eosContentResults" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ModalDocumentId" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderScripts" runat="server">
+        </asp:ContentPlaceHolder>
+</body>
+</html>

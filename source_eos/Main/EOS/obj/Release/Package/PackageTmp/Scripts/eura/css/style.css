@@ -1,0 +1,51 @@
+﻿#simplemodal-container {
+    background-color: #8ABDBE;
+    width: 515px;
+    height: 185px;
+    padding: 0;
+}
+
+.eura-container {
+    width:500px;
+    height:180px;    
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.eura-container-frame {
+    width: 490px;
+    height: 140px;
+    background-color: #fff;
+    padding-left: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.eura-container h3 {
+    padding: 0;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.eura-container textarea { 
+    width:480px; 
+    height:80px; 
+    min-width:480px; 
+    max-width:480px; 
+    min-height:80px;  
+    max-height:80px; 
+}
+
+.eura-container-chk-cnt {
+    margin-top: 10px;
+}
+
+.eura-container-chk-cnt span {
+    margin-left: 5px;
+}
+
+.eura-container-btn-cnt {
+    float: right;
+    margin: 5px 0 0 10px;
+}

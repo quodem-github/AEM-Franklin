@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <sql-query name="SpObtenerAmecsPuedoVer" callable="true">
+    <query-param name="idPeticionario" type="Int32" />
+    <query-param name="isCreateMode" type="Int32" />exec sp_obtener_amecs_puedo_ver :idPeticionario, :isCreateMode</sql-query>
+  <sql-query name="SpEjecutarsql" callable="true">
+    <query-param name="sql" type="String" />exec sp_ejecutarSql :sql</sql-query>
+</hibernate-mapping>

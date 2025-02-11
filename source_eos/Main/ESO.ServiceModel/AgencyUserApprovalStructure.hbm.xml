@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="AgencyUserApprovalStructure" table="agency_user_approval_structure">
+    <id name="Id" type="Int64">
+      <column name="id" not-null="true" precision="19" scale="0" sql-type="bigint" />
+      <generator class="identity" />
+    </id>
+    <property name="Idpeticionario" type="Int32">
+      <column name="IdPeticionario" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Wein" type="String">
+      <column name="wein" default="N''" not-null="false" length="12" sql-type="nvarchar" />
+    </property>
+    <property name="Idpeticionariomanager" type="Int32">
+      <column name="IdPeticionarioManager" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Weinmanager" type="String">
+      <column name="WeinManager" default="NULL" not-null="false" length="12" sql-type="nvarchar" />
+    </property>
+    <property name="Creationdate" type="DateTime">
+      <column name="CreationDate" default="NULL" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="Lastupdatedate" type="DateTime">
+      <column name="LastUpdateDate" default="NULL" not-null="false" sql-type="datetime" />
+    </property>
+    <many-to-one name="Peticionarios_IdPeticionario" class="Peticionarios" update="false" insert="false">
+      <column name="IdPeticionario" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Peticionarios_IdPeticionarioManager" class="Peticionarios">
+      <column name="IdPeticionarioManager" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

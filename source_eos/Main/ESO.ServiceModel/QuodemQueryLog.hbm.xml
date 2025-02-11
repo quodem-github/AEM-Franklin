@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="QuodemQueryLog" table="`_quodem_query_log`">
+    <id name="Id" type="Int32">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="NombreTabla" type="String">
+      <column name="nombre_tabla" not-null="true" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Fecha" type="DateTime">
+      <column name="fecha" not-null="true" sql-type="datetime" />
+    </property>
+    <property name="FiltrosRecibidos" type="String">
+      <column name="filtros_recibidos" not-null="true" sql-type="varchar" />
+    </property>
+    <property name="Resultado" type="String">
+      <column name="resultado" not-null="true" sql-type="varchar" />
+    </property>
+    <many-to-one name="Confempresa" class="Confempresa" update="false" insert="false">
+      <column name="idconfempresa" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Empleadosgp" table="empleadosgp">
+    <id name="Id" type="Int32">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idempleadogp" type="String">
+      <column name="idempleadogp" default="N''" not-null="true" length="5" sql-type="nvarchar" />
+    </property>
+    <property name="Nombre" type="String">
+      <column name="nombre" default="N''" not-null="true" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Apellido" type="String">
+      <column name="apellido" default="N''" not-null="true" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Email" type="String">
+      <column name="email" default="N''" not-null="false" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Confempresa" class="Confempresa" update="false" insert="false">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="Expedientes" inverse="true" generic="true">
+      <key>
+        <column name="idempleadogp" />
+      </key>
+      <one-to-many class="Expediente" />
+    </set>
+    <set name="PeticionariosEmpleadosgps" inverse="true" generic="true">
+      <key>
+        <column name="idempleadogp" />
+      </key>
+      <one-to-many class="PeticionariosEmpleadosgp" />
+    </set>
+  </class>
+</hibernate-mapping>

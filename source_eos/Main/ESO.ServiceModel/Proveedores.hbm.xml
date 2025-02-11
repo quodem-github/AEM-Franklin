@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Proveedores" table="proveedores">
+    <id name="Idproveedor" type="Int32">
+      <column name="IdProveedor" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Idtipoprv" type="String">
+      <column name="IdTipoPrv" default="N''" not-null="true" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Codcia" type="String">
+      <column name="CodCia" default="N''" not-null="false" length="6" sql-type="nvarchar" />
+    </property>
+    <property name="Codamadeus" type="String">
+      <column name="CodAmadeus" default="N''" not-null="false" length="5" sql-type="nvarchar" />
+    </property>
+    <property name="Enlace" type="String">
+      <column name="Enlace" default="N''" not-null="false" length="11" sql-type="nvarchar" />
+    </property>
+    <property name="Proveedor" type="String">
+      <column name="Proveedor" default="N'--'" not-null="true" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Direccion" type="String">
+      <column name="Direccion" default="N'--'" not-null="true" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Nro" type="String">
+      <column name="Nro" default="N''" not-null="false" length="25" sql-type="nvarchar" />
+    </property>
+    <property name="Piso" type="String">
+      <column name="Piso" default="N''" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="Idpoblacion" type="Int32">
+      <column name="IdPoblacion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Codpostal" type="String">
+      <column name="CodPostal" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Telefono" type="String">
+      <column name="Telefono" default="N'-'" not-null="true" length="25" sql-type="nvarchar" />
+    </property>
+    <property name="Fax" type="String">
+      <column name="Fax" default="N''" not-null="false" length="25" sql-type="nvarchar" />
+    </property>
+    <property name="Email" type="String">
+      <column name="Email" default="N''" not-null="false" length="45" sql-type="nvarchar" />
+    </property>
+    <property name="Http" type="String">
+      <column name="http" default="N''" not-null="false" length="45" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Poblaciones" class="Poblaciones" update="false" insert="false">
+      <column name="IdPoblacion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="TiposPrv" class="TiposPrv" update="false" insert="false">
+      <column name="IdTipoPrv" default="N''" not-null="true" length="3" sql-type="nvarchar" />
+    </many-to-one>
+    <set name="Congresos" inverse="true" generic="true">
+      <key>
+        <column name="IdProveedor" />
+      </key>
+      <one-to-many class="Congresos" />
+    </set>
+    <set name="Serviciosreservashotels" inverse="true" generic="true">
+      <key>
+        <column name="Idproveedor" />
+      </key>
+      <one-to-many class="Serviciosreservashotel" />
+    </set>
+    <set name="Tarifasalojs" inverse="true" generic="true">
+      <key>
+        <column name="IdProveedor" />
+      </key>
+      <one-to-many class="Tarifasaloj" />
+    </set>
+    <set name="Tarifasinscripcions" inverse="true" generic="true">
+      <key>
+        <column name="IdProveedor" />
+      </key>
+      <one-to-many class="Tarifasinscripcion" />
+    </set>
+    <set name="Tramitacionesserviciosreservas_IdProveedor1" inverse="true" generic="true">
+      <key>
+        <column name="IdProveedor1" />
+      </key>
+      <one-to-many class="Tramitacionesserviciosreservas" />
+    </set>
+    <set name="Tramitacionesserviciosreservas_IdProveedor2" inverse="true" generic="true">
+      <key>
+        <column name="IdProveedor2" />
+      </key>
+      <one-to-many class="Tramitacionesserviciosreservas" />
+    </set>
+    <set name="Tramitacionesserviciosreservas_IdProveedor3" inverse="true" generic="true">
+      <key>
+        <column name="IdProveedor3" />
+      </key>
+      <one-to-many class="Tramitacionesserviciosreservas" />
+    </set>
+    <set name="Tramitacionesserviciosreservas_IdProveedor4" inverse="true" generic="true">
+      <key>
+        <column name="IdProveedor4" />
+      </key>
+      <one-to-many class="Tramitacionesserviciosreservas" />
+    </set>
+    <set name="Tramitacionesserviciosreservas_IdProveedor5" inverse="true" generic="true">
+      <key>
+        <column name="IdProveedor5" />
+      </key>
+      <one-to-many class="Tramitacionesserviciosreservas" />
+    </set>
+    <set name="Tramitacionesserviciosreservas_IdProveedor6" inverse="true" generic="true">
+      <key>
+        <column name="IdProveedor6" />
+      </key>
+      <one-to-many class="Tramitacionesserviciosreservas" />
+    </set>
+    <set name="ProductosPrvs" inverse="true" generic="true">
+      <key>
+        <column name="FKIdProveedor" />
+      </key>
+      <one-to-many class="ProductosPrv" />
+    </set>
+  </class>
+</hibernate-mapping>

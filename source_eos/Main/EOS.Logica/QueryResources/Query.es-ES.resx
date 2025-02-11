@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InformeGrupos" xml:space="preserve">
+    <value>SELECT DISTINCT (cv_informe_peticion_grupos.IdExpediente)
+INTO #tmp_informe_peticion_grupos
+from
+	cv_informe_peticion_grupos
+INNER JOIN cv_informe_peticion_individuales ON
+	cv_informe_peticion_individuales.IdExpediente = cv_informe_peticion_grupos.IdExpediente
+$WHERE_CLAUSE_UNION$
+
+
+select 
+	cv_informe_peticion_grupos.[Nº Exp] AS [Nº Exp],
+	cv_informe_peticion_grupos.[Unidad] AS [Unidad],
+	cv_informe_peticion_grupos.[Region] AS [Region],
+	cv_informe_peticion_grupos.[Area] AS [Area],
+	cv_informe_peticion_grupos.[Distrito] AS [Distrito*],
+	cv_informe_peticion_grupos.[Apellido Peticionario] AS [Apellido Peticionario],
+	cv_informe_peticion_grupos.[Nombre Peticionario] AS [Nombre Peticionario],
+	cv_informe_peticion_grupos.[Amec] AS [Amec], cv_informe_peticion_grupos.[Agencia] AS [Agencia],
+	cv_informe_peticion_grupos.[Evento] AS [Evento],
+	cv_informe_peticion_grupos.[Fecha inicio evento] AS [FechaComienzo],
+	cv_informe_peticion_grupos.[Apellido1] AS [Apellido1],
+	cv_informe_peticion_grupos.[Apellido2] AS [Apellido2],
+	cv_informe_peticion_grupos.[Nombre] AS [Nombre],
+	cv_informe_peticion_grupos.[MSDID] AS [MSDID],
+	cv_informe_peticion_grupos.[Tipo de gasto] AS [Tipo de gasto],
+	cv_informe_peticion_grupos.[Importe reserva] AS [Importe reserva],
+	cv_informe_peticion_grupos.[Fecha peticion] AS [Fecha peticion],
+	cv_informe_peticion_grupos.[Estado peticion] AS [Estado peticion],
+	cv_informe_peticion_grupos.[TipoExpediente] AS [TipoExpediente],
+	cv_informe_peticion_grupos.[Justificaciones] AS [Justificaciones],
+	cv_informe_peticion_grupos.[TipoAsistente] AS [TipoAsistente],
+	cv_informe_peticion_grupos.[TipoActividad] AS [TipoActividad],
+	cv_informe_peticion_grupos.[NivelRiesgo] AS [NivelRiesgo],
+	cv_informe_peticion_grupos.[FicheroGenesis] AS [FicheroGenesis],
+	cv_informe_peticion_grupos.[Poblacion] AS [Poblacion Congreso],
+	cv_informe_peticion_grupos.[Idpais] AS [Pais],
+	cv_informe_peticion_grupos.[TipoCongreso] AS [TipoCongreso],
+	cv_informe_peticion_grupos.[Departament] AS [Departament],
+	cv_informe_peticion_grupos.[SaleForce] AS [FuerzaVenta],
+	cv_informe_peticion_grupos.[District] AS [Distrito],
+	cv_informe_peticion_grupos.[IdCongreso] AS [IdCongreso],
+	cv_informe_peticion_grupos.[IdPassengerList] AS [IdPassengerList],
+	cv_informe_peticion_grupos.[IdPeticionario] AS [IdPeticionario],
+	cv_informe_peticion_grupos.[IdUnidad] AS [IdUnidad],
+	cv_informe_peticion_grupos.[IdArea] AS [IdArea],
+	cv_informe_peticion_grupos.[IdRegion] AS [IdRegion],
+	cv_informe_peticion_grupos.[IdDistrito] AS [IdDistrito],
+	cv_informe_peticion_grupos.[CodExpediente] AS [CodExpediente],
+	cv_informe_peticion_grupos.[fkIdCongreso] AS [fkIdCongreso],
+	cv_informe_peticion_grupos.[Cargo Peticionario] AS [Cargo Peticionario],
+	cv_informe_peticion_grupos.[Ultima Actualizacion] AS [Ultima Actualizacion],
+	cv_informe_peticion_grupos.[CodEspecialidad] AS [CodEspecialidad],
+	cv_informe_peticion_grupos.[IdEstadoExpediente] AS [IdEstadoExpediente],
+	cv_informe_peticion_grupos.[FechaCreacion] AS [FechaCreacion],
+	cv_informe_peticion_grupos.[IdAreaProductoEmpresa] AS [IdAreaProductoEmpresa],
+	cv_informe_peticion_grupos.[Porcentaje Producto] AS [Porcentaje Producto],
+	cv_informe_peticion_grupos.[IdCargo] AS [IdCargo],
+	cv_informe_peticion_grupos.[IdValFi] AS [IdValFi],
+	cv_informe_peticion_grupos.[Fecha Fin Evento] AS [FechaFin],
+	cv_informe_peticion_grupos.[IdTipoActividadCongreso] AS [IdTipoActividadCongreso],
+	cv_informe_peticion_grupos.[IdEstadoReserva] AS [IdEstadoReserva],
+	cv_informe_peticion_grupos.[IdExpediente] AS [IdExpediente],
+	cv_informe_peticion_grupos.[Internacional] AS [Internacional],
+	cv_informe_peticion_grupos.[Idpais] AS [IdPais],
+	cv_informe_peticion_grupos.[Poblacion] AS [Poblacion]
+from
+	cv_informe_peticion_grupos 
+$WHERE_CLAUSE_UNION$ 
+union all 	
+select 
+	cv_informe_peticion_individuales.[Nº Exp] AS [Nº Exp],
+	cv_informe_peticion_individuales.[Unidad] AS [Unidad],
+	cv_informe_peticion_individuales.[Region] AS [Region],
+	cv_informe_peticion_individuales.[Area] AS [Area],
+	cv_informe_peticion_individuales.[Distrito] AS [Distrito*],
+	cv_informe_peticion_individuales.[Apellido Peticionario] AS [Apellido Peticionario],
+	cv_informe_peticion_individuales.[Nombre Peticionario] AS [Nombre Peticionario],
+	cv_informe_peticion_individuales.[Amec] AS [Amec], cv_informe_peticion_individuales.[Agencia] AS [Agencia],
+	cv_informe_peticion_individuales.[Evento] AS [Evento],
+	cv_informe_peticion_individuales.[Fecha Inicio evento] AS [FechaComienzo],
+	cv_informe_peticion_individuales.[Apellido1] AS [Apellido1],
+	cv_informe_peticion_individuales.[Apellido2] AS [Apellido2],
+	cv_informe_peticion_individuales.[Nombre] AS [Nombre],
+	cv_informe_peticion_individuales.[MSDID] AS [MSDID],
+	cv_informe_peticion_individuales.[Tipo de gasto] AS [Tipo de gasto],
+	cv_informe_peticion_individuales.[Importe Reserva] AS [Importe Reserva],
+	cv_informe_peticion_individuales.[Fecha Petición] AS [Fecha Petición],
+	cv_informe_peticion_individuales.[Estado peticion] AS [Estado peticion],
+	cv_informe_peticion_individuales.[TipoExpediente] AS [TipoExpediente],
+	cv_informe_peticion_individuales.[Justificaciones] AS [Justificaciones],
+	cv_informe_peticion_individuales.[TipoAsistente] AS [TipoAsistente],
+	cv_informe_peticion_individuales.[TipoActividad] AS [TipoActividad],
+	cv_informe_peticion_individuales.[NivelRiesgo] AS [NivelRiesgo],
+	cv_informe_peticion_individuales.[FicheroGenesis] AS [FicheroGenesis],
+	cv_informe_peticion_individuales.[Poblacion] AS [Poblacion Congreso],
+	cv_informe_peticion_individuales.[Idpais] AS [Pais],
+	cv_informe_peticion_individuales.[TipoCongreso] AS [TipoCongreso],
+	cv_informe_peticion_individuales.[Departament] AS [Departament],
+	cv_informe_peticion_individuales.[SaleForce] AS [FuerzaVenta],
+	cv_informe_peticion_individuales.[District] AS [Distrito],
+	cv_informe_peticion_individuales.[IdCongreso] AS [IdCongreso],
+	cv_informe_peticion_individuales.[IdPassengerList] AS [IdPassengerList],
+	cv_informe_peticion_individuales.[IdPeticionario] AS [IdPeticionario],
+	cv_informe_peticion_individuales.[IdUnidad] AS [IdUnidad],
+	cv_informe_peticion_individuales.[IdArea] AS [IdArea],
+	cv_informe_peticion_individuales.[IdRegion] AS [IdRegion],
+	cv_informe_peticion_individuales.[IdDistrito] AS [IdDistrito],
+	cv_informe_peticion_individuales.[CodExpediente] AS [CodExpediente],
+	cv_informe_peticion_individuales.[fkIdCongreso] AS [fkIdCongreso],
+	cv_informe_peticion_individuales.[Cargo Peticionario] AS [Cargo Peticionario],
+	cv_informe_peticion_individuales.[Ultima Actualizacion] AS [Ultima Actualizacion],
+	cv_informe_peticion_individuales.[CodEspecialidad] AS [CodEspecialidad],
+	cv_informe_peticion_individuales.[IdEstadoExpediente] AS [IdEstadoExpediente],
+	cv_informe_peticion_individuales.[FechaCreacion] AS [FechaCreacion],
+	cv_informe_peticion_individuales.[IdAreaProductoEmpresa] AS [IdAreaProductoEmpresa],
+	cv_informe_peticion_individuales.[Porcentaje Producto] AS [Porcentaje Producto],
+	cv_informe_peticion_individuales.[Idcargo] AS [Idcargo],
+	cv_informe_peticion_individuales.[IdValfi] AS [IdValfi],
+	cv_informe_peticion_individuales.[Fecha Fin Evento] AS [FechaFin],
+	cv_informe_peticion_individuales.[IdTipoActividadCongreso] AS [IdTipoActividadCongreso],
+	cv_informe_peticion_individuales.[IdEstadoReserva] AS [IdEstadoReserva],
+	cv_informe_peticion_individuales.[IdExpediente] AS [IdExpediente],
+	cv_informe_peticion_individuales.[Internacional] AS [Internacional],
+	cv_informe_peticion_individuales.[Idpais] AS [IdPais],
+	cv_informe_peticion_individuales.[Poblacion] AS [Poblacion]
+from
+	cv_informe_peticion_individuales
+$WHERE_CLAUSE$ AND
+	cv_informe_peticion_individuales.[IdExpediente] NOT IN 
+	(
+		SELECT IdExpediente
+		from #tmp_informe_peticion_grupos
+	);</value>
+  </data>
+  <data name="InformeGruposWhereClause" xml:space="preserve">
+    <value>$WHERE_CLAUSE$</value>
+  </data>
+  <data name="InformeGruposWhereClauseUnion" xml:space="preserve">
+    <value>$WHERE_CLAUSE_UNION$</value>
+  </data>
+</root>

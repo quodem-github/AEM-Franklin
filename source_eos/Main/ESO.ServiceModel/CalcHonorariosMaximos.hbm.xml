@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CalcHonorariosMaximos" table="calc_honorarios_maximos">
+    <id name="Id" type="Int32">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="FechaInicioVigencia" type="DateTime">
+      <column name="fecha_inicio_vigencia" default="NULL" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="FechaFinVigencia" type="DateTime">
+      <column name="fecha_fin_vigencia" default="NULL" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="Colspan" type="String">
+      <column name="colspan" default="N'1'" not-null="true" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Text" type="String">
+      <column name="Text" default="N''" not-null="true" length="250" sql-type="nvarchar" />
+    </property>
+    <property name="Value" type="String">
+      <column name="Value" default="N''" not-null="true" length="250" sql-type="nvarchar" />
+    </property>
+    <property name="Value2" type="String">
+      <column name="Value_2" default="N''" not-null="true" length="250" sql-type="nvarchar" />
+    </property>
+    <property name="Floatminvalue" type="Single">
+      <column name="FloatMinValue" default="NULL" not-null="false" precision="24" sql-type="real" />
+    </property>
+    <property name="Specialcase" type="Boolean">
+      <column name="SpecialCase" not-null="true" length="1" sql-type="bit" />
+    </property>
+    <property name="Visible" type="Boolean">
+      <column name="Visible" not-null="true" length="1" sql-type="bit" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true">
+      <key>
+        <column name="idCalcHonorariosMaximos" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+</hibernate-mapping>

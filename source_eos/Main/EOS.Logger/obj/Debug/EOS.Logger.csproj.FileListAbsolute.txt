@@ -1,0 +1,8 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Logger\bin\Debug\EOS.Logger.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Logger\bin\Debug\EOS.Logger.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Logger\bin\Debug\Newtonsoft.Json.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Logger\obj\Debug\EOS.Logger.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Logger\obj\Debug\EOS.Logger.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Logger\obj\Debug\EOS.Logger.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Logger\obj\Debug\EOS.Logger.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOS.Logger\obj\Debug\EOS.Logger.pdb

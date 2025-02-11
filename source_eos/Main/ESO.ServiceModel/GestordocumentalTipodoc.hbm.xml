@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="GestordocumentalTipodoc" table="gestordocumental_tipodoc">
+    <id name="Id" type="Int32">
+      <column name="Id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idtipo" type="Int32">
+      <column name="IdTipo" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Nombre" type="String">
+      <column name="Nombre" not-null="true" length="128" sql-type="varchar" />
+    </property>
+    <property name="Inactivo" type="Int32">
+      <column name="Inactivo" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Campolibre" type="Boolean">
+      <column name="CampoLibre" not-null="true" sql-type="bit" />
+    </property>
+    <many-to-one name="GestordocumentalTipoSeccion" class="GestordocumentalTipoSeccion">
+      <column name="IdTipo" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="GestordocumentalDocumentos" inverse="true" generic="true">
+      <key>
+        <column name="IdTipodoc" />
+      </key>
+      <one-to-many class="GestordocumentalDocumento" />
+    </set>
+    <set name="GestordocumentalSubtipodocs" inverse="true" generic="true">
+      <key>
+        <column name="IdTipodoc" />
+      </key>
+      <one-to-many class="GestordocumentalSubtipodoc" />
+    </set>
+  </class>
+</hibernate-mapping>

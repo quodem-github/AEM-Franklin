@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Departaments" table="departaments">
+    <id name="Iddepartament" type="Int32">
+      <column name="iddepartament" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idempresa" type="Int32">
+      <column name="IdEmpresa" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Departament" type="String">
+      <column name="departament" default="N''" not-null="true" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Inactivo" type="Int32">
+      <column name="inactivo" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="Expedientes" inverse="true" generic="true">
+      <key>
+        <column name="iddepartament" />
+      </key>
+      <one-to-many class="Expediente" />
+    </set>
+    <set name="Peticionarios" inverse="true" generic="true">
+      <key>
+        <column name="iddepartament" />
+      </key>
+      <one-to-many class="Peticionarios" />
+    </set>
+    <set name="PeticionGrupos" inverse="true" generic="true">
+      <key>
+        <column name="iddepartament" />
+      </key>
+      <one-to-many class="PeticionGrupos" />
+    </set>
+    <set name="Salesforces" inverse="true" generic="true">
+      <key>
+        <column name="iddepartament" />
+      </key>
+      <one-to-many class="Salesforce" />
+    </set>
+  </class>
+</hibernate-mapping>

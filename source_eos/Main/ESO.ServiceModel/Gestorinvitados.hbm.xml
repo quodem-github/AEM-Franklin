@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Gestorinvitados" table="gestorinvitados">
+    <id name="Idgestorinvitados" type="Int64">
+      <column name="IdGestorInvitados" not-null="true" precision="19" scale="0" sql-type="bigint" />
+      <generator class="identity" />
+    </id>
+    <property name="Ideventoformulario" type="Int64">
+      <column name="IdEventoFormulario" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idcongreso" type="Int32">
+      <column name="IdCongreso" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Descripciongestor" type="String">
+      <column name="DescripcionGestor" default="N'-'" not-null="false" length="150" sql-type="nvarchar" />
+    </property>
+    <property name="Fechainicio" type="DateTime">
+      <column name="FechaInicio" not-null="true" sql-type="datetime2" />
+    </property>
+    <property name="Fechafin" type="DateTime">
+      <column name="FechaFin" not-null="true" sql-type="datetime2" />
+    </property>
+    <property name="Poblacion" type="String">
+      <column name="Poblacion" not-null="true" length="150" sql-type="nvarchar" />
+    </property>
+    <property name="Linkgestorinvitados" type="String">
+      <column name="LinkGestorInvitados" not-null="true" length="256" sql-type="nvarchar" />
+    </property>
+    <property name="Linkprograma" type="String">
+      <column name="LinkPrograma" default="NULL" not-null="false" length="256" sql-type="nvarchar" />
+    </property>
+    <property name="Amec" type="String">
+      <column name="Amec" default="NULL" not-null="false" length="9" sql-type="nvarchar" />
+    </property>
+    <property name="Tipogestorinvitados" type="String">
+      <column name="TipoGestorInvitados" not-null="true" length="256" sql-type="nvarchar" />
+    </property>
+    <property name="Inactivo" type="Int32">
+      <column name="Inactivo" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Confempresa" class="Confempresa" update="false" insert="false">
+      <column name="idconfempresa" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Congresos" class="Congresos" update="false" insert="false">
+      <column name="IdCongreso" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" p1:Guid="4c395070-c63b-4289-a9d6-864d46466f94" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="AbEifDuracionActividad" table="ab_eif_duracion_actividad" p1:Guid="c67bc1de-bd7d-48ac-bb9d-567fc1220631">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="e2ee7746-c0d9-4d25-b63a-5a26ae17bafe">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="7c8f18b8-9d4d-496f-8cbb-b4f07f99d050">
+      <column name="Text" default="''" not-null="true" length="50" sql-type="varchar" p1:unicode="false" />
+    </property>
+    <property name="Value" type="Double" p1:ValidateRequired="true" p1:Guid="18063799-8db1-437d-9dec-c74413c697ac">
+      <column name="Value" default="0.00" not-null="true" precision="53" sql-type="float" p1:unicode="false" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="b5753a43-7707-4e01-8790-cbbc7464cf01" p1:Guid="d8d9b333-d7a3-42b5-97bb-d7d49e3838a2">
+      <key>
+        <column name="idDuracionActividadAbEif" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcAbEifNivelPs" table="calc_ab_eif_nivel_ps" p1:Guid="ae296986-353a-4fc2-aa2d-1200f9f3802a">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="68d29ef6-75dd-45b3-81ac-f6ddc925d13b">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="FechaInicioVigencia" type="DateTime" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="00677624-b8ae-46f7-b11f-14f367ac899b">
+      <column name="fecha_inicio_vigencia" default="NULL" not-null="false" sql-type="datetime" p1:unicode="false" />
+    </property>
+    <property name="FechaFinVigencia" type="DateTime" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="3439ad34-11b9-4438-ad4b-073f5183a384">
+      <column name="fecha_fin_vigencia" default="NULL" not-null="false" sql-type="datetime" p1:unicode="false" />
+    </property>
+    <property name="Text" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="26c2223c-6098-4c9d-b929-d726d6be1f1b">
+      <column name="Text" default="N''" not-null="true" length="50" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Value" type="Single" p1:ValidateRequired="true" p1:Guid="3d453c89-da62-44cd-a465-397ac9a92f36">
+      <column name="Value" default="0" not-null="true" precision="24" sql-type="real" p1:unicode="false" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="4cbdb995-5f81-40b8-8422-baaf117d6017" p1:Guid="019be210-b79b-41c8-a5db-e5c7bd42de84">
+      <key>
+        <column name="idTipoPSAbEif" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcAbEifPreparacion" table="calc_ab_eif_preparacion" p1:Guid="d36bb6f1-6d74-4b32-8b97-b02e650fbd82">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="8847d99e-cbee-4dc2-9712-c06c2c23daec">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="b93cbe17-0742-4c5e-9f90-f8a03f40ec1b">
+      <column name="Text" default="N''" not-null="true" length="50" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Value" type="Single" p1:ValidateRequired="true" p1:Guid="7f4b2ccf-ed41-4f1d-afcc-f7d6cb511462">
+      <column name="Value" default="0" not-null="true" precision="24" sql-type="real" p1:unicode="false" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="c084a6bb-e4d7-4d98-b000-1dd6323bcf12" p1:Guid="50f7a943-6678-4996-89d3-58e839d11b05">
+      <key>
+        <column name="idTiempoPreparacionAbEif" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcCorrespondencias" table="calc_correspondencias" p1:Guid="b0d2cb41-20b2-4f9f-84e3-bd062b1d1c11">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="138a1104-bf4d-4f89-b56b-a2e64dc82636">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Idtipoasistente" type="Int64" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="e523c757-5d24-4a6c-804d-517ee7ea20ee">
+      <column name="idTipoAsistente" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" p1:unicode="false" />
+    </property>
+    <property name="Idtiporeunion" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="d61802af-1655-4ec6-90be-d959228c3539">
+      <column name="idTipoReunion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idtipopsponentes" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="a29386c1-1046-439b-bc84-570928600dd8">
+      <column name="idTipoPSPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idtiponacionallocal" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="213dbd95-0319-43e0-bece-8ebd572c1470">
+      <column name="idTipoNacionalLocal" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idduracionactividadponentes" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="fd552655-94e9-458a-b8d5-180fa11cbf88">
+      <column name="idDuracionActividadPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idtiempopreparacionponentes" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="0258f086-084e-4db4-9494-112d5b21133a">
+      <column name="idTiempoPreparacionPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idtipopsabeif" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="1e73c7fd-a9cb-4c32-81c9-ab935d0b51c0">
+      <column name="idTipoPSAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idduracionactividadabeif" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="8c8f1055-cec1-4427-9379-f254b920f1fb">
+      <column name="idDuracionActividadAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idtiempopreparacionabeif" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="b147b8ab-6b20-41bb-aecd-0cd3906d11fb">
+      <column name="idTiempoPreparacionAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Ponenciacentrosalud" type="Boolean" p1:ValidateRequired="true" p1:Guid="9a727444-de9d-4fa8-9c1b-6cc7ef0c9488">
+      <column name="ponenciaCentroSalud" not-null="true" length="1" sql-type="bit" p1:unicode="false" />
+    </property>
+    <property name="Tallerocurso" type="Boolean" p1:ValidateRequired="true" p1:Guid="28e7f598-cb3b-4746-bc48-5c4bab4dbb9f">
+      <column name="tallerOCurso" not-null="true" length="1" sql-type="bit" p1:unicode="false" />
+    </property>
+    <property name="Videoconferenciarepetida" type="Boolean" p1:ValidateRequired="true" p1:Guid="913dfd0f-d0b5-4824-b36b-dca00ffcbbe1">
+      <column name="VideoconferenciaRepetida" not-null="true" length="1" sql-type="bit" p1:unicode="false" />
+    </property>
+    <property name="Idtipocontratoconsultoria" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="e24ea6b3-e100-4fae-a0da-8041cc5fc237">
+      <column name="idtipoContratoConsultoria" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idcalchonorariosmaximos" type="Int32" p1:ValidateRequired="true" p1:Guid="12b3f9fd-6634-4abf-abfa-32c7315cdbf3">
+      <column name="idCalcHonorariosMaximos" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <many-to-one name="CalcAbEifNivelPs" class="CalcAbEifNivelPs" p1:AssociationGuid="4cbdb995-5f81-40b8-8422-baaf117d6017" p1:Guid="76ed7461-7644-4580-a48f-75ad83c65e93">
+      <column name="idTipoPSAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcAbEifPreparacion" class="CalcAbEifPreparacion" p1:AssociationGuid="c084a6bb-e4d7-4d98-b000-1dd6323bcf12" p1:Guid="960dfd50-7704-498a-a34f-07e4632e8cf1">
+      <column name="idTiempoPreparacionAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcHonorariosMaximos" class="CalcHonorariosMaximos" p1:AssociationGuid="ca32f2b9-78e6-4dd4-abc9-393525b16427" p1:Guid="13227906-afac-46cf-ab53-5305f2eef897">
+      <column name="idCalcHonorariosMaximos" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcPonentesDuracionActividad" class="CalcPonentesDuracionActividad" p1:AssociationGuid="2458ddb4-16db-4d75-9d40-204b4fc0a073" p1:Guid="faed72b0-fc4a-4248-aa0f-7e8f4ab7d04b">
+      <column name="idDuracionActividadPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcPonentesPreparacion" class="CalcPonentesPreparacion" p1:AssociationGuid="9949c3b9-ff9a-431c-87ed-32244ad85ff8" p1:Guid="e1b8b4c4-f8cb-4c73-972a-653daf69c278">
+      <column name="idTiempoPreparacionPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcTipoContratoConsultoria" class="CalcTipoContratoConsultoria" p1:AssociationGuid="6ab8f11d-e19f-4752-a095-6a03c54a1ab5" p1:Guid="ac7790f1-118d-470f-a602-149475938943">
+      <column name="idtipoContratoConsultoria" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcPonentesNivelPs" class="CalcPonentesNivelPs" p1:AssociationGuid="2ac81a2b-4355-47a2-90b8-fe4a4c2c4a72" p1:Guid="6e7d15d2-3323-409f-ad0c-2d75020bf6a0">
+      <column name="idTipoPSPonentes" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcTipoReunion" class="CalcTipoReunion" p1:AssociationGuid="ef323a88-1f8b-48fd-af4e-f522d0e20f3a" p1:Guid="f1d00e0e-5282-4de8-a497-4de89947e149">
+      <column name="idTipoReunion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="AbEifDuracionActividad" class="AbEifDuracionActividad" p1:AssociationGuid="b5753a43-7707-4e01-8790-cbbc7464cf01" p1:Guid="e2793c76-a9ff-42a8-9ed9-eb3ea0f4e7b9">
+      <column name="idDuracionActividadAbEif" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+  </class>
+  <class name="CalcCountryCitiesType" table="calc_country_cities_type" p1:Guid="9b25c62e-5919-427f-b419-bfbf4174973f">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="7815d8aa-13b7-4f90-970f-1c77088b3dcc">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="e2a66d43-ba5c-422c-85a2-303e3cfcf2d4">
+      <column name="Text" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <set name="CalcCountryCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="0bee15a2-5344-40ff-b5d8-4b480046a69b" p1:Guid="1218a3d8-39b6-41e1-8bf3-d48a1d41d290">
+      <key>
+        <column name="idCitiesType" />
+      </key>
+      <one-to-many class="CalcCountryCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcCountryCorrespondencias" table="calc_country_correspondencias" p1:Guid="2cea6f74-9d01-442d-90db-0af77a8c3a44">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="674749f9-2997-466a-a717-d0b94210afc9">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Idtype" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="e24a4f60-7c2e-4771-9996-bd025d9d2205">
+      <column name="idType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idglobaltype" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="629f106c-694d-4851-9039-991aa879789f">
+      <column name="idGlobalType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idnumspeakstype" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="ccb6be9d-6630-4faf-a1fb-c58aa37544bb">
+      <column name="idNumSpeaksType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idcitiestype" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="dcee2866-ef54-401d-84cb-cf81efcb5fec">
+      <column name="idCitiesType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idnumspeaksmoderatorstype" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="6b3a01a1-fc8b-4a7a-a452-d1997026ea75">
+      <column name="idNumSpeaksModeratorsType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Tabletext" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="4c7f3b36-6bc2-4d26-8e23-fb09a8c459e5">
+      <column name="tableText" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Idstandarvalue" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="afec3ce8-5ff2-44a3-b04e-413ebe6f5475">
+      <column name="idStandarValue" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idstandarvalueappend" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="8fa805bf-b895-4bb0-8a35-9395e73b67a8">
+      <column name="idStandarValueAppend" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Idmaxvalue" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="4f85eaf1-f08b-48ad-9b00-0f32a884f1b1">
+      <column name="idMaxValue" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Idmaxvalueappend" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="ab61ba39-6057-4280-abb3-3365f04be6da">
+      <column name="idMaxValueAppend" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Iddaysnospeak" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="78fdb0aa-5a76-462f-bd1e-22c1c52391fd">
+      <column name="idDaysNoSpeak" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Aditional" type="Int32" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="80358f67-c61a-4bb0-9400-e8b1d6bd2500">
+      <column name="Aditional" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </property>
+    <property name="Aditionalappend" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="fb2855ba-bfce-457f-b89d-a63ed993ec21">
+      <column name="AditionalAppend" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <many-to-one name="CalcCountryCitiesType" class="CalcCountryCitiesType" p1:AssociationGuid="0bee15a2-5344-40ff-b5d8-4b480046a69b" p1:Guid="8767c674-c547-4936-9699-57067eef293c">
+      <column name="idCitiesType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcCountryGlobalType" class="CalcCountryGlobalType" p1:AssociationGuid="c8c7f3a8-a9dd-42d1-94bc-ea927601cb3a" p1:Guid="3a725cd2-fe44-4e28-914e-063ec3811929">
+      <column name="idGlobalType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcCountryNumSpeaksModeratorsType" class="CalcCountryNumSpeaksModeratorsType" p1:AssociationGuid="b27642c2-70f5-4d3a-a0fa-2f6b74830355" p1:Guid="3d743459-48a8-45ab-9542-5b4cb5b41510">
+      <column name="idNumSpeaksModeratorsType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcCountryNumSpeaksType" class="CalcCountryNumSpeaksType" p1:AssociationGuid="418fb088-8279-470d-83e0-e512d7eadd62" p1:Guid="35564765-d372-40a8-9e94-92b069809182">
+      <column name="idNumSpeaksType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+    <many-to-one name="CalcCountryType" class="CalcCountryType" p1:AssociationGuid="b00dfb3a-7ecc-4c2b-942e-ae8520a32ea5" p1:Guid="6d408ed8-4d5e-498c-a89d-b432acd573e1">
+      <column name="idType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+    </many-to-one>
+  </class>
+  <class name="CalcCountryGlobalType" table="calc_country_global_type" p1:Guid="df7a4eee-e2f7-468d-b9d5-f184617962cf">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="7a3c63cc-3011-4965-b6f0-eae6b8fdeaaf">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="52a31791-2b3f-4bc9-b0d3-5e7c438705ef">
+      <column name="Text" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <set name="CalcCountryCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="c8c7f3a8-a9dd-42d1-94bc-ea927601cb3a" p1:Guid="f5c61b2e-26fb-493d-8063-43d90d290e94">
+      <key>
+        <column name="idGlobalType" />
+      </key>
+      <one-to-many class="CalcCountryCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcCountryNumSpeaksModeratorsType" table="calc_country_num_speaks_moderators_type" p1:Guid="97fe98d1-44dc-4e81-99fe-7ccad7f8af5c">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="72828930-9e35-419d-8e19-10b005095e8c">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="28b414f9-6a8d-4099-8720-d69d0166795a">
+      <column name="Text" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Visible" type="Boolean" p1:ValidateRequired="true" p1:Guid="c3aea103-f492-4187-a04b-b929c46dc54b">
+      <column name="Visible" not-null="true" length="1" sql-type="bit" p1:unicode="false" />
+    </property>
+    <set name="CalcCountryCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="b27642c2-70f5-4d3a-a0fa-2f6b74830355" p1:Guid="b5a7a5e5-e63f-4975-9234-5e25126ff81f">
+      <key>
+        <column name="idNumSpeaksModeratorsType" />
+      </key>
+      <one-to-many class="CalcCountryCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcCountryNumSpeaksType" table="calc_country_num_speaks_type" p1:Guid="113d887f-6259-44e5-973a-a3dbdc18e277">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="7a8a1adc-2dd6-4dd5-b473-3ebf49b3448d">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="afddcfe2-8ba0-4577-8bb1-9887ec1f04ce">
+      <column name="Text" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Visible" type="Boolean" p1:ValidateRequired="true" p1:Guid="dca4a401-6620-46a0-a5c9-0fc82db4021d">
+      <column name="Visible" not-null="true" length="1" sql-type="bit" p1:unicode="false" />
+    </property>
+    <set name="CalcCountryCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="418fb088-8279-470d-83e0-e512d7eadd62" p1:Guid="d2f2de51-71d7-483f-aeea-4e3522bd5d13">
+      <key>
+        <column name="idNumSpeaksType" />
+      </key>
+      <one-to-many class="CalcCountryCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcCountryReasonsType" table="calc_country_reasons_type" p1:Guid="a7b6ea38-8062-4f52-9a5d-0530a3655c7c">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="3916470e-ab8e-43fe-8be0-d62fb16ec81d">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="25cd0b29-aeaf-477b-92b7-b6ea2b88a7ac">
+      <column name="Text" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+  </class>
+  <class name="CalcCountryType" table="calc_country_type" p1:Guid="9f45538e-bb37-47ae-964b-31372a06c9e5">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="886a1cf0-8b5b-4b18-8473-65fcec53a99c">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="150" p1:ValidateRequired="true" p1:Guid="f99bacb2-3a33-421e-9537-989c9c83b21a">
+      <column name="Text" default="N''" not-null="true" length="150" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <set name="CalcCountryCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="b00dfb3a-7ecc-4c2b-942e-ae8520a32ea5" p1:Guid="3f50ff5c-59f8-4ca4-a50f-2713069ecd29">
+      <key>
+        <column name="idType" />
+      </key>
+      <one-to-many class="CalcCountryCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcHonorariosMaximos" table="calc_honorarios_maximos" p1:Guid="e1d7f49f-2897-4d84-8fe7-cd66bd7ac864">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="5840574a-0264-4931-8702-4463feceb69f">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="FechaInicioVigencia" type="DateTime" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="16c5128f-0385-4ca6-be11-57690cbcc0fd">
+      <column name="fecha_inicio_vigencia" default="NULL" not-null="false" sql-type="datetime" p1:unicode="false" />
+    </property>
+    <property name="FechaFinVigencia" type="DateTime" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="8e0298ae-7fcd-4069-b91d-9d832e2e96c6">
+      <column name="fecha_fin_vigencia" default="NULL" not-null="false" sql-type="datetime" p1:unicode="false" />
+    </property>
+    <property name="Colspan" type="String" p1:ValidateMaxLength="10" p1:ValidateRequired="true" p1:Guid="a98b2bfb-b4d8-46f8-bc3a-d611d55064df">
+      <column name="colspan" default="N'1'" not-null="true" length="10" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Text" type="String" p1:ValidateMaxLength="250" p1:ValidateRequired="true" p1:Guid="50f5dd15-be26-4a4b-acfa-23eae4317d60">
+      <column name="Text" default="N''" not-null="true" length="250" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Value" type="String" p1:ValidateMaxLength="250" p1:ValidateRequired="true" p1:Guid="451e481a-afbb-4b70-a388-fe9cb9f5771f">
+      <column name="Value" default="N''" not-null="true" length="250" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Value2" type="String" p1:ValidateMaxLength="250" p1:ValidateRequired="true" p1:Guid="435db3c8-f8eb-4177-89fc-34c112a10007">
+      <column name="Value_2" default="N''" not-null="true" length="250" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Floatminvalue" type="Single" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="0cd6c4df-0d1e-429a-b10a-9273a49efeb2">
+      <column name="FloatMinValue" default="NULL" not-null="false" precision="24" sql-type="real" p1:unicode="false" />
+    </property>
+    <property name="Specialcase" type="Boolean" p1:ValidateRequired="true" p1:Guid="0b77a0dc-ee00-4cff-b48e-f5bf70053cbd">
+      <column name="SpecialCase" not-null="true" length="1" sql-type="bit" p1:unicode="false" />
+    </property>
+    <property name="Visible" type="Boolean" p1:ValidateRequired="true" p1:Guid="78d26183-695a-4c13-b87d-196a246838f9">
+      <column name="Visible" not-null="true" length="1" sql-type="bit" p1:unicode="false" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="ca32f2b9-78e6-4dd4-abc9-393525b16427" p1:Guid="95ab207f-7ed9-44f2-b97d-3bfee49e5257">
+      <key>
+        <column name="idCalcHonorariosMaximos" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcPonentesDuracionActividad" table="calc_ponentes_duracion_actividad" p1:Guid="6b3c6abf-5b0f-4212-9476-9fe856967b02">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="d94d5e50-dd96-49ef-be19-bcd43f98a091">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="6ed98d81-0197-4e44-a739-76a6456b8749">
+      <column name="Text" default="N''" not-null="true" length="50" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Value" type="Single" p1:ValidateRequired="true" p1:Guid="8c4c5115-b188-4e05-8c8b-c18ff8328376">
+      <column name="Value" default="0" not-null="true" precision="24" sql-type="real" p1:unicode="false" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="2458ddb4-16db-4d75-9d40-204b4fc0a073" p1:Guid="5aaba9b9-40ee-4630-94d0-cbede7531ac6">
+      <key>
+        <column name="idDuracionActividadPonentes" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcPonentesNivelPs" table="calc_ponentes_nivel_ps" p1:Guid="1cad7dfc-a6a0-4535-bdae-c865241da73d">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="8326dacd-3a76-4320-9637-d68be6fb5838">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="FechaInicioVigencia" type="DateTime" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="4321c0da-c97e-44fb-993e-39093ae31270">
+      <column name="fecha_inicio_vigencia" default="NULL" not-null="false" sql-type="datetime" p1:unicode="false" />
+    </property>
+    <property name="FechaFinVigencia" type="DateTime" p1:nullable="true" p1:ValidateRequired="false" p1:Guid="b371609f-9a2f-4ae3-bc78-0820bf2d35dc">
+      <column name="fecha_fin_vigencia" default="NULL" not-null="false" sql-type="datetime" p1:unicode="false" />
+    </property>
+    <property name="Text" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="a86a0c30-75cd-488f-9b0d-2549163782a4">
+      <column name="Text" default="N''" not-null="true" length="50" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Value" type="Single" p1:ValidateRequired="true" p1:Guid="c45c1b87-15cc-4f88-8a3f-c10d315160c6">
+      <column name="Value" default="0" not-null="true" precision="24" sql-type="real" p1:unicode="false" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="2ac81a2b-4355-47a2-90b8-fe4a4c2c4a72" p1:Guid="8259bfd9-dfda-401f-98d7-9d9278c2dcf7">
+      <key>
+        <column name="idTipoPSPonentes" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcPonentesPreparacion" table="calc_ponentes_preparacion" p1:Guid="9e824385-cebe-46fb-94bd-6f6866400a0c">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="c036bc79-ce18-48e8-b61e-5c511abaeb3d">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="82c3e1c4-686a-4e9f-b2ef-f56868bda9a2">
+      <column name="Text" default="N''" not-null="true" length="50" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Value" type="Single" p1:ValidateRequired="true" p1:Guid="674c0c7d-d60c-454e-b73d-2ac36af53635">
+      <column name="Value" default="0" not-null="true" precision="24" sql-type="real" p1:unicode="false" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="9949c3b9-ff9a-431c-87ed-32244ad85ff8" p1:Guid="a08b2e35-ce48-4adf-bccd-5dd825d76014">
+      <key>
+        <column name="idTiempoPreparacionPonentes" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcTipoContratoConsultoria" table="calc_tipo_contrato_consultoria" p1:Guid="cef6eeb8-a00f-4a6a-a034-dc74e0496f11">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="205b248c-0334-4d52-8f53-179e12dbe725">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="553bd24e-2656-43e0-89d7-2118e085f551">
+      <column name="Text" default="N''" not-null="true" length="50" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <property name="Value" type="Single" p1:ValidateRequired="true" p1:Guid="9a5e6e68-d615-4eee-ab92-4d1eabc2469c">
+      <column name="Value" default="0" not-null="true" precision="24" sql-type="real" p1:unicode="false" />
+    </property>
+    <property name="Campodependiente" type="Boolean" p1:ValidateRequired="true" p1:Guid="1f9b43fb-4a52-4233-9908-346fb03b7c30">
+      <column name="CampoDependiente" not-null="true" length="1" sql-type="bit" p1:unicode="false" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="6ab8f11d-e19f-4752-a095-6a03c54a1ab5" p1:Guid="6d2426f1-56ae-4ede-831f-414d6a14c65a">
+      <key>
+        <column name="idtipoContratoConsultoria" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+  <class name="CalcTipoPonente" table="calc_tipo_ponente" p1:Guid="a8e023e2-2f05-420f-871e-0c55e9c23b6c">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="2917d342-e816-4cc6-8989-07ff23ec5a4e">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Tipo" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="49886d1c-1cbc-47da-bdfe-00a4fd41bf78">
+      <column name="Tipo" default="N''" not-null="true" length="50" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+  </class>
+  <class name="CalcTipoReunion" table="calc_tipo_reunion" p1:Guid="346fcdea-9bb9-4597-bbb7-756f735c98c2">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="0c64c295-53d9-42f0-b55a-f6e28918a60e">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" p1:unicode="false" />
+      <generator class="identity" />
+    </id>
+    <property name="Tipo" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="7d43e969-3d3b-4d8d-ad61-3fe3a8ba4960">
+      <column name="Tipo" default="N''" not-null="true" length="50" sql-type="nvarchar" p1:unicode="true" />
+    </property>
+    <set name="CalcCorrespondencias" inverse="true" generic="true" p1:AssociationGuid="ef323a88-1f8b-48fd-af4e-f522d0e20f3a" p1:Guid="b85470bf-0de1-4078-8781-43b528dcf86d">
+      <key>
+        <column name="idTipoReunion" />
+      </key>
+      <one-to-many class="CalcCorrespondencias" />
+    </set>
+  </class>
+</hibernate-mapping>

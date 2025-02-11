@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Serviciosreservashotel" table="serviciosreservashotel">
+    <id name="Idserviciohotel" type="Int32">
+      <column name="idserviciohotel" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Fechahorallegada" type="DateTime">
+      <column name="fechahorallegada" not-null="true" sql-type="datetime2" />
+    </property>
+    <property name="Fechahorasalida" type="DateTime">
+      <column name="fechahorasalida" not-null="true" sql-type="datetime2" />
+    </property>
+    <property name="Idpais" type="String">
+      <column name="IdPais" default="N''" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Pais" type="String">
+      <column name="pais" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Idprovincia" type="String">
+      <column name="IdProvincia" default="N''" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Provincia" type="String">
+      <column name="provincia" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Idpoblacion" type="Int32">
+      <column name="IdPoblacion" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Poblacion" type="String">
+      <column name="poblacion" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Idproveedor" type="Int32">
+      <column name="Idproveedor" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Hotel" type="String">
+      <column name="hotel" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Idtipoaloj" type="Int32">
+      <column name="IdTipoAloj" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Categoria" type="String">
+      <column name="categoria" default="N''" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Observaciones" type="String">
+      <column name="observaciones" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Idtipohab" type="String">
+      <column name="idtipohab" default="N''" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="NumHabitaciones" type="Int32">
+      <column name="num_habitaciones" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="DescTipoalojamiento" type="String">
+      <column name="desc_tipoalojamiento" default="N''" not-null="false" length="45" sql-type="nvarchar" />
+    </property>
+    <property name="DescIdtipoHabitacion" type="String">
+      <column name="desc_idtipo_habitacion" default="N''" not-null="false" length="25" sql-type="nvarchar" />
+    </property>
+    <property name="Idtarifaaloj" type="Int32">
+      <column name="idtarifaaloj" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Pvp" type="Double">
+      <column name="pvp" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Confempresa" class="Confempresa" update="false" insert="false">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Tarifasaloj" class="Tarifasaloj" update="false" insert="false">
+      <column name="idtarifaaloj" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Tiposaloj" class="Tiposaloj" update="false" insert="false">
+      <column name="IdTipoAloj" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="TiposHab" class="TiposHab" update="false" insert="false">
+      <column name="idtipohab" default="N''" not-null="false" length="3" sql-type="nvarchar" />
+    </many-to-one>
+    <many-to-one name="Poblaciones" class="Poblaciones" update="false" insert="false">
+      <column name="IdPoblacion" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Proveedores" class="Proveedores" update="false" insert="false">
+      <column name="Idproveedor" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="HotelPassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idserviciohotel" />
+      </key>
+      <one-to-many class="HotelPassengersList" />
+    </set>
+    <set name="Serviciosreservasviajes" inverse="true" generic="true">
+      <key>
+        <column name="idserviciohotel" />
+      </key>
+      <one-to-many class="Serviciosreservasviajes" />
+    </set>
+  </class>
+</hibernate-mapping>

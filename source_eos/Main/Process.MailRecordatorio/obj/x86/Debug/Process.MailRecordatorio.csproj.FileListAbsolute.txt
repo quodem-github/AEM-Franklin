@@ -1,0 +1,16 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\bin\Debug\msd.MailRecordatorio.exe.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\bin\Debug\msd.MailRecordatorio.exe.manifest
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\bin\Debug\msd.MailRecordatorio.application
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\bin\Debug\msd.MailRecordatorio.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\bin\Debug\msd.MailRecordatorio.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\bin\Debug\Quodem.Monitor.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\bin\Debug\Quodem.Planner.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\bin\Debug\Quodem.Sql.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\bin\Debug\Quodem.Utility.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\obj\x86\Debug\Process.MailRecordatorio.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\obj\x86\Debug\Process.MailRecordatorio.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\obj\x86\Debug\msd.MailRecordatorio.exe.manifest
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\obj\x86\Debug\msd.MailRecordatorio.application
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\obj\x86\Debug\Process.MailRecordatorio.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\obj\x86\Debug\msd.MailRecordatorio.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MailRecordatorio\obj\x86\Debug\msd.MailRecordatorio.pdb

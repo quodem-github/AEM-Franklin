@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Positions" table="positions">
+    <id name="Idposition" type="Int32">
+      <column name="idposition" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Position" type="String">
+      <column name="position" default="N''" not-null="true" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Inactivo" type="Int32">
+      <column name="inactivo" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Serviciosreservasactividades" table="serviciosreservasactividades">
+    <id name="Idservicioactividad" type="Int32">
+      <column name="idservicioactividad" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Idtarifaactividad" type="Int32">
+      <column name="idtarifaactividad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Observaciones" type="String">
+      <column name="observaciones" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Pvp" type="Double">
+      <column name="pvp" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Sede" type="String">
+      <column name="sede" default="N''" not-null="false" length="60" sql-type="nvarchar" />
+    </property>
+    <property name="Descripcion" type="String">
+      <column name="Descripcion" default="N''" not-null="false" length="200" sql-type="nvarchar" />
+    </property>
+    <property name="Tipo" type="String">
+      <column name="tipo" default="NULL" not-null="false" length="45" sql-type="nvarchar" />
+    </property>
+    <property name="Fechainicio" type="DateTime">
+      <column name="fechainicio" default="NULL" not-null="false" sql-type="date" />
+    </property>
+    <property name="Horainicio" type="String">
+      <column name="horainicio" default="NULL" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Minutosinicio" type="String">
+      <column name="minutosinicio" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Fechafin" type="DateTime">
+      <column name="fechafin" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Horafin" type="String">
+      <column name="horafin" default="NULL" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Minutosfin" type="String">
+      <column name="minutosfin" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Pax" type="Int32">
+      <column name="pax" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Confempresa" class="Confempresa" update="false" insert="false">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Tarifasactividad" class="Tarifasactividad" update="false" insert="false">
+      <column name="idtarifaactividad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="ActividadesPassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idservicioactividad" />
+      </key>
+      <one-to-many class="ActividadesPassengersList" />
+    </set>
+    <set name="Serviciosreservasviajes" inverse="true" generic="true">
+      <key>
+        <column name="idservicioactividad" />
+      </key>
+      <one-to-many class="Serviciosreservasviajes" />
+    </set>
+  </class>
+</hibernate-mapping>

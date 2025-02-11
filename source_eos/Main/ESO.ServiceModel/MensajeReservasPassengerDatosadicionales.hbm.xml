@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MensajeReservasPassengerDatosadicionales" table="mensaje_reservas_passenger_datosadicionales">
+    <id name="Idmensaje" type="Int64">
+      <column name="idmensaje" not-null="true" precision="19" scale="0" sql-type="bigint" />
+      <generator class="identity" />
+    </id>
+    <property name="Idtipoactividadpax" type="Int64">
+      <column name="idtipoactividadpax" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idtipoasistente" type="Int64">
+      <column name="idtipoasistente" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idnivelriesgo" type="Int64">
+      <column name="idnivelriesgo" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Mensaje" type="String">
+      <column name="mensaje" not-null="true" length="450" sql-type="varchar" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\bin\Release\GenesysImportProcess.exe.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\bin\Release\GenesysImportProcess.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\bin\Release\GenesysImportProcess.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\bin\Release\Excel.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\bin\Release\Quodem.Monitor.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\bin\Release\Renci.SshNet.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\obj\Release\Process.GenesysImport.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\obj\Release\Process.GenesysImport.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\obj\Release\Process.GenesysImport.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\obj\Release\GenesysImportProcess.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\obj\Release\GenesysImportProcess.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.GenesysImport\bin\Release\Quodem.Correo.dll

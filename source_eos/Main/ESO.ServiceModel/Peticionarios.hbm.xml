@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Peticionarios" table="peticionarios">
+    <id name="Idpeticionario" type="Int32">
+      <column name="IdPeticionario" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Fkidempresa" type="Int32">
+      <column name="FKIdEmpresa" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Login" type="String">
+      <column name="login" default="NULL" not-null="false" length="25" sql-type="nvarchar" />
+    </property>
+    <property name="Password" type="String">
+      <column name="password" default="NULL" not-null="false" length="40" sql-type="nvarchar" />
+    </property>
+    <property name="Wein" type="String">
+      <column name="wein" default="N''" not-null="false" length="12" sql-type="nvarchar" />
+    </property>
+    <property name="Idcargo" type="Int32">
+      <column name="IdCargo" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtratamiento" type="Int32">
+      <column name="idtratamiento" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Nombre" type="String">
+      <column name="Nombre" default="N''" not-null="true" length="52" sql-type="nvarchar" />
+    </property>
+    <property name="Apellido1" type="String">
+      <column name="Apellido1" default="N''" not-null="true" length="52" sql-type="nvarchar" />
+    </property>
+    <property name="Apellido2" type="String">
+      <column name="Apellido2" default="N''" not-null="false" length="52" sql-type="nvarchar" />
+    </property>
+    <property name="Direccion" type="String">
+      <column name="Direccion" default="N''" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Idpoblacion" type="Int32">
+      <column name="IdPoblacion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Codpostal" type="String">
+      <column name="CodPostal" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Telefono" type="String">
+      <column name="Telefono" default="N''" not-null="false" length="25" sql-type="nvarchar" />
+    </property>
+    <property name="Extension" type="String">
+      <column name="extension" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Movil" type="String">
+      <column name="Movil" default="N''" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="Email" type="String">
+      <column name="Email" default="N''" not-null="false" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Inactivo" type="Int16">
+      <column name="Inactivo" default="0" not-null="true" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Observaciones" type="String">
+      <column name="Observaciones" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Fechaprimeraccesoportal" type="DateTime">
+      <column name="fechaprimeraccesoportal" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Idarea" type="Int32">
+      <column name="Idarea" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idregion" type="Int32">
+      <column name="idregion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Iddistrito" type="Int32">
+      <column name="iddistrito" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Atencionprimaria" type="Int16">
+      <column name="atencionprimaria" default="0" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Descuentoresidente" type="String">
+      <column name="descuentoresidente" default="N''" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Idunidad" type="Int32">
+      <column name="idunidad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idpeticionarioresponsable" type="Int32">
+      <column name="idpeticionarioresponsable" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Administrador" type="Int16">
+      <column name="administrador" default="0" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Amex" type="String">
+      <column name="amex" default="NULL" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="FechaCaducidad" type="DateTime">
+      <column name="fecha_caducidad" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Idnivelaprobacion" type="Int64">
+      <column name="idnivelaprobacion" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Emailpiloto" type="String">
+      <column name="emailPiloto" default="NULL" not-null="false" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Emailbueno" type="String">
+      <column name="emailBueno" default="NULL" not-null="false" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Poblacion" type="String">
+      <column name="Poblacion" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Idposition" type="Int32">
+      <column name="idposition" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Iddepartament" type="Int32">
+      <column name="iddepartament" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idsaleforce" type="Int32">
+      <column name="idsaleforce" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Iddistrict" type="Int32">
+      <column name="iddistrict" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Weinmanager" type="String">
+      <column name="WeinManager" not-null="false" length="12" sql-type="nvarchar" />
+    </property>
+    <property name="Creationdate" type="DateTime">
+      <column name="CreationDate" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="Lastupdatedate" type="DateTime">
+      <column name="LastUpdateDate" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="Medico" type="Boolean">
+      <column name="medico" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="Legal" type="Boolean">
+      <column name="legal" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="Executive" type="Boolean">
+      <column name="executive" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="Director" type="Boolean">
+      <column name="director" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="Gerente" type="Boolean">
+      <column name="gerente" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="Assistant" type="Boolean">
+      <column name="assistant" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="Altocargo" type="Boolean">
+      <column name="altocargo" default="0" not-null="false" sql-type="bit" />
+    </property>
+    <property name="Levelcode" type="String">
+      <column name="LevelCode" not-null="false" length="10" sql-type="varchar" />
+    </property>
+    <property name="Externaluser" type="Boolean">
+      <column name="externalUser" default="0" not-null="true" sql-type="bit" />
+    </property>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Newco" type="Boolean">
+      <column name="newco" not-null="true" sql-type="bit" />
+    </property>
+    <many-to-one name="Nivelesaprobacion" class="Nivelesaprobacion" update="false" insert="false">
+      <column name="idnivelaprobacion" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+    <many-to-one name="Poblaciones" class="Poblaciones" update="false" insert="false">
+      <column name="IdPoblacion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Tratamientos" class="Tratamientos" update="false" insert="false">
+      <column name="idtratamiento" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Departaments" class="Departaments" update="false" insert="false">
+      <column name="iddepartament" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Salesforce" class="Salesforce" update="false" insert="false">
+      <column name="idsaleforce" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Districts" class="Districts" update="false" insert="false">
+      <column name="iddistrict" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="Amecs_idsolicitante" inverse="true" generic="true">
+      <key>
+        <column name="idsolicitante" />
+      </key>
+      <one-to-many class="Amecs" />
+    </set>
+    <set name="Amecs_idcreadopor" inverse="true" generic="true">
+      <key>
+        <column name="idcreadopor" />
+      </key>
+      <one-to-many class="Amecs" />
+    </set>
+    <set name="Congresos" inverse="true" generic="true">
+      <key>
+        <column name="IdPeticionario" />
+      </key>
+      <one-to-many class="Congresos" />
+    </set>
+    <set name="Expedientes" inverse="true" generic="true">
+      <key>
+        <column name="IdPeticionario" />
+      </key>
+      <one-to-many class="Expediente" />
+    </set>
+    <set name="Reservasviajes" inverse="true" generic="true">
+      <key>
+        <column name="IdPeticionario" />
+      </key>
+      <one-to-many class="Reservasviajes" />
+    </set>
+    <set name="PeticionesActividads" inverse="true" generic="true">
+      <key>
+        <column name="IdPeticionario" />
+      </key>
+      <one-to-many class="PeticionesActividad" />
+    </set>
+    <set name="PeticionGrupos" inverse="true" generic="true">
+      <key>
+        <column name="idpeticionario" />
+      </key>
+      <one-to-many class="PeticionGrupos" />
+    </set>
+    <set name="AgencyUserApprovalStructures_IdPeticionario" inverse="true" generic="true">
+      <key>
+        <column name="IdPeticionario" />
+      </key>
+      <one-to-many class="AgencyUserApprovalStructure" />
+    </set>
+    <set name="AgencyUserApprovalStructures_IdPeticionarioManager" inverse="true" generic="true">
+      <key>
+        <column name="IdPeticionarioManager" />
+      </key>
+      <one-to-many class="AgencyUserApprovalStructure" />
+    </set>
+    <set name="Aprobadoramecs_idaprobador" inverse="true" generic="true">
+      <key>
+        <column name="idaprobador" />
+      </key>
+      <one-to-many class="Aprobadoramec" />
+    </set>
+    <set name="Aprobadoramecs_idcreadopor" inverse="true" generic="true">
+      <key>
+        <column name="idcreadopor" />
+      </key>
+      <one-to-many class="Aprobadoramec" />
+    </set>
+    <set name="GestordocumentalDocumentos" inverse="true" generic="true">
+      <key>
+        <column name="IdPeticionario" />
+      </key>
+      <one-to-many class="GestordocumentalDocumento" />
+    </set>
+    <set name="GestordocumentalDocumentoversions" inverse="true" generic="true">
+      <key>
+        <column name="IdPeticionario" />
+      </key>
+      <one-to-many class="GestordocumentalDocumentoversion" />
+    </set>
+    <set name="PeticionariosEmpleadosgps" inverse="true" generic="true">
+      <key>
+        <column name="idpeticionario" />
+      </key>
+      <one-to-many class="PeticionariosEmpleadosgp" />
+    </set>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+c:\users\allorente\documents\visual studio 2017\Projects\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.exe.config
+c:\users\allorente\documents\visual studio 2017\Projects\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.exe
+c:\users\allorente\documents\visual studio 2017\Projects\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.pdb
+c:\users\allorente\documents\visual studio 2017\Projects\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\RestSharp.dll
+c:\users\allorente\documents\visual studio 2017\Projects\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\RestSharp.xml
+c:\users\allorente\documents\visual studio 2017\Projects\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.csprojResolveAssemblyReference.cache
+c:\users\allorente\documents\visual studio 2017\Projects\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.csproj.CoreCompileInputs.cache
+c:\users\allorente\documents\visual studio 2017\Projects\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.exe
+c:\users\allorente\documents\visual studio 2017\Projects\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.pdb
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.exe.config
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.exe
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.pdb
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.exe
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.pdb
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\RestSharp.dll
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\RestSharp.xml
+\\Datastore\unidad_x\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.exe.config
+\\Datastore\unidad_x\JMM\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.exe
+\\Datastore\unidad_x\JMM\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.pdb
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\Newtonsoft.Json.dll
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\Newtonsoft.Json.xml
+X:\JMM\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.csprojResolveAssemblyReference.cache

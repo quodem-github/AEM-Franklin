@@ -1,0 +1,7 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.Msd.Spotfire.CsvGenerator\bin\Release\Process.Msd.Spotfire.CsvGenerator.exe.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.Msd.Spotfire.CsvGenerator\bin\Release\Process.Msd.Spotfire.CsvGenerator.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.Msd.Spotfire.CsvGenerator\bin\Release\Process.Msd.Spotfire.CsvGenerator.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.Msd.Spotfire.CsvGenerator\obj\Release\Process.Msd.Spotfire.CsvGenerator.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.Msd.Spotfire.CsvGenerator\obj\Release\Process.Msd.Spotfire.CsvGenerator.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.Msd.Spotfire.CsvGenerator\obj\Release\Process.Msd.Spotfire.CsvGenerator.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.Msd.Spotfire.CsvGenerator\obj\Release\Process.Msd.Spotfire.CsvGenerator.pdb

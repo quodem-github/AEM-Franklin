@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Serviciosreservastransporte" table="serviciosreservastransporte">
+    <id name="Idserviciotransporte" type="Int32">
+      <column name="idserviciotransporte" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="IdtipobonoIda1" type="String">
+      <column name="IdTipoBono_ida1" default="NULL" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Ida1Fechasalida" type="DateTime">
+      <column name="ida1_fechasalida" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Ida1Origen" type="String">
+      <column name="ida1_origen" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Ida1Destino" type="String">
+      <column name="ida1_destino" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Ida1NumvueloTren" type="String">
+      <column name="ida1_numvuelo_tren" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Ida1Horasalida" type="String">
+      <column name="ida1_horasalida" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Ida1Horallegada" type="String">
+      <column name="ida1_horallegada" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="IdtipobonoIda2" type="String">
+      <column name="IdTipoBono_ida2" default="NULL" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Ida2Fechasalida" type="DateTime">
+      <column name="ida2_fechasalida" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Ida2Origen" type="String">
+      <column name="ida2_origen" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Ida2Destino" type="String">
+      <column name="ida2_destino" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Ida2NumvueloTren" type="String">
+      <column name="ida2_numvuelo_tren" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Ida2Horasalida" type="String">
+      <column name="ida2_horasalida" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Ida2Horallegada" type="String">
+      <column name="ida2_horallegada" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="IdtipobonoReg1" type="String">
+      <column name="IdTipoBono_reg1" default="NULL" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Reg1Fechasalida" type="DateTime">
+      <column name="reg1_fechasalida" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Reg1Origen" type="String">
+      <column name="reg1_origen" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Reg1Destino" type="String">
+      <column name="reg1_destino" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Reg1NumvueloTren" type="String">
+      <column name="reg1_numvuelo_tren" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Reg1Horasalida" type="String">
+      <column name="reg1_horasalida" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Reg1Horallegada" type="String">
+      <column name="reg1_horallegada" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="IdtipobonoReg2" type="String">
+      <column name="IdTipoBono_reg2" default="NULL" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Reg2Fechasalida" type="DateTime">
+      <column name="reg2_fechasalida" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Reg2Origen" type="String">
+      <column name="reg2_origen" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Reg2Destino" type="String">
+      <column name="reg2_destino" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Reg2NumvueloTren" type="String">
+      <column name="reg2_numvuelo_tren" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Reg2Horasalida" type="String">
+      <column name="reg2_horasalida" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Reg2Horallegada" type="String">
+      <column name="reg2_horallegada" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="ImporteMax" type="Double">
+      <column name="importe_max" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="ObservacionesIda" type="String">
+      <column name="observaciones_ida" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="ObservacionesReg" type="String">
+      <column name="observaciones_reg" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Observaciones" type="String">
+      <column name="observaciones" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="GastosCancelacion" type="String">
+      <column name="gastos_cancelacion" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Ida" type="String">
+      <column name="ida" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Regreso" type="String">
+      <column name="regreso" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Confempresa" class="Confempresa" update="false" insert="false">
+      <column name="idconfempresa" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="Serviciosreservasviajes" inverse="true" generic="true">
+      <key>
+        <column name="idserviciotransporte" />
+      </key>
+      <one-to-many class="Serviciosreservasviajes" />
+    </set>
+    <set name="Transportepassengerslists" inverse="true" generic="true">
+      <key>
+        <column name="idserviciotransporte" />
+      </key>
+      <one-to-many class="Transportepassengerslist" />
+    </set>
+  </class>
+</hibernate-mapping>

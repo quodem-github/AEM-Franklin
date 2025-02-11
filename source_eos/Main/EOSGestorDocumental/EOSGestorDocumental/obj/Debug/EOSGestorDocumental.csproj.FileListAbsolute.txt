@@ -1,0 +1,12 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.exe.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\EOSGestorDocumental.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\Newtonsoft.Json.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\RestSharp.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\Newtonsoft.Json.xml
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\bin\Debug\RestSharp.xml
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\EOSGestorDocumental\EOSGestorDocumental\obj\Debug\EOSGestorDocumental.pdb

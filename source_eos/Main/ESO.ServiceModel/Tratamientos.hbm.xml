@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Tratamientos" table="tratamientos">
+    <id name="Idtratamiento" type="Int32">
+      <column name="idtratamiento" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Ttocarta" type="String">
+      <column name="ttocarta" default="N''" not-null="true" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Ttocertificado" type="String">
+      <column name="ttocertificado" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Ttomsd" type="String">
+      <column name="ttomsd" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="PassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idtratamiento" />
+      </key>
+      <one-to-many class="PassengersList" />
+    </set>
+    <set name="Peticionarios" inverse="true" generic="true">
+      <key>
+        <column name="idtratamiento" />
+      </key>
+      <one-to-many class="Peticionarios" />
+    </set>
+  </class>
+</hibernate-mapping>

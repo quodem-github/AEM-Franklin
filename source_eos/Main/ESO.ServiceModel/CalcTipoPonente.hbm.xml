@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CalcTipoPonente" table="calc_tipo_ponente">
+    <id name="Id" type="Int32">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Tipo" type="String">
+      <column name="Tipo" default="N''" not-null="true" length="50" sql-type="nvarchar" />
+    </property>
+  </class>
+</hibernate-mapping>

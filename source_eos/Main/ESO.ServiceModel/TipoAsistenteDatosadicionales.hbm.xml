@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TipoAsistenteDatosadicionales" table="tipo_asistente_datosadicionales">
+    <id name="Idtipoasistente" type="Int64">
+      <column name="idtipoasistente" not-null="true" precision="19" scale="0" sql-type="bigint" />
+      <generator class="identity" />
+    </id>
+    <property name="Tipoasistente" type="String">
+      <column name="tipoasistente" not-null="true" length="45" sql-type="varchar" />
+    </property>
+    <property name="Idtipoabc" type="Int64">
+      <column name="idtipoABC" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <set name="DatosadicionalesReservasPassengers" inverse="true" generic="true">
+      <key>
+        <column name="idtipoasistente" />
+      </key>
+      <one-to-many class="DatosadicionalesReservasPassenger" />
+    </set>
+    <set name="PeticionGrupos" inverse="true" generic="true">
+      <key>
+        <column name="idtipoasistente_datosadicionales" />
+      </key>
+      <one-to-many class="PeticionGrupos" />
+    </set>
+  </class>
+</hibernate-mapping>

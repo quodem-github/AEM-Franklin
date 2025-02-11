@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Amecs" table="amecs">
+    <id name="Idamecs" type="String">
+      <column name="idamecs" not-null="true" length="128" precision="10" scale="0" sql-type="varchar" />
+      <generator class="assigned" />
+    </id>
+    <property name="Idsolicitante" type="Int32">
+      <column name="idsolicitante" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idcargo" type="Int32">
+      <column name="Idcargo" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idcreadopor" type="Int32">
+      <column name="idcreadopor" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Fechaamecs" type="DateTime">
+      <column name="fechaamecs" not-null="true" sql-type="datetime2" />
+    </property>
+    <property name="Nwein" type="String">
+      <column name="nwein" not-null="true" length="45" sql-type="varchar" />
+    </property>
+    <property name="Idtipoactividad" type="Int32">
+      <column name="idtipoactividad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Preaprobadaamed" type="Int16">
+      <column name="preaprobadaamed" default="NULL" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Preaprobadaneg" type="Int16">
+      <column name="preaprobadaneg" not-null="true" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Preaprobadaleg" type="Int16">
+      <column name="preaprobadaleg" not-null="true" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Farmaindustria" type="Int16">
+      <column name="farmaindustria" not-null="true" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Casosclinicos" type="Int16">
+      <column name="casosclinicos" not-null="true" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Participantesmsd" type="Int64">
+      <column name="participantesmsd" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Detallecriterios" type="String">
+      <column name="detallecriterios" default="NULL" not-null="false" length="200" sql-type="varchar" />
+    </property>
+    <property name="Medicosfichero" type="Int16">
+      <column name="medicosfichero" default="NULL" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Duracionhoras" type="String">
+      <column name="duracionhoras" default="NULL" not-null="false" length="10" sql-type="varchar" />
+    </property>
+    <property name="Ponentespatrocinados" type="Int64">
+      <column name="ponentespatrocinados" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Conceptogastos" type="String">
+      <column name="conceptogastos" default="NULL" not-null="false" sql-type="varchar" />
+    </property>
+    <property name="Cargoadaxas" type="String">
+      <column name="cargoadaxas" default="NULL" not-null="false" length="150" sql-type="varchar" />
+    </property>
+    <property name="Importegasto" type="Decimal">
+      <column name="importegasto" default="NULL" not-null="false" precision="10" scale="3" sql-type="decimal" />
+    </property>
+    <property name="Cartascontrato" type="Int64">
+      <column name="cartascontrato" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Programaamecs" type="String">
+      <column name="programaamecs" default="NULL" not-null="false" length="150" sql-type="varchar" />
+    </property>
+    <property name="Urlprograma" type="String">
+      <column name="urlprograma" default="NULL" not-null="false" length="150" sql-type="varchar" />
+    </property>
+    <property name="Descripcionobjetivo" type="String">
+      <column name="descripcionobjetivo" default="NULL" not-null="false" length="300" sql-type="varchar" />
+    </property>
+    <property name="Idestado" type="Int64">
+      <column name="idestado" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Descripcion" type="String">
+      <column name="descripcion" default="NULL" not-null="false" length="200" sql-type="varchar" />
+    </property>
+    <property name="Politican20" type="Int16">
+      <column name="politicaN20" default="NULL" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Fechacomienzo" type="DateTime">
+      <column name="fechacomienzo" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Fechafinalizacion" type="DateTime">
+      <column name="fechafinalizacion" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Lugarsede" type="String">
+      <column name="lugarsede" default="NULL" not-null="false" length="100" sql-type="varchar" />
+    </property>
+    <property name="Idcriterioseleccion" type="Int32">
+      <column name="idcriterioseleccion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Criterioespecificado" type="String">
+      <column name="criterioespecificado" default="NULL" not-null="false" length="200" sql-type="varchar" />
+    </property>
+    <property name="Idnivelaprobacion" type="Int64">
+      <column name="idnivelaprobacion" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Paraguas" type="Int16">
+      <column name="paraguas" not-null="true" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Importegastoacumulado" type="Double">
+      <column name="importegastoacumulado" default="NULL" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="Profesionalessanitarios" type="Int64">
+      <column name="profesionalessanitarios" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Fechaultimaactualizacion" type="DateTime">
+      <column name="fechaultimaactualizacion" not-null="true" sql-type="datetime" />
+    </property>
+    <property name="Idposition" type="Int32">
+      <column name="idposition" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idamecsrelacionado" type="String">
+      <column name="idamecsrelacionado" not-null="false" length="128" sql-type="varchar" />
+    </property>
+    <property name="Veeva" type="Boolean">
+      <column name="veeva" default="0" not-null="true" sql-type="bit" />
+    </property>
+    <property name="Newco" type="Boolean">
+      <column name="newco" default="0" not-null="true" sql-type="bit" />
+    </property>
+    <many-to-one name="Peticionarios_idsolicitante" class="Peticionarios" update="false" insert="false">
+      <column name="idsolicitante" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Confempresa" class="Confempresa" update="false" insert="false">
+      <column name="idconfempresa" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Peticionarios_idcreadopor" class="Peticionarios" update="false" insert="false">
+      <column name="idcreadopor" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Nivelesaprobacion" class="Nivelesaprobacion" update="false" insert="false">
+      <column name="idnivelaprobacion" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+    <many-to-one name="Criteriosseleccion" class="Criteriosseleccion" update="false" insert="false">
+      <column name="idcriterioseleccion" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="Aprobadoramecs" inverse="true" generic="true">
+      <key>
+        <column name="idamecs" />
+      </key>
+      <one-to-many class="Aprobadoramec" />
+    </set>
+  </class>
+</hibernate-mapping>

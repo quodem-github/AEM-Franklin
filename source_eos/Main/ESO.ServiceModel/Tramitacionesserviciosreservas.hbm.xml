@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Tramitacionesserviciosreservas" table="tramitacionesserviciosreservas">
+    <id name="Idtramitacion" type="Int32">
+      <column name="idtramitacion" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Fkidservicio" type="Int32">
+      <column name="fkidservicio" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Linea" type="Int32">
+      <column name="linea" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Requerimientos" type="String">
+      <column name="requerimientos" not-null="true" sql-type="nvarchar" />
+    </property>
+    <property name="Alternativa1" type="String">
+      <column name="alternativa1" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Okalternativa1" type="String">
+      <column name="okalternativa1" default="N''" not-null="false" length="2" sql-type="nvarchar" />
+    </property>
+    <property name="Alternativa2" type="String">
+      <column name="alternativa2" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Okalternativa2" type="String">
+      <column name="okalternativa2" default="N''" not-null="false" length="2" sql-type="nvarchar" />
+    </property>
+    <property name="Alternativa3" type="String">
+      <column name="alternativa3" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Okalternativa3" type="String">
+      <column name="okalternativa3" default="N''" not-null="false" length="2" sql-type="nvarchar" />
+    </property>
+    <property name="Idestado" type="String">
+      <column name="idestado" default="NULL" not-null="false" length="5" sql-type="nvarchar" />
+    </property>
+    <property name="Pvp1" type="Double">
+      <column name="pvp1" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="Pvp2" type="Double">
+      <column name="pvp2" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="Pvp3" type="Double">
+      <column name="pvp3" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="Requerimientos2" type="String">
+      <column name="requerimientos2" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Idproveedor1" type="Int32">
+      <column name="IdProveedor1" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idproveedor2" type="Int32">
+      <column name="IdProveedor2" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idproveedor3" type="Int32">
+      <column name="IdProveedor3" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idproductoprv1" type="Int32">
+      <column name="IdProductoPrv1" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idproductoprv2" type="Int32">
+      <column name="IdProductoPrv2" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idproductoprv3" type="Int32">
+      <column name="IdProductoPrv3" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Requerimientos3" type="String">
+      <column name="requerimientos3" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Validez1" type="String">
+      <column name="Validez1" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Validez2" type="String">
+      <column name="Validez2" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Validez3" type="String">
+      <column name="Validez3" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Idproveedor4" type="Int32">
+      <column name="IdProveedor4" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idproveedor5" type="Int32">
+      <column name="IdProveedor5" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idproveedor6" type="Int32">
+      <column name="IdProveedor6" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Gastoscancelacion1" type="String">
+      <column name="gastoscancelacion1" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Gastoscancelacion2" type="String">
+      <column name="gastoscancelacion2" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Gastoscancelacion3" type="String">
+      <column name="gastoscancelacion3" not-null="false" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Serviciosreservasviajes" class="Serviciosreservasviajes" update="false" insert="false">
+      <column name="fkidservicio" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Estadosreservas" class="Estadosreservas" update="false" insert="false">
+      <column name="idestado" default="NULL" not-null="false" length="5" sql-type="nvarchar" />
+    </many-to-one>
+    <many-to-one name="Proveedores_IdProveedor1" class="Proveedores" update="false" insert="false">
+      <column name="IdProveedor1" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Proveedores_IdProveedor2" class="Proveedores" update="false" insert="false">
+      <column name="IdProveedor2" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Proveedores_IdProveedor3" class="Proveedores" update="false" insert="false">
+      <column name="IdProveedor3" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Proveedores_IdProveedor4" class="Proveedores" update="false" insert="false">
+      <column name="IdProveedor4" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Proveedores_IdProveedor5" class="Proveedores" update="false" insert="false">
+      <column name="IdProveedor5" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Proveedores_IdProveedor6" class="Proveedores" update="false" insert="false">
+      <column name="IdProveedor6" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

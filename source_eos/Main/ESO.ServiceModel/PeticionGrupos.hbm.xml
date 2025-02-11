@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="PeticionGrupos" table="peticion_grupos">
+    <id name="Idpeticiongrupo" type="Int64">
+      <column name="idpeticiongrupo" not-null="true" precision="19" scale="0" sql-type="bigint" />
+      <generator class="assigned" />
+    </id>
+    <property name="Idevento" type="Int64">
+      <column name="idevento" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idasistente" type="Int32">
+      <column name="idasistente" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idexpediente" type="Int32">
+      <column name="idexpediente" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Unidad" type="String">
+      <column name="unidad" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="Region" type="String">
+      <column name="region" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="Area" type="String">
+      <column name="area" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="NombrePeticionario" type="String">
+      <column name="nombre_peticionario" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="ApellidoPeticionario" type="String">
+      <column name="apellido_peticionario" default="NULL" not-null="false" length="100" sql-type="varchar" />
+    </property>
+    <property name="Idamec" type="String">
+      <column name="idamec" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="Evento" type="String">
+      <column name="evento" default="NULL" not-null="false" length="80" sql-type="varchar" />
+    </property>
+    <property name="FechaInicioEvento" type="DateTime">
+      <column name="fecha_inicio_evento" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Apellido1" type="String">
+      <column name="apellido1" default="NULL" not-null="false" length="255" sql-type="varchar" />
+    </property>
+    <property name="Nombre" type="String">
+      <column name="nombre" default="NULL" not-null="false" length="255" sql-type="varchar" />
+    </property>
+    <property name="Msdid" type="String">
+      <column name="msdid" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="TipoGasto" type="String">
+      <column name="tipo_gasto" default="NULL" not-null="false" length="20" sql-type="varchar" />
+    </property>
+    <property name="ImportePeticion" type="Single">
+      <column name="importe_peticion" default="NULL" not-null="false" precision="24" sql-type="real" />
+    </property>
+    <property name="FechaPeticion" type="DateTime">
+      <column name="fecha_peticion" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="EstadoPeticion" type="String">
+      <column name="estado_peticion" default="NULL" not-null="false" length="20" sql-type="varchar" />
+    </property>
+    <property name="Idpeticionario" type="Int32">
+      <column name="idpeticionario" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idunidad" type="Int64">
+      <column name="idunidad" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idarea" type="Int64">
+      <column name="idarea" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idregion" type="Int64">
+      <column name="idregion" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Iddistrito" type="Int64">
+      <column name="Iddistrito" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Fkidcongreso" type="Int64">
+      <column name="fkidcongreso" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="CargoPeticionario" type="String">
+      <column name="cargo_peticionario" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="Numpedido" type="String">
+      <column name="numpedido" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="UltimaActualizacion" type="DateTime">
+      <column name="ultima_actualizacion" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Codespecialidad" type="String">
+      <column name="codespecialidad" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="EstadoExpediente" type="String">
+      <column name="estado_expediente" default="NULL" not-null="false" length="20" sql-type="varchar" />
+    </property>
+    <property name="FechaExpediente" type="DateTime">
+      <column name="fecha_expediente" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Producto" type="String">
+      <column name="producto" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="PorcentajeProdcuto" type="String">
+      <column name="porcentaje_prodcuto" default="NULL" not-null="false" length="50" sql-type="varchar" />
+    </property>
+    <property name="Idcargo" type="Int64">
+      <column name="idcargo" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idvalfi" type="Int64">
+      <column name="idvalfi" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="FechaFinEvento" type="DateTime">
+      <column name="fecha_fin_evento" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Idtipoactividadcongreso" type="Int64">
+      <column name="idtipoactividadcongreso" default="NULL" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Idestadoreserva" type="String">
+      <column name="idestadoreserva" default="NULL" not-null="false" length="20" sql-type="varchar" />
+    </property>
+    <property name="Distrito" type="String">
+      <column name="distrito" default="NULL" not-null="false" length="255" sql-type="varchar" />
+    </property>
+    <property name="Apellido2" type="String">
+      <column name="apellido2" default="NULL" not-null="false" length="255" sql-type="varchar" />
+    </property>
+    <property name="TipoactividadDatosadicionales" type="String">
+      <column name="tipoactividad_datosadicionales" default="NULL" not-null="false" length="255" sql-type="varchar" />
+    </property>
+    <property name="TipoasistenteDatosadicionales" type="String">
+      <column name="tipoasistente_datosadicionales" default="NULL" not-null="false" length="255" sql-type="varchar" />
+    </property>
+    <property name="NivelriesgoDatosadicionales" type="String">
+      <column name="nivelriesgo_datosadicionales" default="NULL" not-null="false" length="255" sql-type="varchar" />
+    </property>
+    <property name="JustificacionesDatosadicionales" type="String">
+      <column name="justificaciones_datosadicionales" default="NULL" not-null="false" length="255" sql-type="varchar" />
+    </property>
+    <property name="FicherogenesisDatosadicionales" type="String">
+      <column name="ficherogenesis_datosadicionales" default="NULL" not-null="false" length="45" sql-type="varchar" />
+    </property>
+    <property name="Iddepartament" type="Int32">
+      <column name="iddepartament" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idsaleforce" type="Int32">
+      <column name="idsaleforce" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Iddistrict" type="Int32">
+      <column name="iddistrict" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idposition" type="Int32">
+      <column name="idposition" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="IdtipoactividadDatosadicionales" type="Int64">
+      <column name="idtipoactividad_datosadicionales" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="IdtipoasistenteDatosadicionales" type="Int64">
+      <column name="idtipoasistente_datosadicionales" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="IdnivelriesgoDatosadicionales" type="Int64">
+      <column name="idnivelriesgo_datosadicionales" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <many-to-one name="Expediente" class="Expediente" update="false" insert="false">
+      <column name="idexpediente" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="PassengersList" class="PassengersList" update="false" insert="false">
+      <column name="idasistente" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Peticionarios" class="Peticionarios" update="false" insert="false">
+      <column name="idpeticionario" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="NivelRiesgoHcpDatosadicionales" class="NivelRiesgoHcpDatosadicionales" update="false" insert="false">
+      <column name="idnivelriesgo_datosadicionales" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+    <many-to-one name="TipoActividadPaxDatosadicionales" class="TipoActividadPaxDatosadicionales" update="false" insert="false">
+      <column name="idtipoactividad_datosadicionales" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+    <many-to-one name="TipoAsistenteDatosadicionales" class="TipoAsistenteDatosadicionales" update="false" insert="false">
+      <column name="idtipoasistente_datosadicionales" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+    <many-to-one name="Departaments" class="Departaments" update="false" insert="false">
+      <column name="iddepartament" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Salesforce" class="Salesforce" update="false" insert="false">
+      <column name="idsaleforce" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Districts" class="Districts" update="false" insert="false">
+      <column name="iddistrict" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

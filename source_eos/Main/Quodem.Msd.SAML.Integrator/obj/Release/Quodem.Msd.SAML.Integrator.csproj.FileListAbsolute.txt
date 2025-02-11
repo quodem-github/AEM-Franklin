@@ -1,0 +1,9 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Quodem.Msd.SAML.Integrator\bin\Release\Quodem.Msd.SAML.Integrator.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Quodem.Msd.SAML.Integrator\bin\Release\Quodem.Msd.SAML.Integrator.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Quodem.Msd.SAML.Integrator\bin\Release\Newtonsoft.Json.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Quodem.Msd.SAML.Integrator\bin\Release\RestSharp.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Quodem.Msd.SAML.Integrator\obj\Release\Quodem.Msd.SAML.Integrator.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Quodem.Msd.SAML.Integrator\obj\Release\Quodem.Msd.SAML.Integrator.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Quodem.Msd.SAML.Integrator\obj\Release\Quodem.Msd.SAML.Integrator.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Quodem.Msd.SAML.Integrator\obj\Release\Quodem.Msd.SAML.Integrator.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Quodem.Msd.SAML.Integrator\obj\Release\Quodem.Msd.SAML.Integrator.pdb

@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EE23B92-3B83-42FB-80D4-0BF31406E2AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EOS.ServiceLogic</RootNamespace>
+    <AssemblyName>EOS.ServiceLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BLL\AutoMapper\AutomapperService.cs" />
+    <Compile Include="BLL\AutoMapper\GestorDocumentalDocumentoCustomConverter.cs" />
+    <Compile Include="BLL\AutoMapper\GestorDocumentalDocumentoVersionCustomConverter.cs" />
+    <Compile Include="BLL\AutoMapper\IntByteNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\ServicioReservaActividadesCustomConverter.cs" />
+    <Compile Include="BLL\AutoMapper\ServicioReservaActividadesReturnCustomConverter.cs" />
+    <Compile Include="BLL\AutoMapper\IntByteTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\DateTimeNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\DoubleDecimalTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\DoubleDecimalNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\IntLongNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\IntLongTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\ReservasViajesReturnCustomController.cs" />
+    <Compile Include="BLL\AutoMapper\ReservasViajesCustomConverter.cs" />
+    <Compile Include="BLL\AutoMapper\PeticionGruposCustomConverter.cs" />
+    <Compile Include="BLL\AutoMapper\DecimalTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\DecimalNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\LongTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\LongNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\ByteNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\ByteTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\IntShortNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\IntShortTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\ShortTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\ShortNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\StringDateTimeNullableTypeConverter.cs" />
+    <Compile Include="BLL\AutoMapper\StringDateTimeTypeConverter.cs" />
+    <Compile Include="BLL\Calculator\ABEifDuracionActividadService.cs" />
+    <Compile Include="BLL\Calculator\ABEifNivelPSService.cs" />
+    <Compile Include="BLL\Calculator\ABEifPreparacionService.cs" />
+    <Compile Include="BLL\Calculator\TipoPonenteService.cs" />
+    <Compile Include="BLL\Calculator\CorrespondenciasService.cs" />
+    <Compile Include="BLL\Calculator\CountryToCountryService.cs" />
+    <Compile Include="BLL\Calculator\TipoContratoConsultoriaService.cs" />
+    <Compile Include="BLL\Calculator\PonentesDuracionActividadService.cs" />
+    <Compile Include="BLL\Calculator\PonentesNivelPSService.cs" />
+    <Compile Include="BLL\Calculator\PonentesPreparacionService.cs" />
+    <Compile Include="BLL\Calculator\TipoReunionService.cs" />
+    <Compile Include="BLL\Calculator\HonorariosMaximosService.cs" />
+    <Compile Include="BLL\AutoMapper\DateTimeTypeConverter.cs" />
+    <Compile Include="BLL\IServiceExtended.cs" />
+    <Compile Include="BLL\IService.cs" />
+    <Compile Include="BLL\IServiceBase.cs" />
+    <Compile Include="BLL\Services\ActividadesPassengersListService.cs" />
+    <Compile Include="BLL\Services\AgencyKeyService.cs" />
+    <Compile Include="BLL\Services\AmecService.cs" />
+    <Compile Include="BLL\Services\PeticionariosEmpleadosGPService.cs" />
+    <Compile Include="BLL\Services\EstructuraOrganizativaService.cs" />
+    <Compile Include="BLL\Services\AprobadorAmecService.cs" />
+    <Compile Include="BLL\GestorDocumental\GestorDocumentalServiceManager.cs" />
+    <Compile Include="BLL\Services\GestorDocumentalService.cs" />
+    <Compile Include="BLL\Services\PositionsService.cs" />
+    <Compile Include="BLL\Services\SalesForceService.cs" />
+    <Compile Include="BLL\Services\DepartamentsService.cs" />
+    <Compile Include="BLL\Services\DistrictsService.cs" />
+    <Compile Include="BLL\Services\QuodemLogService.cs" />
+    <Compile Include="BLL\Services\TiposBonosService.cs" />
+    <Compile Include="BLL\Services\TratamientosService.cs" />
+    <Compile Include="BLL\Services\TipoAsistenteDatosAdicionalesService.cs" />
+    <Compile Include="BLL\Services\TipoActividadPaxDatosAdicionalesService.cs" />
+    <Compile Include="BLL\Services\PeticionGruposService.cs" />
+    <Compile Include="BLL\Services\AmecsService.cs" />
+    <Compile Include="BLL\Services\JustificacionesDatosAdicionalesService.cs" />
+    <Compile Include="BLL\Services\Estados_ReservasService.cs" />
+    <Compile Include="BLL\Services\EspecialidadesService.cs" />
+    <Compile Include="BLL\Services\EmpleadosGPService.cs" />
+    <Compile Include="BLL\Services\DatosAdicionalesReservasPassengerService.cs" />
+    <Compile Include="BLL\Services\NivelRiesgoHCPDatosAdicionalesService.cs" />
+    <Compile Include="BLL\Services\PassengersService.cs" />
+    <Compile Include="BLL\Services\PeticionariosService.cs" />
+    <Compile Include="BLL\Services\TiposReservasWebService.cs" />
+    <Compile Include="BLL\Services\TiposPatrocinioService.cs" />
+    <Compile Include="BLL\Services\TiposPRVService.cs" />
+    <Compile Include="BLL\Services\TipoActividadService.cs" />
+    <Compile Include="BLL\Services\TipoServiciosService.cs" />
+    <Compile Include="BLL\Services\ServiciosService.cs" />
+    <Compile Include="BLL\Services\ProvinciasService.cs" />
+    <Compile Include="BLL\Services\ProductosPRVService.cs" />
+    <Compile Include="BLL\Services\NivelRiesgoHCPService.cs" />
+    <Compile Include="BLL\Services\MensajeReservasPassengerDatosAdicionalesService.cs" />
+    <Compile Include="BLL\Services\IatasServiceService.cs" />
+    <Compile Include="BLL\Services\CriteriosSeleccionService.cs" />
+    <Compile Include="BLL\Services\ConfEmpresaService.cs" />
+    <Compile Include="BLL\Services\ComunidadService.cs" />
+    <Compile Include="BLL\Services\CongresosService.cs" />
+    <Compile Include="BLL\Services\EstadosReservasService.cs" />
+    <Compile Include="BLL\Services\ExpedienteService.cs" />
+    <Compile Include="BLL\Services\GestorInvitadosService.cs" />
+    <Compile Include="BLL\Services\HotelPassengerListService.cs" />
+    <Compile Include="BLL\Services\InscripcionPassengersListService.cs" />
+    <Compile Include="BLL\Services\NivelesAprobacionService.cs" />
+    <Compile Include="BLL\Services\PeticionActividadService.cs" />
+    <Compile Include="BLL\Services\PoblacionService.cs" />
+    <Compile Include="BLL\Services\ProductoService.cs" />
+    <Compile Include="BLL\Services\ProveedorService.cs" />
+    <Compile Include="BLL\Services\ReservaPassengersListService.cs" />
+    <Compile Include="BLL\Services\ReservaViajesService.cs" />
+    <Compile Include="BLL\Services\ServicioReservaHotelService.cs" />
+    <Compile Include="BLL\Services\ServicioReservaActividadesService.cs" />
+    <Compile Include="BLL\Services\ServiciosReservasInscripcionService.cs" />
+    <Compile Include="BLL\Services\ServiciosReservasTransporteService.cs" />
+    <Compile Include="BLL\Services\ServiciosReservasViajesService.cs" />
+    <Compile Include="BLL\Services\TarifaAlojService.cs" />
+    <Compile Include="BLL\Services\TarifasActividadService.cs" />
+    <Compile Include="BLL\Services\TarifasInscripcionService.cs" />
+    <Compile Include="BLL\Services\TipoCongresoService.cs" />
+    <Compile Include="BLL\Services\TipoInscripcionService.cs" />
+    <Compile Include="BLL\Services\TiposActividadCongresoService.cs" />
+    <Compile Include="BLL\Services\TiposAlojamientoService.cs" />
+    <Compile Include="BLL\Services\TiposHabitacionService.cs" />
+    <Compile Include="BLL\Services\TramitacionesServiciosReservasService.cs" />
+    <Compile Include="BLL\Services\TransportePassengersListService.cs" />
+    <Compile Include="BLL\Validator\ValidateService.cs" />
+    <Compile Include="BLL\Services\ValoracionFiService.cs" />
+    <Compile Include="BLL\Token\ServiceOrigin.cs" />
+    <Compile Include="BLL\Token\IServiceSuscriptorService.cs" />
+    <Compile Include="BLL\Token\ServiceSubscriptionServiceImpl.cs" />
+    <Compile Include="BLL\Validator\ObjectValidator.cs" />
+    <Compile Include="Data\DTO\Area.cs" />
+    <Compile Include="Data\DTO\AreaManager.cs" />
+    <Compile Include="Data\DTO\AreaManagerListDTO.cs" />
+    <Compile Include="Data\DTO\AreasListDTO.cs" />
+    <Compile Include="Data\DTO\Calculator\ABEifDuracionActividadDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DTO\Calculator\ABEifNivelPSDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DTO\Calculator\ABEifPreparacionDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DTO\Peticionario.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ActividadesPassengersListEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ActividadesPassengersListEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\AmecEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\AmecEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\CongresosEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\CongresosEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\EmpleadosGpEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\EmpleadosGpEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\EstadosReservasEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\EstadosReservasEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\Estados_ReservasEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\Estados_ReservasEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ExpedienteEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ExpedienteEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\GestorDocumentalDocumentoEditorResultResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\GestorDocumentalDocumentoEditorResultDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\GestorInvitadosDeleteDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\GestorInvitadosEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\GestorInvitadosDeleteResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\GestorInvitadosEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\HotelPassengerListEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\HotelPassengerListEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\IatasEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\IatasEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\InscripcionPassengersListEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\InscripcionPassengersListEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\NivelesAprobacionEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\NivelesAprobacionEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PeticionActividadEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PeticionActividadEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PeticionGruposDeleteDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PeticionGruposEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PeticionGruposDeleteResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PeticionGruposEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PoblacionEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PoblacionEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ProductoEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ProductoEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ProductosPRVEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ProductosPRVEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ProveedorEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ProveedorEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ProvinciasEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ProvinciasEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ReservaPassengersEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ReservaPassengersEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ReservaViajesEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ReservaViajesEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasActividadesEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasActividadesEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasHotelEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasHotelEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasInscripcionEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasInscripcionEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasTransporteEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasTransporteEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasViajesEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\ServiciosReservasViajesEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TarifasActividadEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TarifasActividadEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TarifasAlojEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TarifasAlojEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TarifasInscripcionEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TarifasInscripcionEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TipoBonosEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TipoBonosEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TiposPRVEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TiposAlojamientoEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TiposAlojamientoEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TiposPRVEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TramitacionesServiciosReservasEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TramitacionesServicioReservasEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PeticionariosEmpleadosGPEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TransportePassengersListEditDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\PeticionariosEmpleadosGPEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\TransportePassengersListEditResponseDto.cs" />
+    <Compile Include="Data\DTO\ServiceEdition\GestorDocumentalDocumentoEditorDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalDocumentoDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalDocumentoResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalDocumentoVersionBajaDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalDocumentoVersionDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalDocumentoVersionResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalSubTipoDocDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalSubTipoDocResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalTipoDocDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalTipoDocResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalTipoSeccionDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalTipoSeccionResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorDocumentalBase.cs" />
+    <Compile Include="Data\DTO\Service\IServiceGestorDocumental.cs" />
+    <Compile Include="Data\DTO\Service\PeticionariosEmpleadosGPResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\PositionsDto.cs" />
+    <Compile Include="Data\DTO\Service\PositionsResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\EstructuraOrganizativaDto.cs" />
+    <Compile Include="Data\DTO\Service\EstructuraOrganizativaResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\AprobadorAmecResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\AprobadorAmecDto.cs" />
+    <Compile Include="Data\DTO\Service\SalesForceResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\SalesForceDto.cs" />
+    <Compile Include="Data\DTO\Service\DepartamentsResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\DepartamentsDto.cs" />
+    <Compile Include="Data\DTO\Service\DistrictsResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\DistrictsDto.cs" />
+    <Compile Include="Data\DTO\Service\MensajeReservasPassengerDatosAdicionalesResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\NivelRiesgoHCPDatosAdicionalesDto.cs" />
+    <Compile Include="Data\DTO\Service\NivelRiesgoHCPDatosAdicionalesResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\NivelRiesgoHCPResponseDto.cs" />
+    <Compile Include="Data\DTO\Calculator\TipoPonenteDto.cs" />
+    <Compile Include="Data\DTO\Calculator\CorrespondenciasDto.cs" />
+    <Compile Include="Data\DTO\Calculator\CountryToCountryReasonsTypeDto.cs" />
+    <Compile Include="Data\DTO\Calculator\CountryToCountryCitiesTypeDto.cs" />
+    <Compile Include="Data\DTO\Calculator\CountryToCountryNumSpeaksModerTypeDto.cs" />
+    <Compile Include="Data\DTO\Calculator\CountryToCountryNumSpeaksTypeDto.cs" />
+    <Compile Include="Data\DTO\Calculator\CountryToCountryGlobalTypeDto.cs" />
+    <Compile Include="Data\DTO\Calculator\CountryToCountryTypeDto.cs" />
+    <Compile Include="Data\DTO\Calculator\CountryToCountryDto.cs" />
+    <Compile Include="Data\DTO\Calculator\TipoContratoConsultoriaDto.cs" />
+    <Compile Include="Data\DTO\Calculator\CountryToCountryCorrespondenciasDto.cs" />
+    <Compile Include="Data\DTO\Calculator\HonorariosMaximosDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DTO\Calculator\PonentesDuracionActividadDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DTO\Calculator\PonentesNivelPSDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DTO\Calculator\PonentesPreparacionDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DTO\Calculator\TipoReunionDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DTO\District.cs" />
+    <Compile Include="Data\DTO\DistrictManager.cs" />
+    <Compile Include="Data\DTO\DistrictsListDTO.cs" />
+    <Compile Include="Data\DTO\DistrictsManagersListDTO.cs" />
+    <Compile Include="Data\DTO\Service\ActividadesPassengersListDto.cs" />
+    <Compile Include="Data\DTO\Service\ActividadesPassengersListResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\AmecDto.cs" />
+    <Compile Include="Data\DTO\Service\AmecResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\AmecsDto.cs" />
+    <Compile Include="Data\DTO\Service\AmecsResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ComunidadDto.cs" />
+    <Compile Include="Data\DTO\Service\ComunidadResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ConfEmpresaDto.cs" />
+    <Compile Include="Data\DTO\Service\ConfEmpresaResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\CongresosDto.cs" />
+    <Compile Include="Data\DTO\Service\CongresosResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\CriteriosSeleccionDto.cs" />
+    <Compile Include="Data\DTO\Service\CriteriosSeleccionResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\DatosAdicionalesReservasPassengerDto.cs" />
+    <Compile Include="Data\DTO\Service\DatosAdicionalesReservasPassengerResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\EmpleadosGpDto.cs" />
+    <Compile Include="Data\DTO\Service\EmpleadosGpResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\EspecialidadesDto.cs" />
+    <Compile Include="Data\DTO\Service\EspecialidadesResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\EstadosReservasDto.cs" />
+    <Compile Include="Data\DTO\Service\EstadosReservasResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\Estados_ReservasDto.cs" />
+    <Compile Include="Data\DTO\Service\Estados_ReservasResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorInvitadosDto.cs" />
+    <Compile Include="Data\DTO\Service\GestorInvitadosResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\HotelPassengerListDto.cs" />
+    <Compile Include="Data\DTO\Service\HotelPassengerListResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\IatasDto.cs" />
+    <Compile Include="Data\DTO\Service\IatasReponseDto.cs" />
+    <Compile Include="Data\DTO\Service\InscripcionPassengersListDto.cs" />
+    <Compile Include="Data\DTO\Service\InscripcionPassengersListResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\JustificacionesDatosAdicionalesDto.cs" />
+    <Compile Include="Data\DTO\Service\JustificacionesDatosAdicionalesResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\MensajeReservasPassengerDatosAdicionalesDto.cs" />
+    <Compile Include="Data\DTO\Service\NivelesAprobacionDto.cs" />
+    <Compile Include="Data\DTO\Service\NivelesAprobacionResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\NivelRiesgoHCPDto.cs" />
+    <Compile Include="Data\DTO\Service\PeticionActividadDto.cs" />
+    <Compile Include="Data\DTO\Service\PeticionActividadResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\PeticionGruposDto.cs" />
+    <Compile Include="Data\DTO\Service\PeticionGruposResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\PoblacionDto.cs" />
+    <Compile Include="Data\DTO\Service\PoblacionResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ProductoDto.cs" />
+    <Compile Include="Data\DTO\Service\ProductoResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ProductosPRVDto.cs" />
+    <Compile Include="Data\DTO\Service\ProductosPRVResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ProveedorDto.cs" />
+    <Compile Include="Data\DTO\Service\ProveedorResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ProvinciasDto.cs" />
+    <Compile Include="Data\DTO\Service\ProvinciasResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ReservaViajesDto.cs" />
+    <Compile Include="Data\DTO\Service\ReservaViajesResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ResponseBase.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosReservasActividadesDto.cs" />
+    <Compile Include="Data\DTO\Service\ServicioReservaActividadesResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosReservasHotelDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosReservasHotelResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosReservasInscripcionDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosReservasInscripcionResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosReservasTransporteDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosReservasTransporteResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosReservasViajesDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosReservasViajesResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiciosResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TarifasActividadDto.cs" />
+    <Compile Include="Data\DTO\Service\TarifasActividadResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TarifasAlojDto.cs" />
+    <Compile Include="Data\DTO\Service\TarifasAlojResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TarifasInscripcionDto.cs" />
+    <Compile Include="Data\DTO\Service\TarifasInscripcionResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoActividadDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoActividadPaxDatosAdicionalesDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoActividadPaxDatosAdicionalesResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoActividadResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoAsistenteDatosAdicionalesDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoAsistenteDatosAdicionalesResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoBonoDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoCongresoDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoCongresoResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoInscripcionDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoInscripcionResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposActividadCongresoDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposActividadCongresoResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposAlojamientoDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposAlojamientoResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposBonosResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoServiciosDto.cs" />
+    <Compile Include="Data\DTO\Service\TipoServiciosResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposHabitacionDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposHabitacionResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposPatrocinioDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposPatrocinioResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposPRVDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposPRVResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposReservasWebDto.cs" />
+    <Compile Include="Data\DTO\Service\TiposReservasWebResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TramitacionesServiciosReservasDto.cs" />
+    <Compile Include="Data\DTO\Service\TramitacionesServiciosReservasResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\PeticionariosEmpleadosGPDto.cs" />
+    <Compile Include="Data\DTO\Service\TransportePassengersListDto.cs" />
+    <Compile Include="Data\DTO\Service\TransportePassengersListResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\TratamientosResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ValoracionFiDto.cs" />
+    <Compile Include="Data\DTO\Service\ValoracionFiResponseDto.cs" />
+    <Compile Include="Data\DTO\TratamientosDto.cs" />
+    <Compile Include="Data\Filters\FilterActividadesPassengersList.cs" />
+    <Compile Include="Data\Filters\FilterAmec.cs" />
+    <Compile Include="Data\Filters\FilterAprobadorAmec.cs" />
+    <Compile Include="Data\Filters\FilterAmecs.cs" />
+    <Compile Include="Data\Filters\FilterBase.cs" />
+    <Compile Include="Data\Filters\FilterComunidad.cs" />
+    <Compile Include="Data\Filters\FilterEstructuraOrganizativa.cs" />
+    <Compile Include="Data\Filters\FilterCongresos.cs" />
+    <Compile Include="Data\Filters\FilterCriteriosSeleccion.cs" />
+    <Compile Include="Data\Filters\FilterDatosAdicionalesReservasPassenger.cs" />
+    <Compile Include="Data\Filters\FilterEmpleadosGp.cs" />
+    <Compile Include="Data\Filters\FilterEstados_Reservas.cs" />
+    <Compile Include="Data\Filters\FilterExpediente.cs" />
+    <Compile Include="Data\Filters\FilterGestorDocumentalDocumentoVersion.cs" />
+    <Compile Include="Data\Filters\FilterGestorDocumentalDocumento.cs" />
+    <Compile Include="Data\Filters\FilterGestorDocumentalDocumentoVersionBaja.cs" />
+    <Compile Include="Data\Filters\FilterIatas.cs" />
+    <Compile Include="Data\Filters\FilterInscripcionPassengersList.cs" />
+    <Compile Include="Data\Filters\FilterMensajeReservasPassengerDatosAdicionales.cs" />
+    <Compile Include="Data\Filters\FilterNivelRiesgoHCP.cs" />
+    <Compile Include="Data\Filters\FilterPeticionariosList.cs" />
+    <Compile Include="Data\Filters\FilterPeticionarios.cs" />
+    <Compile Include="Data\Filters\FilterPassengerList.cs" />
+    <Compile Include="Data\Filters\FilterPeticionActividad.cs" />
+    <Compile Include="Data\Filters\FilterPeticionGrupos.cs" />
+    <Compile Include="Data\Filters\FilterPoblacion.cs" />
+    <Compile Include="Data\Filters\FilterProveedor.cs" />
+    <Compile Include="Data\Filters\FilterProvincias.cs" />
+    <Compile Include="Data\Filters\FilterReservasPassengerList.cs" />
+    <Compile Include="Data\Filters\FilterServicios.cs" />
+    <Compile Include="Data\Filters\FilterServiciosReservasInscripcion.cs" />
+    <Compile Include="Data\Filters\FilterServiciosReservasHotel.cs" />
+    <Compile Include="Data\Filters\FilterServiciosReservasActividades.cs" />
+    <Compile Include="Data\Filters\FilterServiciosReservasTransporte.cs" />
+    <Compile Include="Data\Filters\FilterServiciosReservasViajes.cs" />
+    <Compile Include="Data\Filters\FilterTarifasActividad.cs" />
+    <Compile Include="Data\DTO\Passenger.cs" />
+    <Compile Include="Data\DTO\PassengersListDTO.cs" />
+    <Compile Include="Data\DTO\PeticionariosListDTO.cs" />
+    <Compile Include="Data\DTO\Region.cs" />
+    <Compile Include="Data\DTO\RegionManager.cs" />
+    <Compile Include="Data\DTO\RegionsListDTO.cs" />
+    <Compile Include="Data\DTO\RegionsManagersListDTO.cs" />
+    <Compile Include="Data\DTO\Service\ExpedienteDto.cs" />
+    <Compile Include="Data\DTO\Service\ExpedienteResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ReservaPassengersDto.cs" />
+    <Compile Include="Data\DTO\Service\ReservaPassengersResponseDto.cs" />
+    <Compile Include="Data\DTO\Service\ServiceError.cs" />
+    <Compile Include="Data\DTO\Service\ServiceErrorItem.cs" />
+    <Compile Include="Data\DTO\Unit.cs" />
+    <Compile Include="Data\DTO\UnitManager.cs" />
+    <Compile Include="Data\DTO\UnitsListDTO.cs" />
+    <Compile Include="Data\DTO\UnitsManagersListDTO.cs" />
+    <Compile Include="Data\FilterPaginated.cs" />
+    <Compile Include="Data\Filters\FilterGestorInvitados.cs" />
+    <Compile Include="Data\Filters\FilterHotelPassengerList.cs" />
+    <Compile Include="Data\Filters\FilterReservaViajes.cs" />
+    <Compile Include="Data\Filters\FilterTarifasAloj.cs" />
+    <Compile Include="Data\Filters\FilterTarifasInscripcion.cs" />
+    <Compile Include="Data\Filters\FilterTipoActividad.cs" />
+    <Compile Include="Data\Filters\FilterTipoBonos.cs" />
+    <Compile Include="Data\Filters\FilterTipoServicio.cs" />
+    <Compile Include="Data\Filters\FilterTiposPatrocinio.cs" />
+    <Compile Include="Data\Filters\FilterTiposPRV.cs" />
+    <Compile Include="Data\Filters\FilterTramitacionesServiciosReservas.cs" />
+    <Compile Include="Data\Filters\FilterPeticionariosEmpleadosGP.cs" />
+    <Compile Include="Data\Filters\FilterTransportePassengersList.cs" />
+    <Compile Include="Data\Filters\FilterProductosPRV.cs" />
+    <Compile Include="Data\Filters\FilterTiposReservasWeb.cs" />
+    <Compile Include="Data\ReceivedData.cs" />
+    <Compile Include="Data\ServiceResponse\ErrorItem.cs" />
+    <Compile Include="Data\ServiceResponse\SrvResponse.cs" />
+    <Compile Include="Enums\EAsistenteTypes.cs" />
+    <Compile Include="Enums\ECountryToCountryTypesCities.cs" />
+    <Compile Include="Enums\ECountryToCountrySpeakersTypes.cs" />
+    <Compile Include="Enums\ECountryToCountryTypes.cs" />
+    <Compile Include="Enums\ECountryToCountryGlobalTypes.cs" />
+    <Compile Include="Enums\EDbConnection.cs" />
+    <Compile Include="Enums\EExpedienteType.cs" />
+    <Compile Include="Enums\ErrorCode.cs" />
+    <Compile Include="HelperNHibernate.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="DLL\DataServiceEncrypt.cs" />
+    <Compile Include="DLL\PeticionariosFilter.cs" />
+    <Compile Include="DLL\ServiceQuerySecurityInfo.cs" />
+    <Compile Include="Enums\EEntityStatus.cs" />
+    <Compile Include="Variables.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EOS.Entidades\EOS.Entidades.csproj">
+      <Project>{A44E0C75-86A2-492D-AB27-07DF32863526}</Project>
+      <Name>EOS.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ESO.ServiceModel\EOS.ServiceModel.csproj">
+      <Project>{d87a9ad3-a954-4134-ac85-923bd5ef5429}</Project>
+      <Name>EOS.ServiceModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\AutoMapper.dll" />
+    <Content Include="lib\BouncyCastle.Crypto.dll" />
+    <Content Include="lib\Iesi.Collections.dll" />
+    <Content Include="lib\Microsoft.CSharp.dll" />
+    <Content Include="lib\Microsoft.WindowsAPICodePack.dll" />
+    <Content Include="lib\Microsoft.WindowsAPICodePack.Shell.dll" />
+    <Content Include="lib\Newtonsoft.Json.dll" />
+    <Content Include="lib\NHibernate.dll" />
+    <Content Include="lib\NHibernate.Validator.dll" />
+    <Content Include="lib\NHibernate.Validator.Specific.dll" />
+    <Content Include="lib\Quodem.ContentManager.dll" />
+    <Content Include="lib\Quodem.Monitor.dll" />
+    <Content Include="lib\Quodem.ORM.NHibernate.dll" />
+    <Content Include="lib\Quodem.Utility.dll" />
+    <Content Include="lib\System.ComponentModel.DataAnnotations.dll" />
+    <Content Include="lib\System.Configuration.dll" />
+    <Content Include="lib\System.Data.DataSetExtensions.dll" />
+    <Content Include="lib\System.Data.dll" />
+    <Content Include="lib\System.dll" />
+    <Content Include="lib\System.IO.dll" />
+    <Content Include="lib\System.Runtime.dll" />
+    <Content Include="lib\System.Runtime.Serialization.dll" />
+    <Content Include="lib\System.Threading.Tasks.dll" />
+    <Content Include="lib\System.Web.dll" />
+    <Content Include="lib\System.Web.Extensions.dll" />
+    <Content Include="lib\System.Xml.dll" />
+    <Content Include="lib\System.Xml.Linq.dll" />
+    <Content Include="Scripts\Tablas_Token.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Validator, Version=1.3.2.4000, Culture=neutral, PublicKeyToken=70154e18752585bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NHibernate.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Validator.Specific, Version=1.3.2.4000, Culture=neutral, PublicKeyToken=70154e18752585bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NHibernate.Validator.Specific.dll</HintPath>
+    </Reference>
+    <Reference Include="Quodem.ContentManager, Version=5.0.1.0, Culture=neutral, PublicKeyToken=865ce75f9226627a, processorArchitecture=MSIL">
+      <HintPath>lib\Quodem.ContentManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Quodem.Monitor, Version=5.0.1.0, Culture=neutral, PublicKeyToken=865ce75f9226627a, processorArchitecture=MSIL">
+      <HintPath>lib\Quodem.Monitor.dll</HintPath>
+    </Reference>
+    <Reference Include="Quodem.ORM.NHibernate, Version=5.0.0.0, Culture=neutral, PublicKeyToken=865ce75f9226627a, processorArchitecture=MSIL">
+      <HintPath>lib\Quodem.ORM.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Quodem.Utility, Version=5.0.1.0, Culture=neutral, PublicKeyToken=865ce75f9226627a, processorArchitecture=MSIL">
+      <HintPath>lib\Quodem.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO">
+      <HintPath>lib\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>lib\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>lib\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--<Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

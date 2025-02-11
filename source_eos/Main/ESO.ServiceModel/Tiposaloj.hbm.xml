@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Tiposaloj" table="tiposaloj">
+    <id name="Idtipoaloj" type="Int32">
+      <column name="IdTipoAloj" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Tipoaloj" type="String">
+      <column name="TipoAloj" default="N''" not-null="true" length="35" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="Serviciosreservashotels" inverse="true" generic="true">
+      <key>
+        <column name="IdTipoAloj" />
+      </key>
+      <one-to-many class="Serviciosreservashotel" />
+    </set>
+    <set name="Tarifasalojs" inverse="true" generic="true">
+      <key>
+        <column name="IdTipoAloj" />
+      </key>
+      <one-to-many class="Tarifasaloj" />
+    </set>
+  </class>
+</hibernate-mapping>

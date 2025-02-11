@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="GestordocumentalTipoSeccion" table="gestordocumental_tipo_seccion">
+    <id name="Id" type="Int32">
+      <column name="Id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Nombre" type="String">
+      <column name="Nombre" not-null="true" length="128" sql-type="varchar" />
+    </property>
+    <property name="Inactivo" type="Int32">
+      <column name="Inactivo" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="GestordocumentalTipodocs" inverse="true" generic="true">
+      <key>
+        <column name="IdTipo" />
+      </key>
+      <one-to-many class="GestordocumentalTipodoc" />
+    </set>
+  </class>
+</hibernate-mapping>

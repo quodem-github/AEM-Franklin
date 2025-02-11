@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Poblaciones" table="poblaciones">
+    <id name="Idpoblacion" type="Int32">
+      <column name="IdPoblacion" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Poblacion" type="String">
+      <column name="Poblacion" default="N''" not-null="true" length="41" sql-type="nvarchar" />
+    </property>
+    <property name="Idprovincia" type="String">
+      <column name="IdProvincia" default="NULL" not-null="false" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Idpais" type="String">
+      <column name="IdPais" default="N''" not-null="true" length="3" sql-type="nvarchar" />
+    </property>
+    <property name="Codpostal" type="String">
+      <column name="CodPostal" default="N''" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idpaisabc" type="Int64">
+      <column name="IdPaisABC" default="407" not-null="false" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Inactivo" type="Byte">
+      <column name="inactivo" default="0" not-null="false" precision="3" scale="0" sql-type="tinyint" />
+    </property>
+    <property name="Idconfempresa" type="Int32">
+      <column name="idconfempresa" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="Congresos" inverse="true" generic="true">
+      <key>
+        <column name="IdPoblacion" />
+      </key>
+      <one-to-many class="Congresos" />
+    </set>
+    <set name="Peticionarios" inverse="true" generic="true">
+      <key>
+        <column name="IdPoblacion" />
+      </key>
+      <one-to-many class="Peticionarios" />
+    </set>
+    <set name="Serviciosreservashotels" inverse="true" generic="true">
+      <key>
+        <column name="IdPoblacion" />
+      </key>
+      <one-to-many class="Serviciosreservashotel" />
+    </set>
+    <set name="PeticionesActividads" inverse="true" generic="true">
+      <key>
+        <column name="IdPoblacion" />
+      </key>
+      <one-to-many class="PeticionesActividad" />
+    </set>
+    <set name="Proveedores" inverse="true" generic="true">
+      <key>
+        <column name="IdPoblacion" />
+      </key>
+      <one-to-many class="Proveedores" />
+    </set>
+  </class>
+</hibernate-mapping>

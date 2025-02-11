@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CalcCountryReasonsType" table="calc_country_reasons_type">
+    <id name="Id" type="Int32">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Text" type="String">
+      <column name="Text" default="N''" not-null="true" length="150" sql-type="nvarchar" />
+    </property>
+  </class>
+</hibernate-mapping>

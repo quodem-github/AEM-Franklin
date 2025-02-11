@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Expediente" table="expediente">
+    <id name="Idxpediente" type="Int32">
+      <column name="idxpediente" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Idregion" type="Int32">
+      <column name="idregion" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idamec" type="Int32">
+      <column name="idamec" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Expediente1" type="String">
+      <column name="expediente" default="N''" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Idunidad" type="Int32">
+      <column name="idunidad" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idarea" type="Int32">
+      <column name="Idarea" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idpeticionario" type="Int32">
+      <column name="IdPeticionario" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtiporeserva" type="Int32">
+      <column name="IdTipoReserva" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idempresa" type="Int32">
+      <column name="IdEmpresa" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idestado" type="String">
+      <column name="idestado" default="N''" not-null="true" length="5" sql-type="nvarchar" />
+    </property>
+    <property name="Iddistrito" type="Int32">
+      <column name="iddistrito" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Fechacreacion" type="DateTime">
+      <column name="fechacreacion" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Idempleadogp" type="Int32">
+      <column name="idempleadogp" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Codexpediente" type="String">
+      <column name="codexpediente" default="N''" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Urgente" type="Int16">
+      <column name="urgente" default="0" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Importetotal" type="Double">
+      <column name="importeTotal" default="0" not-null="false" precision="53" sql-type="float" />
+    </property>
+    <property name="Visible" type="Int16">
+      <column name="visible" default="1" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Iddepartament" type="Int32">
+      <column name="iddepartament" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idsaleforce" type="Int32">
+      <column name="idsaleforce" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Iddistrict" type="Int32">
+      <column name="iddistrict" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Tipopagofee" type="Int32">
+      <column name="tipoPagoFee" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Amec" class="Amec" update="false" insert="false">
+      <column name="idamec" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Peticionarios" class="Peticionarios" update="false" insert="false">
+      <column name="IdPeticionario" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Estadosreservas" class="Estadosreservas" update="false" insert="false">
+      <column name="idestado" default="N''" not-null="true" length="5" sql-type="nvarchar" />
+    </many-to-one>
+    <many-to-one name="TiposreservasWeb" class="TiposreservasWeb" update="false" insert="false">
+      <column name="IdTipoReserva" default="0" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Empleadosgp" class="Empleadosgp" update="false" insert="false">
+      <column name="idempleadogp" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Departaments" class="Departaments" update="false" insert="false">
+      <column name="iddepartament" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Salesforce" class="Salesforce" update="false" insert="false">
+      <column name="idsaleforce" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Districts" class="Districts" update="false" insert="false">
+      <column name="iddistrict" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="ReservasPassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idxpediente" />
+      </key>
+      <one-to-many class="ReservasPassengersList" />
+    </set>
+    <set name="Reservasviajes" inverse="true" generic="true">
+      <key>
+        <column name="fkidexpediente" />
+      </key>
+      <one-to-many class="Reservasviajes" />
+    </set>
+    <set name="PeticionGrupos" inverse="true" generic="true">
+      <key>
+        <column name="idexpediente" />
+      </key>
+      <one-to-many class="PeticionGrupos" />
+    </set>
+    <set name="GestordocumentalDocumentos" inverse="true" generic="true">
+      <key>
+        <column name="IdExpediente" />
+      </key>
+      <one-to-many class="GestordocumentalDocumento" />
+    </set>
+  </class>
+</hibernate-mapping>

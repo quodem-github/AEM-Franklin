@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Aprobadoramec" table="aprobadoramec">
+    <id name="Idaprovadoramec" type="Int32">
+      <column name="idaprovadoramec" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idamecs" type="String">
+      <column name="idamecs" not-null="false" length="128" precision="10" scale="0" sql-type="varchar" />
+    </property>
+    <property name="Idaprobador" type="Int32">
+      <column name="idaprobador" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idcreadopor" type="Int32">
+      <column name="idcreadopor" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Fechacreacion" type="DateTime">
+      <column name="fechacreacion" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="Aprobacionjefe" type="Int32">
+      <column name="aprobacionjefe" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Amecs" class="Amecs">
+      <column name="idamecs" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Peticionarios_idaprobador" class="Peticionarios" update="false" insert="false">
+      <column name="idaprobador" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Peticionarios_idcreadopor" class="Peticionarios" update="false" insert="false">
+      <column name="idcreadopor" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

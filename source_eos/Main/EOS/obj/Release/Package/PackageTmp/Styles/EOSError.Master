@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EOSError.master.cs" Inherits="EOS.Styles.EOSError" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="html" xmlns="http://www.w3.org/1999/xhtml" runat="server">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="lang" content="es" />
+    <meta name="author" content="Ibermática" />
+    <meta name="organization" content="Grupo Pacífico" />
+    <meta name="locality" content="España" />
+    <meta name="keywords" content="Grupo Pacífico, Viajes" />
+    <meta name="description" content="Maqueta para la aplicación de viajes de Grupo Pacífico" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <link rel="stylesheet" href="<%# ResolveUrl("~/Styles/style.css?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%# ResolveUrl("~/Styles/custom.css?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%# ResolveUrl("~/Styles/Tabs.css?v=" + System.DateTime.Now.ToString("yyyyMMdd"))%>" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder ID="headContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type='text/javascript'>
+        function NoImplementado() {
+            alert("Esta funcionalidad no ha sido implementada todavía");
+        }
+    </script>
+</head>
+<body>
+    <form id="MainForm" runat="server">
+    <asp:Image ID="eosImgHeader" runat="server" />
+    <div id="eosNavBar" runat="server">
+        <ul>
+            <li><a title="Contacto" href="javascript:;" onclick="window.open('<%=Page.ResolveUrl("~/Account/Contacto.aspx")%>','Datos_de_Contacto','width=300,height=150,left=200,top=200')">
+                contacto</a> </li>
+        </ul>
+    </div>
+    <div id="eosHeaderPersonal" runat="server">
+        <div style="height: 64px;">
+            <asp:ContentPlaceHolder ID="eosHeaderInfoBasica" runat="server">
+                <div id="eosHPLogo">
+                    <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Styles/images/logoGP.png" AlternateText="Grupo Pacífico" /></div>
+                <div id="eosHPDatos">
+                    <div id="eosNombreContacto" runat="server">
+                        <!--NombreDemo ApellidoDemo (IT@XXXX.COM)--></div>
+                    <div id="eosNombreTecnico" runat="server">
+                        <!-- TECNICO XXX: Nombre DEMO --></div>
+                    <asp:HyperLink ID="eosNombreTecnicoEmail" runat="server"></asp:HyperLink>
+
+                </div>
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="eosHeaderBotonera" runat="server">
+                <div id="eosHPBotones">
+                    <div class="eosBotonera eosBotonInformes">
+                        <a title="Acceder a Informes y Listados" onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Acceder a Informes y Listados';return true;"
+                            href="javascript:document.location.href = '/Informes/FiltroInforme.aspx';">Acceso
+                            a Informes y Listados</a></div>
+                    <div class="eosBotonera eosBotonDatosPer">
+                        <a title="Acceder a Datos Personales" onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Cambiar datos personales';return true;"
+                            href="javascript:document.location.href = '/CambiarDatosPersonales.aspx';">Acceso
+                            a Datos Personales</a></div>
+                    <div class="eosBotonera eosBotonNuevoExp" style="padding-left: 8px;">
+                        <a title="Crear Nuevo Expediente" onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Crear un Nuevo Expediente';return true;"
+                            href="javascript:document.location.href = '/NuevoExpedientePasoA.aspx?idexp=0';">
+                            Nuevo Expediente</a></div>
+                    <div class="eosBotonera eosBotonAMEC">
+                        <a title="Acceder a Listados AMEC" onmouseout="javascript:window.status='';return true;"
+                            onmouseover="javascript:window.status='Litados de AMECs';return true;" href="javascript:document.location.href = '/ListadoAMECs.aspx';">
+                            Listados de AMECs</a></div>
+                    <%--<div class="eosBotonera eosBotonActividades"><a title="Acceder a Actividades" href="javascript:NoImplementado();">Acceso a Actividades</a></div>--%>
+                    <div class="eosBotonera eosBotonSalir">
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="RedirectToLoginPage"
+                            LogoutText="Salir" LogoutPageUrl="~/" />
+                    </div>
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:ContentPlaceHolder ID="eosHeaderContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="eosContentMain">
+        <asp:ContentPlaceHolder ID="eosContentStatus" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="eosContentFilter" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="eosContentResults" runat="server">
+        </asp:ContentPlaceHolder>
+        <div id="eosFooter">
+
+
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Comunidad" table="comunidad">
+    <id name="Idcomunidad" type="Int32">
+      <column name="IdComunidad" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Comunidad1" type="String">
+      <column name="Comunidad" default="N''" not-null="true" length="25" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="Provincias" inverse="true" generic="true">
+      <key>
+        <column name="IdComunidad" />
+      </key>
+      <one-to-many class="Provincias" />
+    </set>
+  </class>
+</hibernate-mapping>

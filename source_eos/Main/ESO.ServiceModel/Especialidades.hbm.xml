@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Especialidades" table="especialidades">
+    <id name="Idespecialidad" type="Int32">
+      <column name="idespecialidad" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Codespecialidad" type="String">
+      <column name="codespecialidad" default="N''" not-null="false" length="5" sql-type="nvarchar" />
+    </property>
+    <property name="Especialidad" type="String">
+      <column name="especialidad" default="N''" not-null="true" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <set name="Congresos" inverse="true" generic="true">
+      <key>
+        <column name="idespecialidad" />
+      </key>
+      <one-to-many class="Congresos" />
+    </set>
+    <set name="PassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idespecialidad" />
+      </key>
+      <one-to-many class="PassengersList" />
+    </set>
+    <set name="PeticionesActividads" inverse="true" generic="true">
+      <key>
+        <column name="idespecialidad" />
+      </key>
+      <one-to-many class="PeticionesActividad" />
+    </set>
+  </class>
+</hibernate-mapping>

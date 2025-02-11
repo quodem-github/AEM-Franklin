@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repositories>
+  <repository path="..\EOS.Api\packages.config" />
+  <repository path="..\EOS.Entidades\packages.config" />
+  <repository path="..\EOS.Logger\packages.config" />
+  <repository path="..\EOS.Logica\packages.config" />
+  <repository path="..\EOS.Repositorios\packages.config" />
+  <repository path="..\EOS.ServiceLogic\packages.config" />
+  <repository path="..\EOS.Web\packages.config" />
+  <repository path="..\EOS\packages.config" />
+  <repository path="..\ESO.ServiceModel\packages.config" />
+  <repository path="..\Process.AmecImport\packages.config" />
+  <repository path="..\Process.GenesysCreateReport\packages.config" />
+  <repository path="..\Process.GenesysImport\packages.config" />
+  <repository path="..\Process.PeticionariosImport\packages.config" />
+  <repository path="..\Quodem.Msd.SAML.Integrator\packages.config" />
+</repositories>

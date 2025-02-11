@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="PassengersList" table="passengers_list">
+    <id name="Idpassengerlist" type="Int32">
+      <column name="idpassengerlist" default="0" not-null="true" precision="10" scale="0" sql-type="int" unique="true" />
+      <generator class="assigned" />
+    </id>
+    <property name="Nombre" type="String">
+      <column name="nombre" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Apel1" type="String">
+      <column name="apel1" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Apel2" type="String">
+      <column name="apel2" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Nif" type="String">
+      <column name="NIF" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Direccionemail" type="String">
+      <column name="DireccionEmail" default="N''" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Telefonocontacto" type="String">
+      <column name="TelefonoContacto" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Fechanacimiento" type="DateTime">
+      <column name="FechaNacimiento" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Pasaporte" type="String">
+      <column name="Pasaporte" default="N''" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Fechacaducidadpasaporte" type="DateTime">
+      <column name="FechaCaducidadPasaporte" default="NULL" not-null="false" sql-type="datetime2" />
+    </property>
+    <property name="Nombrecentrotrabajo" type="String">
+      <column name="NombreCentroTrabajo" default="N''" not-null="false" length="100" sql-type="nvarchar" />
+    </property>
+    <property name="Localidadcentrotrabajo" type="String">
+      <column name="LocalidadCentroTrabajo" default="N''" not-null="false" length="150" sql-type="nvarchar" />
+    </property>
+    <property name="Direccioncentrotrabajo" type="String">
+      <column name="DireccionCentroTrabajo" default="N''" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <property name="Lugaremisionpasaporte" type="String">
+      <column name="LugarEmisionPasaporte" default="N''" not-null="false" length="40" sql-type="nvarchar" />
+    </property>
+    <property name="Nacionalidadpasaporte" type="String">
+      <column name="NacionalidadPasaporte" default="N''" not-null="false" length="40" sql-type="nvarchar" />
+    </property>
+    <property name="Organizacionvisitaprofesional" type="String">
+      <column name="OrganizacionVisitaProfesional" default="N''" not-null="false" length="80" sql-type="nvarchar" />
+    </property>
+    <property name="Direccionprofesionalorganizacion" type="String">
+      <column name="DireccionProfesionalOrganizacion" default="N''" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Codigopostal" type="String">
+      <column name="CodigoPostal" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Localidad" type="String">
+      <column name="Localidad" default="NULL" not-null="false" length="45" sql-type="nvarchar" />
+    </property>
+    <property name="Provincia" type="String">
+      <column name="Provincia" default="NULL" not-null="false" length="45" sql-type="nvarchar" />
+    </property>
+    <property name="Pais" type="String">
+      <column name="Pais" default="N''" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Msdid" type="String">
+      <column name="msdid" default="N''" not-null="true" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="Locked" type="Int32">
+      <column name="locked" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtratamiento" type="Int32">
+      <column name="idtratamiento" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Iddistrito" type="Int32">
+      <column name="iddistrito" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idespecialidad" type="Int32">
+      <column name="idespecialidad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Descuentoresidente" type="String">
+      <column name="descuentoresidente" default="N''" not-null="false" length="128" sql-type="nvarchar" />
+    </property>
+    <property name="Idnivelriesgo" type="Int64">
+      <column name="idnivelriesgo" default="6" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </property>
+    <property name="Inactivo" type="Int32">
+      <column name="inactivo" default="0" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Genesyscode" type="String">
+      <column name="GenesysCode" default="NULL" not-null="false" length="30" sql-type="nvarchar" />
+    </property>
+    <property name="Goldenid" type="String">
+      <column name="GoldenId" default="NULL" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="Provincecenter" type="String">
+      <column name="ProvinceCenter" default="NULL" not-null="false" length="150" sql-type="nvarchar" />
+    </property>
+    <property name="Postalcodecenter" type="String">
+      <column name="PostalCodeCenter" default="NULL" not-null="false" length="50" sql-type="nvarchar" />
+    </property>
+    <property name="Updatedate" type="DateTime">
+      <column name="UpdateDate" default="NULL" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="Centercode" type="String">
+      <column name="CenterCode" default="NULL" not-null="false" length="100" sql-type="nvarchar" />
+    </property>
+    <property name="Internacional" type="Int32">
+      <column name="internacional" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Peticionario" type="Int32">
+      <column name="peticionario" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="IdpassengerlistoriginGp" type="Int32">
+      <column name="idpassengerlistorigin_gp" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="IdpassengerlistoriginMt" type="Int32">
+      <column name="idpassengerlistorigin_mt" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="IdpassengerlistoriginAmex" type="Int32">
+      <column name="idpassengerlistorigin_amex" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="Especialidades" class="Especialidades" update="false" insert="false">
+      <column name="idespecialidad" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Tratamientos" class="Tratamientos" update="false" insert="false">
+      <column name="idtratamiento" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="NivelRiesgoHcp" class="NivelRiesgoHcp" update="false" insert="false">
+      <column name="idnivelriesgo" default="6" not-null="true" precision="19" scale="0" sql-type="bigint" />
+    </many-to-one>
+    <set name="ActividadesPassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idpassengerlist" />
+      </key>
+      <one-to-many class="ActividadesPassengersList" />
+    </set>
+    <set name="HotelPassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idpassengerlist" />
+      </key>
+      <one-to-many class="HotelPassengersList" />
+    </set>
+    <set name="InsPassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idpassengerlist" />
+      </key>
+      <one-to-many class="InsPassengersList" />
+    </set>
+    <set name="ReservasPassengersLists" inverse="true" generic="true">
+      <key>
+        <column name="idpassengerlist" />
+      </key>
+      <one-to-many class="ReservasPassengersList" />
+    </set>
+    <set name="Transportepassengerslists" inverse="true" generic="true">
+      <key>
+        <column name="idpassengerlist" />
+      </key>
+      <one-to-many class="Transportepassengerslist" />
+    </set>
+    <set name="PeticionGrupos" inverse="true" generic="true">
+      <key>
+        <column name="idasistente" />
+      </key>
+      <one-to-many class="PeticionGrupos" />
+    </set>
+    <set name="GestordocumentalDocumentos" inverse="true" generic="true">
+      <key>
+        <column name="IdPassengerList" />
+      </key>
+      <one-to-many class="GestordocumentalDocumento" />
+    </set>
+  </class>
+</hibernate-mapping>

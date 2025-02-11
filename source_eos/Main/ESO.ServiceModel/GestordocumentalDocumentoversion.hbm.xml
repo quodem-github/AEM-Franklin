@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="GestordocumentalDocumentoversion" table="gestordocumental_documentoversion">
+    <id name="Id" type="Int32">
+      <column name="Id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Iddocumento" type="Int32">
+      <column name="IdDocumento" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Nombreoriginal" type="String">
+      <column name="NombreOriginal" not-null="true" length="256" sql-type="varchar" />
+    </property>
+    <property name="Rutafichero" type="String">
+      <column name="RutaFichero" not-null="true" sql-type="varchar" />
+    </property>
+    <property name="Version" type="Int32">
+      <column name="version" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idpeticionario" type="Int32">
+      <column name="IdPeticionario" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Fecha" type="DateTime">
+      <column name="Fecha" not-null="true" sql-type="datetime" />
+    </property>
+    <property name="Metadata" type="String">
+      <column name="Metadata" not-null="true" sql-type="varchar" />
+    </property>
+    <property name="Documentonovalido" type="Boolean">
+      <column name="DocumentoNoValido" not-null="true" sql-type="bit" />
+    </property>
+    <property name="Fechamodificacion" type="DateTime">
+      <column name="FechaModificacion" default="getdate()" not-null="true" sql-type="datetime" />
+    </property>
+    <many-to-one name="Peticionarios" class="Peticionarios" update="false" insert="false">
+      <column name="IdPeticionario" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="GestordocumentalDocumento" class="GestordocumentalDocumento" update="false" insert="false">
+      <column name="IdDocumento" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

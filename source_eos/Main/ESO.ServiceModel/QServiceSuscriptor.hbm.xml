@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="QServiceSuscriptor" table="q_service_suscriptor">
+    <id name="Idservicesuscriptor" type="Int32">
+      <column name="IdServiceSuscriptor" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idservice" type="Int32">
+      <column name="IdService" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idsuscriptor" type="Int32">
+      <column name="IdSuscriptor" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <many-to-one name="QService" class="QService" update="false" insert="false">
+      <column name="IdService" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="QSuscriptor" class="QSuscriptor" update="false" insert="false">
+      <column name="IdSuscriptor" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="QServiceQueries" inverse="true" generic="true">
+      <key>
+        <column name="IdServiceSuscriptor" />
+      </key>
+      <one-to-many class="QServiceQuery" />
+    </set>
+  </class>
+</hibernate-mapping>

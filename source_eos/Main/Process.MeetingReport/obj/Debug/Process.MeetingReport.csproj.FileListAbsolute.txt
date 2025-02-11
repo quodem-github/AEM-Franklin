@@ -1,0 +1,16 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\Process.MeetingReport.exe.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\Process.MeetingReport.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\Process.MeetingReport.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\NPOI.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\NPOI.OOXML.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\NPOI.OpenXml4Net.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\Quodem.Correo.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\Quodem.MailForms.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\bin\Debug\Quodem.Monitor.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\obj\Debug\Process.MeetingReport.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\obj\Debug\Process.MeetingReport.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\obj\Debug\Process.MeetingReport.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\obj\Debug\Process.MeetingReport.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.MeetingReport\obj\Debug\Process.MeetingReport.pdb

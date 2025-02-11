@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE0A6E57-0819-4C1A-9C0B-EEF5118BC772}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EOS.Web</RootNamespace>
+    <AssemblyName>EOS.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\EOS.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\EOS.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseAmex|AnyCPU'">
+    <OutputPath>bin\ReleaseAmex\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseAmex|x86'">
+    <OutputPath>bin\x86\ReleaseAmex\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\EOS.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseGP|AnyCPU'">
+    <OutputPath>bin\ReleaseGP\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseGP|x86'">
+    <OutputPath>bin\x86\ReleaseGP\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\EOS.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseMT|AnyCPU'">
+    <OutputPath>bin\ReleaseMT\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseMT|x86'">
+    <OutputPath>bin\x86\ReleaseMT\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\EOS.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AgenteAgencias.cs" />
+    <Compile Include="AgenteAMEC.cs" />
+    <Compile Include="AgenteAmecInfo.cs" />
+    <Compile Include="AgenteAprobadorAmec.cs" />
+    <Compile Include="AgenteBase.cs" />
+    <Compile Include="AgenteComentariosAMEC.cs" />
+    <Compile Include="AgenteDelegacion.cs" />
+    <Compile Include="AgenteEmpleados.cs" />
+    <Compile Include="AgenteExpedientes.cs" />
+    <Compile Include="AgenteMaestros.cs" />
+    <Compile Include="AgenteParticipantes.cs" />
+    <Compile Include="AgentePeticionarioManager.cs" />
+    <Compile Include="AgenteServicio.cs" />
+    <Compile Include="AgenteUnidadesOrgAMEC.cs" />
+    <Compile Include="AgenteUsuarios.cs" />
+    <Compile Include="Alert.cs" />
+    <Compile Include="AgenteFlujoAprobacion.cs" />
+    <Compile Include="BLL\GestorFlujo\CondicionesFlujo.cs" />
+    <Compile Include="BLL\GestorFlujo\Flujos\FlujoACP.cs" />
+    <Compile Include="BLL\GestorFlujo\Flujos\FlujoASP.cs" />
+    <Compile Include="BLL\GestorFlujo\Flujos\FlujoDADCP.cs" />
+    <Compile Include="BLL\GestorFlujo\Flujos\FlujoDADSP.cs" />
+    <Compile Include="BLL\GestorFlujo\Flujos\FlujoDCP.cs" />
+    <Compile Include="BLL\GestorFlujo\Flujos\FlujoDirCP.cs" />
+    <Compile Include="BLL\GestorFlujo\Flujos\FlujoDirSP.cs" />
+    <Compile Include="BLL\GestorFlujo\Flujos\FlujoDSP.cs" />
+    <Compile Include="BLL\GestorFlujo\Flujos\IFlujo.cs" />
+    <Compile Include="BLL\GestorFlujo\GestorFlujo.cs" />
+    <Compile Include="BLL\GestorPermisos\ComunPermisos.cs" />
+    <Compile Include="BLL\GestorPermisos\GestorPermisos.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\IPermiso.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoBorrador.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoCancelado.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoLegal.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoMedico.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoMultiaprobacion.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoNegocio.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoNegocioAssistant.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoPendienteSometer.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoPeticionario.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoRechazado.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisosAprobado.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoSupJer.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoSupJerAssistant.cs" />
+    <Compile Include="BLL\GestorPermisos\Permisos\PermisoSupJerCreador.cs" />
+    <Compile Include="Controls\GestorParticipantesPanel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\IEOSControl.cs" />
+    <Compile Include="Controls\InputDatePickerControl.cs" />
+    <Compile Include="Controls\InscripcionTabPanel.cs" />
+    <Compile Include="Controls\TabContainer.cs" />
+    <Compile Include="Controls\TabPanel.cs" />
+    <Compile Include="Controls\TimeInputBox.cs" />
+    <Compile Include="DesplegablesHandler.cs" />
+    <Compile Include="Encriptacion.cs" />
+    <Compile Include="Enums\AprobacionJefe.cs" />
+    <Compile Include="Enums\EstadoDelegacion.cs" />
+    <Compile Include="Enums\EstadosAmec.cs" />
+    <Compile Include="Enums\GestorDocTipo.cs" />
+    <Compile Include="Enums\GestorTipoSeccion.cs" />
+    <Compile Include="Enums\NivelesAprobacion.cs" />
+    <Compile Include="ExtensionesString.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="GPMembershipProvider.cs" />
+    <Compile Include="Mail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Variables.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EOS.Entidades\EOS.Entidades.csproj">
+      <Project>{A44E0C75-86A2-492D-AB27-07DF32863526}</Project>
+      <Name>EOS.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS.Logger\EOS.Logger.csproj">
+      <Project>{E7AA28B8-07B3-4602-96F5-0951949ECA8A}</Project>
+      <Name>EOS.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS.Repositorios\EOS.Repositorios.csproj">
+      <Project>{3958F85E-62B4-46B5-9B29-6D62CBD55BB0}</Project>
+      <Name>EOS.Repositorios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS.Logica\EOS.Logica.csproj">
+      <Project>{8E9B675F-50DD-42A2-BC62-4CCA1D6F53D8}</Project>
+      <Name>EOS.Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CheckDate.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CheckTime.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BLL\GestorPermisos\TODO.txt" />
+    <Content Include="lib\AjaxControlToolkit.dll" />
+    <Content Include="lib\AutoMapper.dll" />
+    <Content Include="lib\BouncyCastle.Crypto.dll" />
+    <Content Include="lib\Iesi.Collections.dll" />
+    <Content Include="lib\Microsoft.CSharp.dll" />
+    <Content Include="lib\Microsoft.WindowsAPICodePack.dll" />
+    <Content Include="lib\Microsoft.WindowsAPICodePack.Shell.dll" />
+    <Content Include="lib\Newtonsoft.Json.dll" />
+    <Content Include="lib\NHibernate.dll" />
+    <Content Include="lib\System.ComponentModel.DataAnnotations.dll" />
+    <Content Include="lib\System.Configuration.dll" />
+    <Content Include="lib\System.Data.DataSetExtensions.dll" />
+    <Content Include="lib\System.Data.dll" />
+    <Content Include="lib\System.Data.Entity.dll" />
+    <Content Include="lib\System.dll" />
+    <Content Include="lib\System.Drawing.dll" />
+    <Content Include="lib\System.Runtime.dll" />
+    <Content Include="lib\System.Web.ApplicationServices.dll" />
+    <Content Include="lib\System.Web.dll" />
+    <Content Include="lib\System.Web.DynamicData.dll" />
+    <Content Include="lib\System.Web.Extensions.dll" />
+    <Content Include="lib\System.Xml.dll" />
+    <Content Include="lib\System.Xml.Linq.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.725, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime">
+      <HintPath>lib\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!--<Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

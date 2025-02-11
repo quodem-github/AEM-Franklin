@@ -1,0 +1,16 @@
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\Process.BudgetReport.exe.config
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\Process.BudgetReport.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\Process.BudgetReport.pdb
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\NPOI.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\NPOI.OOXML.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\NPOI.OpenXml4Net.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\NPOI.OpenXmlFormats.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\Quodem.Correo.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\Quodem.MailForms.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\bin\Release\Quodem.Monitor.dll
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\obj\Release\Process.BudgetReport.csproj.AssemblyReference.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\obj\Release\Process.BudgetReport.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\obj\Release\Process.BudgetReport.csproj.CopyComplete
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\obj\Release\Process.BudgetReport.exe
+D:\VisualStudio\Proyectos\eos-msd-es\Main\Process.BudgetReport\obj\Release\Process.BudgetReport.pdb

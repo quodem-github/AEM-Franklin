@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CalcCountryCorrespondencias" table="calc_country_correspondencias">
+    <id name="Id" type="Int32">
+      <column name="id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idtype" type="Int32">
+      <column name="idType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idglobaltype" type="Int32">
+      <column name="idGlobalType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idnumspeakstype" type="Int32">
+      <column name="idNumSpeaksType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idcitiestype" type="Int32">
+      <column name="idCitiesType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idnumspeaksmoderatorstype" type="Int32">
+      <column name="idNumSpeaksModeratorsType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Tabletext" type="String">
+      <column name="tableText" default="N''" not-null="true" length="150" sql-type="nvarchar" />
+    </property>
+    <property name="Idstandarvalue" type="Int32">
+      <column name="idStandarValue" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idstandarvalueappend" type="String">
+      <column name="idStandarValueAppend" default="N''" not-null="true" length="150" sql-type="nvarchar" />
+    </property>
+    <property name="Idmaxvalue" type="Int32">
+      <column name="idMaxValue" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idmaxvalueappend" type="String">
+      <column name="idMaxValueAppend" default="N''" not-null="true" length="150" sql-type="nvarchar" />
+    </property>
+    <property name="Iddaysnospeak" type="Int32">
+      <column name="idDaysNoSpeak" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Aditional" type="Int32">
+      <column name="Aditional" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Aditionalappend" type="String">
+      <column name="AditionalAppend" default="N''" not-null="true" length="150" sql-type="nvarchar" />
+    </property>
+    <many-to-one name="CalcCountryCitiesType" class="CalcCountryCitiesType">
+      <column name="idCitiesType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcCountryGlobalType" class="CalcCountryGlobalType">
+      <column name="idGlobalType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcCountryNumSpeaksModeratorsType" class="CalcCountryNumSpeaksModeratorsType">
+      <column name="idNumSpeaksModeratorsType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcCountryNumSpeaksType" class="CalcCountryNumSpeaksType">
+      <column name="idNumSpeaksType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="CalcCountryType" class="CalcCountryType">
+      <column name="idType" default="NULL" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

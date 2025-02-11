@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EOS.ServiceModel" namespace="EOS.ServiceModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="GestordocumentalDocumento" table="gestordocumental_documento">
+    <id name="Id" type="Int32">
+      <column name="Id" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="Idamec" type="String">
+      <column name="IdAmec" not-null="true" length="128" precision="10" scale="0" sql-type="varchar" />
+    </property>
+    <property name="Idexpediente" type="Int32">
+      <column name="IdExpediente" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idtipodoc" type="Int32">
+      <column name="IdTipodoc" not-null="true" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idsubtipodoc" type="Int32">
+      <column name="IdSubTipodoc" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idpeticionario" type="Int32">
+      <column name="IdPeticionario" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Idpassengerlist" type="Int32">
+      <column name="IdPassengerList" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Fecha" type="DateTime">
+      <column name="Fecha" not-null="true" sql-type="datetime" />
+    </property>
+    <property name="Campolibre" type="String">
+      <column name="CampoLibre" not-null="false" sql-type="varchar" />
+    </property>
+    <property name="Fechamodificacion" type="DateTime">
+      <column name="FechaModificacion" default="getdate()" not-null="true" sql-type="datetime" />
+    </property>
+    <many-to-one name="Expediente" class="Expediente" update="false" insert="false">
+      <column name="IdExpediente" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="PassengersList" class="PassengersList" update="false" insert="false">
+      <column name="IdPassengerList" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Peticionarios" class="Peticionarios" update="false" insert="false">
+      <column name="IdPeticionario" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="GestordocumentalSubtipodoc" class="GestordocumentalSubtipodoc" update="false" insert="false">
+      <column name="IdSubTipodoc" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="GestordocumentalTipodoc" class="GestordocumentalTipodoc" update="false" insert="false">
+      <column name="IdTipodoc" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="GestordocumentalDocumentoversions" inverse="true" generic="true">
+      <key>
+        <column name="IdDocumento" />
+      </key>
+      <one-to-many class="GestordocumentalDocumentoversion" />
+    </set>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,100 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using EOS.Web.Enums;
+using EOS.Entidades.Datos;
+using EOS.Web;
+
+namespace EOS.Web.BLL.GestorPermisos.Permisos
+{
+    public class PermisoMultiaprobacion : IPermiso
+    {
+        public EstadosAmec Estado { get { return EstadosAmec.PendienteMultiaprobacion; } } 
+        private readonly AgenteAprobadorAmec _agAprobador;
+
+        public PermisoMultiaprobacion(AgenteAprobadorAmec agAprobador)
+        {
+            _agAprobador = agAprobador;
+        }
+
+        public bool BuscarPermisos(int estado)
+        {
+            return estado == Estado.GetHashCode();
+        }
+
+        public bool PuedoAprobarYRechazar(string idamec, int idPeticionario)
+        {
+            return _agAprobador.ObtenerPermisosMultiAprobacion(idamec, idPeticionario);
+        }
+
+        public bool PuedoSometer(string idamec, int idPeticionario)
+        {
+            return _agAprobador.ObtenerPermisoSometer(idamec, idPeticionario);
+        }
+        public bool Rechazar(string idamec, int idPeticionario)
+        {
+            AgenteAmecInfo agAmec = new AgenteAmecInfo();
+            DAmecInfo amec = agAmec.CargarTodosValoresAmec(idamec);
+            try
+            {
+                AgenteUsuarios agUsuarios = new AgenteUsuarios();
+                
+                DDatosPersonalesUsuario usuario = agUsuarios.ObtenerDatosPersonalesPorIDPeticionario(idPeticionario.ToString());
+                agAmec.InsertarHistorialAmec(EstadosAmec.Rechazado.GetHashCode(), idamec, usuario, NivelesAprobacion.Multiaprobacion.GetHashCode(), null);
+                ComunPermisos.CambiarEstadoAmec(idamec, agAmec, EstadosAmec.Rechazado, NivelesAprobacion.No);
+                return true;
+            }
+            catch (Exception)
+            {
+                agAmec.BorrarHistorialAmec(EstadosAmec.Rechazado.GetHashCode(), idamec, idPeticionario, NivelesAprobacion.DepartamentoLegal.GetHashCode());
+                agAmec.CambiarEstadoAmec(amec.idestado.ToString(), idamec.ToString(), amec.idnivelaprobacion);
+                throw;
+            }
+        }
+        public bool Aprobar(string idamec, int idPeticionario, bool condicionado)
+        {
+            AgenteAmecInfo agAmec = new AgenteAmecInfo();
+            DAmecInfo amec = agAmec.CargarTodosValoresAmec(idamec);
+            try
+            {
+                AgenteUsuarios agUsuarios = new AgenteUsuarios();
+                
+                bool solicitanteDirector = ComunPermisos.EsSolicitanteDirector(idamec);
+                DDatosPersonalesUsuario usuario = agUsuarios.ObtenerDatosPersonalesPorIDPeticionario(idPeticionario.ToString());
+                agAmec.InsertarHistorialAmec(EstadosAmec.AprobadoMultiaprobacion.GetHashCode(), idamec, usuario, NivelesAprobacion.Multiaprobacion.GetHashCode(), null);
+
+                if (solicitanteDirector)
+                {
+                    agAmec.CambiarEstadoAmec(EstadosAmec.PendienteNegocio.GetHashCode().ToString(), idamec.ToString(), NivelesAprobacion.Negocio.GetHashCode());
+                }
+                else
+                {
+                    if (amec.preaprobadaneg.HasValue && amec.preaprobadaneg.Value)
+                    {
+                        agAmec.CambiarEstadoAmec(EstadosAmec.PendienteNegocio.GetHashCode().ToString(), idamec.ToString(), NivelesAprobacion.Negocio.GetHashCode());
+                    }
+                    else
+                    {
+                        agAmec.CambiarEstadoAmec(EstadosAmec.PendienteSupJerarquico.GetHashCode().ToString(), idamec.ToString(), NivelesAprobacion.SuperiorJerarquico.GetHashCode());
+                    }
+                    
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                if (amec.preaprobadaneg.HasValue && amec.preaprobadaneg.Value)
+                    agAmec.BorrarHistorialAmec(EstadosAmec.PreaprobadoNegocio.GetHashCode(), idamec, idPeticionario, NivelesAprobacion.SuperiorJerarquico.GetHashCode());
+                agAmec.BorrarHistorialAmec(EstadosAmec.AprobadoMultiaprobacion.GetHashCode(), idamec, idPeticionario, NivelesAprobacion.Multiaprobacion.GetHashCode());
+                agAmec.CambiarEstadoAmec(amec.idestado.ToString(), idamec.ToString(), amec.idnivelaprobacion);
+                throw;
+            }
+        }
+        public List<string> ObtenerListaDestinatarios(string idamec, int idPeticionario)
+        {
+            return new List<string>();
+        }
+    }
+}
